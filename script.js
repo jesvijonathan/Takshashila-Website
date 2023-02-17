@@ -34,7 +34,7 @@ onload = function () {
 
     document.addEventListener("mousedown", function () {
       cursor_circle.style.transform = `scale(0.5)`;
-      cursor_border.style.border = "0.2vw solid grey";
+      cursor_border.style.border = "0.25vw solid grey";
       // setTimeout(function () {
       //   cursor_circle.style.transform = `scale(1)`;
       // }, 100);
