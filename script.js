@@ -6,10 +6,19 @@ onload = function () {
   const image5 = document.querySelector("#image5");
 
   const cursor = document.querySelector("#cursor");
+  const cursor_border = document.querySelector("#cursor_border");
+  const cursor_circle = document.querySelector("#cursor_circle");
 
   document.addEventListener("mousemove", (event) => {
     const mouseX = event.clientX;
     const mouseY = event.clientY;
+
+    cursor.style.transform = `translate3d(${mouseX - 20}px, ${
+      mouseY - 20
+    }px, 0)`;
+    cursor.style.transform = `translate3d(${mouseX - 20}px, ${
+      mouseY - 20
+    }px, 0)`;
 
     let x = mouseX / window.innerWidth;
     let y = mouseY / window.innerHeight;
@@ -22,11 +31,17 @@ onload = function () {
     image4.style.y = `${x * -50}`;
     image5.style.transform = `translate(${x * -7}px, ${y * -7}px)`;
 
-    cursor.style.transform = `translate3d(${mouseX - 20}px, ${
-      mouseY - 20
-    }px, 0)`;
-    cursor.style.transform = `translate3d(${mouseX - 20}px, ${
-      mouseY - 20
-    }px, 0)`;
+    document.addEventListener("mousedown", function () {
+      cursor_circle.style.transform = `scale(0.5)`;
+      cursor_border.style.border = "0.2vw solid grey";
+      // setTimeout(function () {
+      //   cursor_circle.style.transform = `scale(1)`;
+      // }, 100);
+    });
+
+    document.addEventListener("mouseup", function () {
+      cursor_circle.style.transform = `scale(1)`;
+      cursor_border.style.border = " 0.1vw solid #ffffff80";
+    });
   });
 };
