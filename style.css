@@ -291,7 +291,7 @@ section {
 .cursor_circle {
   width: 0.8vw;
   height: 0.8vw;
-  margin: 0.6vw;
+  margin: 0.65vw;
   background-color: white;
   border-radius: 50%;
   transition: 0.2s ease;
