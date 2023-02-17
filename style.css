@@ -221,6 +221,10 @@ section {
   text-align: center;
   font-family: "oo";
   font-size: 1vw;
+  z-index: 1;
+}
+.main_signin:hover {
+  background-color: #7f7f7f;
 }
 .container {
   position: relative;
@@ -285,10 +289,9 @@ section {
   justify-content: center;
   align-items: center;
   position: fixed;
-  transition: ease;
-}
-.nocursor {
-  cursor: none;
+  transition: linear;
+  z-index: 1000;
+  pointer-events: none;
 }
 .cursor_circle {
   width: 0.8vw;

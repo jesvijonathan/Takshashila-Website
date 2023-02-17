@@ -34,7 +34,7 @@ onload = function () {
 
     document.addEventListener("mousedown", function () {
       cursor_circle.style.transform = `scale(0.5)`;
-      cursor_border.style.border = "0.25vw solid grey";
+      cursor_border.style.border = "0.2vw solid white";
       // setTimeout(function () {
       //   cursor_circle.style.transform = `scale(1)`;
       // }, 100);
@@ -44,5 +44,24 @@ onload = function () {
       cursor_circle.style.transform = `scale(1)`;
       cursor_border.style.border = " 0.1vw solid #ffffff80";
     });
+  });
+
+  document.addEventListener("mouseout", () => {
+    const mouseX = event.clientX;
+    const mouseY = event.clientY;
+
+    if (
+      mouseY <= 0 ||
+      mouseX <= 0 ||
+      mouseX >= window.innerWidth ||
+      mouseY >= window.innerHeight
+    ) {
+      cursor.style.display = "none";
+    }
+  });
+  document.addEventListener("mouseenter", () => {
+    {
+      cursor.style.display = "block";
+    }
   });
 };
