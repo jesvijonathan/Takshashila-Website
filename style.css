@@ -187,6 +187,27 @@ section {
   height: 9vw;
   top: -7.4vw;
   position: absolute;
+  transition: 1s ease-in-out;
+}
+
+.arrow_container svg:hover {
+  animation: arrow_dash 1s ease forwards;
+}
+
+@keyframes arrow_dash {
+  0% {
+    stroke-dashoffset: 300;
+    stroke-dasharray: 290;
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 0%;
+  }
 }
 
 .main_navigation {
@@ -207,6 +228,8 @@ section {
 
   font-family: "oo";
   font-weight: 100;
+  z-index: 2;
+  text-decoration: none;
 }
 
 .main_signin {

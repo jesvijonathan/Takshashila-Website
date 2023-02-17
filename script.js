@@ -35,6 +35,10 @@ onload = function () {
     document.addEventListener("mousedown", function () {
       cursor_circle.style.transform = `scale(0.5)`;
       cursor_border.style.border = "0.2vw solid white";
+      // document.body.style.background = "white";
+
+      // document.body.style.mixBlendMode = " difference";
+
       // setTimeout(function () {
       //   cursor_circle.style.transform = `scale(1)`;
       // }, 100);
@@ -43,6 +47,9 @@ onload = function () {
     document.addEventListener("mouseup", function () {
       cursor_circle.style.transform = `scale(1)`;
       cursor_border.style.border = " 0.1vw solid #ffffff80";
+
+      // document.body.style.mixBlendMode = " unset";
+      // document.body.style.background = "#282828 ";
     });
   });
 
