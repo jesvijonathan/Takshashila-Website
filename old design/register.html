@@ -1,0 +1,1896 @@
+<html lang="en">
+  <head>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <title>Cepher Records | Registration</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Cepher Records" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Inder&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Jura&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../static/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <div class="grain"></div>
+  <body>
+    <div class="title_bol">Registration</div>
+    <form
+      class="form"
+      id="formf"
+      action="/register_verify"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <div class="form-group">
+        <div class="dddtt1">
+          <div class="det-1">
+            <div class="text-group" title="Enter your Email Address">
+              <input
+                type="email"
+                autofocus="Ture"
+                name="Email"
+                id="ename"
+                required
+              />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label id="ename-label">Email Address</label>
+            </div>
+
+            <div class="text-group" title="Enter an Username">
+              <input
+                type="text"
+                autofocus="Ture"
+                name="Username"
+                id="uname"
+                required
+              />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label id="uname-label">Username</label>
+              <!-- <div id="explicit-block-txttt">error 1</div> -->
+            </div>
+          </div>
+
+          <div class="phone">
+            <div class="text-group tell2" title="Enter Country Code">
+              <input
+                class="tel-code"
+                type="number"
+                name="Country_Code"
+                id="tel-country-code"
+                autocomplete="tel-country-code"
+                required="false"
+                list="country-code"
+                onfocus="this.value='';"
+              />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label class="label-gap" id="code-label" style="left: 0.4vw"
+                >Code</label
+              >
+            </div>
+            <!-- https://github.com/jackocnr/intl-tel-input/blob/master/src/js/data.js -->
+            <datalist id="country-code">
+              <option data-countryCode="DZ" value="213">Algeria (+213)</option>
+              <option data-countryCode="AD" value="376">Andorra (+376)</option>
+              <option data-countryCode="AO" value="244">Angola (+244)</option>
+              <option data-countryCode="AI" value="1264">
+                Anguilla (+1264)
+              </option>
+              <option data-countryCode="AG" value="1268">
+                Antigua &amp; Barbuda (+1268)
+              </option>
+              <option data-countryCode="AR" value="54">Argentina (+54)</option>
+              <option data-countryCode="AM" value="374">Armenia (+374)</option>
+              <option data-countryCode="AW" value="297">Aruba (+297)</option>
+              <option data-countryCode="AU" value="61">Australia (+61)</option>
+              <option data-countryCode="AT" value="43">Austria (+43)</option>
+              <option data-countryCode="AZ" value="994">
+                Azerbaijan (+994)
+              </option>
+              <option data-countryCode="BS" value="1242">
+                Bahamas (+1242)
+              </option>
+              <option data-countryCode="BH" value="973">Bahrain (+973)</option>
+              <option data-countryCode="BD" value="880">
+                Bangladesh (+880)
+              </option>
+              <option data-countryCode="BB" value="1246">
+                Barbados (+1246)
+              </option>
+              <option data-countryCode="BY" value="375">Belarus (+375)</option>
+              <option data-countryCode="BE" value="32">Belgium (+32)</option>
+              <option data-countryCode="BZ" value="501">Belize (+501)</option>
+              <option data-countryCode="BJ" value="229">Benin (+229)</option>
+              <option data-countryCode="BM" value="1441">
+                Bermuda (+1441)
+              </option>
+              <option data-countryCode="BT" value="975">Bhutan (+975)</option>
+              <option data-countryCode="BO" value="591">Bolivia (+591)</option>
+              <option data-countryCode="BA" value="387">
+                Bosnia Herzegovina (+387)
+              </option>
+              <option data-countryCode="BW" value="267">Botswana (+267)</option>
+              <option data-countryCode="BR" value="55">Brazil (+55)</option>
+              <option data-countryCode="BN" value="673">Brunei (+673)</option>
+              <option data-countryCode="BG" value="359">Bulgaria (+359)</option>
+              <option data-countryCode="BF" value="226">
+                Burkina Faso (+226)
+              </option>
+              <option data-countryCode="BI" value="257">Burundi (+257)</option>
+              <option data-countryCode="KH" value="855">Cambodia (+855)</option>
+              <option data-countryCode="CM" value="237">Cameroon (+237)</option>
+              <option data-countryCode="CA" value="1">Canada (+1)</option>
+              <option data-countryCode="CV" value="238">
+                Cape Verde Islands (+238)
+              </option>
+              <option data-countryCode="KY" value="1345">
+                Cayman Islands (+1345)
+              </option>
+              <option data-countryCode="CF" value="236">
+                Central African Republic (+236)
+              </option>
+              <option data-countryCode="CL" value="56">Chile (+56)</option>
+              <option data-countryCode="CN" value="86">China (+86)</option>
+              <option data-countryCode="CO" value="57">Colombia (+57)</option>
+              <option data-countryCode="KM" value="269">Comoros (+269)</option>
+              <option data-countryCode="CG" value="242">Congo (+242)</option>
+              <option data-countryCode="CK" value="682">
+                Cook Islands (+682)
+              </option>
+              <option data-countryCode="CR" value="506">
+                Costa Rica (+506)
+              </option>
+              <option data-countryCode="HR" value="385">Croatia (+385)</option>
+              <option data-countryCode="CU" value="53">Cuba (+53)</option>
+              <option data-countryCode="CY" value="90392">
+                Cyprus North (+90392)
+              </option>
+              <option data-countryCode="CY" value="357">
+                Cyprus South (+357)
+              </option>
+              <option data-countryCode="CZ" value="42">
+                Czech Republic (+42)
+              </option>
+              <option data-countryCode="DK" value="45">Denmark (+45)</option>
+              <option data-countryCode="DJ" value="253">Djibouti (+253)</option>
+              <option data-countryCode="DM" value="1809">
+                Dominica (+1809)
+              </option>
+              <option data-countryCode="DO" value="1809">
+                Dominican Republic (+1809)
+              </option>
+              <option data-countryCode="EC" value="593">Ecuador (+593)</option>
+              <option data-countryCode="EG" value="20">Egypt (+20)</option>
+              <option data-countryCode="SV" value="503">
+                El Salvador (+503)
+              </option>
+              <option data-countryCode="GQ" value="240">
+                Equatorial Guinea (+240)
+              </option>
+              <option data-countryCode="ER" value="291">Eritrea (+291)</option>
+              <option data-countryCode="EE" value="372">Estonia (+372)</option>
+              <option data-countryCode="ET" value="251">Ethiopia (+251)</option>
+              <option data-countryCode="FK" value="500">
+                Falkland Islands (+500)
+              </option>
+              <option data-countryCode="FO" value="298">
+                Faroe Islands (+298)
+              </option>
+              <option data-countryCode="FJ" value="679">Fiji (+679)</option>
+              <option data-countryCode="FI" value="358">Finland (+358)</option>
+              <option data-countryCode="FR" value="33">France (+33)</option>
+              <option data-countryCode="GF" value="594">
+                French Guiana (+594)
+              </option>
+              <option data-countryCode="PF" value="689">
+                French Polynesia (+689)
+              </option>
+              <option data-countryCode="GA" value="241">Gabon (+241)</option>
+              <option data-countryCode="GM" value="220">Gambia (+220)</option>
+              <option data-countryCode="GE" value="7880">
+                Georgia (+7880)
+              </option>
+              <option data-countryCode="DE" value="49">Germany (+49)</option>
+              <option data-countryCode="GH" value="233">Ghana (+233)</option>
+              <option data-countryCode="GI" value="350">
+                Gibraltar (+350)
+              </option>
+              <option data-countryCode="GR" value="30">Greece (+30)</option>
+              <option data-countryCode="GL" value="299">
+                Greenland (+299)
+              </option>
+              <option data-countryCode="GD" value="1473">
+                Grenada (+1473)
+              </option>
+              <option data-countryCode="GP" value="590">
+                Guadeloupe (+590)
+              </option>
+              <option data-countryCode="GU" value="671">Guam (+671)</option>
+              <option data-countryCode="GT" value="502">
+                Guatemala (+502)
+              </option>
+              <option data-countryCode="GN" value="224">Guinea (+224)</option>
+              <option data-countryCode="GW" value="245">
+                Guinea - Bissau (+245)
+              </option>
+              <option data-countryCode="GY" value="592">Guyana (+592)</option>
+              <option data-countryCode="HT" value="509">Haiti (+509)</option>
+              <option data-countryCode="HN" value="504">Honduras (+504)</option>
+              <option data-countryCode="HK" value="852">
+                Hong Kong (+852)
+              </option>
+              <option data-countryCode="HU" value="36">Hungary (+36)</option>
+              <option data-countryCode="IS" value="354">Iceland (+354)</option>
+              <option data-countryCode="IN" value="91">India (+91)</option>
+              <option data-countryCode="ID" value="62">Indonesia (+62)</option>
+              <option data-countryCode="IR" value="98">Iran (+98)</option>
+              <option data-countryCode="IQ" value="964">Iraq (+964)</option>
+              <option data-countryCode="IE" value="353">Ireland (+353)</option>
+              <option data-countryCode="IL" value="972">Israel (+972)</option>
+              <option data-countryCode="IT" value="39">Italy (+39)</option>
+              <option data-countryCode="JM" value="1876">
+                Jamaica (+1876)
+              </option>
+              <option data-countryCode="JP" value="81">Japan (+81)</option>
+              <option data-countryCode="JO" value="962">Jordan (+962)</option>
+              <option data-countryCode="KZ" value="7">Kazakhstan (+7)</option>
+              <option data-countryCode="KE" value="254">Kenya (+254)</option>
+              <option data-countryCode="KI" value="686">Kiribati (+686)</option>
+              <option data-countryCode="KP" value="850">
+                Korea North (+850)
+              </option>
+              <option data-countryCode="KR" value="82">
+                Korea South (+82)
+              </option>
+              <option data-countryCode="KW" value="965">Kuwait (+965)</option>
+              <option data-countryCode="KG" value="996">
+                Kyrgyzstan (+996)
+              </option>
+              <option data-countryCode="LA" value="856">Laos (+856)</option>
+              <option data-countryCode="LV" value="371">Latvia (+371)</option>
+              <option data-countryCode="LB" value="961">Lebanon (+961)</option>
+              <option data-countryCode="LS" value="266">Lesotho (+266)</option>
+              <option data-countryCode="LR" value="231">Liberia (+231)</option>
+              <option data-countryCode="LY" value="218">Libya (+218)</option>
+              <option data-countryCode="LI" value="417">
+                Liechtenstein (+417)
+              </option>
+              <option data-countryCode="LT" value="370">
+                Lithuania (+370)
+              </option>
+              <option data-countryCode="LU" value="352">
+                Luxembourg (+352)
+              </option>
+              <option data-countryCode="MO" value="853">Macao (+853)</option>
+              <option data-countryCode="MK" value="389">
+                Macedonia (+389)
+              </option>
+              <option data-countryCode="MG" value="261">
+                Madagascar (+261)
+              </option>
+              <option data-countryCode="MW" value="265">Malawi (+265)</option>
+              <option data-countryCode="MY" value="60">Malaysia (+60)</option>
+              <option data-countryCode="MV" value="960">Maldives (+960)</option>
+              <option data-countryCode="ML" value="223">Mali (+223)</option>
+              <option data-countryCode="MT" value="356">Malta (+356)</option>
+              <option data-countryCode="MH" value="692">
+                Marshall Islands (+692)
+              </option>
+              <option data-countryCode="MQ" value="596">
+                Martinique (+596)
+              </option>
+              <option data-countryCode="MR" value="222">
+                Mauritania (+222)
+              </option>
+              <option data-countryCode="YT" value="269">Mayotte (+269)</option>
+              <option data-countryCode="MX" value="52">Mexico (+52)</option>
+              <option data-countryCode="FM" value="691">
+                Micronesia (+691)
+              </option>
+              <option data-countryCode="MD" value="373">Moldova (+373)</option>
+              <option data-countryCode="MC" value="377">Monaco (+377)</option>
+              <option data-countryCode="MN" value="976">Mongolia (+976)</option>
+              <option data-countryCode="MS" value="1664">
+                Montserrat (+1664)
+              </option>
+              <option data-countryCode="MA" value="212">Morocco (+212)</option>
+              <option data-countryCode="MZ" value="258">
+                Mozambique (+258)
+              </option>
+              <option data-countryCode="MN" value="95">Myanmar (+95)</option>
+              <option data-countryCode="NA" value="264">Namibia (+264)</option>
+              <option data-countryCode="NR" value="674">Nauru (+674)</option>
+              <option data-countryCode="NP" value="977">Nepal (+977)</option>
+              <option data-countryCode="NL" value="31">
+                Netherlands (+31)
+              </option>
+              <option data-countryCode="NC" value="687">
+                New Caledonia (+687)
+              </option>
+              <option data-countryCode="NZ" value="64">
+                New Zealand (+64)
+              </option>
+              <option data-countryCode="NI" value="505">
+                Nicaragua (+505)
+              </option>
+              <option data-countryCode="NE" value="227">Niger (+227)</option>
+              <option data-countryCode="NG" value="234">Nigeria (+234)</option>
+              <option data-countryCode="NU" value="683">Niue (+683)</option>
+              <option data-countryCode="NF" value="672">
+                Norfolk Islands (+672)
+              </option>
+              <option data-countryCode="NP" value="670">
+                Northern Marianas (+670)
+              </option>
+              <option data-countryCode="NO" value="47">Norway (+47)</option>
+              <option data-countryCode="OM" value="968">Oman (+968)</option>
+              <option data-countryCode="PW" value="680">Palau (+680)</option>
+              <option data-countryCode="PA" value="507">Panama (+507)</option>
+              <option data-countryCode="PG" value="675">
+                Papua New Guinea (+675)
+              </option>
+              <option data-countryCode="PY" value="595">Paraguay (+595)</option>
+              <option data-countryCode="PE" value="51">Peru (+51)</option>
+              <option data-countryCode="PH" value="63">
+                Philippines (+63)
+              </option>
+              <option data-countryCode="PL" value="48">Poland (+48)</option>
+              <option data-countryCode="PT" value="351">Portugal (+351)</option>
+              <option data-countryCode="PR" value="1787">
+                Puerto Rico (+1787)
+              </option>
+              <option data-countryCode="QA" value="974">Qatar (+974)</option>
+              <option data-countryCode="RE" value="262">Reunion (+262)</option>
+              <option data-countryCode="RO" value="40">Romania (+40)</option>
+              <option data-countryCode="RU" value="7">Russia (+7)</option>
+              <option data-countryCode="RW" value="250">Rwanda (+250)</option>
+              <option data-countryCode="SM" value="378">
+                San Marino (+378)
+              </option>
+              <option data-countryCode="ST" value="239">
+                Sao Tome &amp; Principe (+239)
+              </option>
+              <option data-countryCode="SA" value="966">
+                Saudi Arabia (+966)
+              </option>
+              <option data-countryCode="SN" value="221">Senegal (+221)</option>
+              <option data-countryCode="CS" value="381">Serbia (+381)</option>
+              <option data-countryCode="SC" value="248">
+                Seychelles (+248)
+              </option>
+              <option data-countryCode="SL" value="232">
+                Sierra Leone (+232)
+              </option>
+              <option data-countryCode="SG" value="65">Singapore (+65)</option>
+              <option data-countryCode="SK" value="421">
+                Slovak Republic (+421)
+              </option>
+              <option data-countryCode="SI" value="386">Slovenia (+386)</option>
+              <option data-countryCode="SB" value="677">
+                Solomon Islands (+677)
+              </option>
+              <option data-countryCode="SO" value="252">Somalia (+252)</option>
+              <option data-countryCode="ZA" value="27">
+                South Africa (+27)
+              </option>
+              <option data-countryCode="ES" value="34">Spain (+34)</option>
+              <option data-countryCode="LK" value="94">Sri Lanka (+94)</option>
+              <option data-countryCode="SH" value="290">
+                St. Helena (+290)
+              </option>
+              <option data-countryCode="KN" value="1869">
+                St. Kitts (+1869)
+              </option>
+              <option data-countryCode="SC" value="1758">
+                St. Lucia (+1758)
+              </option>
+              <option data-countryCode="SD" value="249">Sudan (+249)</option>
+              <option data-countryCode="SR" value="597">Suriname (+597)</option>
+              <option data-countryCode="SZ" value="268">
+                Swaziland (+268)
+              </option>
+              <option data-countryCode="SE" value="46">Sweden (+46)</option>
+              <option data-countryCode="CH" value="41">
+                Switzerland (+41)
+              </option>
+              <option data-countryCode="SI" value="963">Syria (+963)</option>
+              <option data-countryCode="TW" value="886">Taiwan (+886)</option>
+              <option data-countryCode="TJ" value="7">Tajikstan (+7)</option>
+              <option data-countryCode="TH" value="66">Thailand (+66)</option>
+              <option data-countryCode="TG" value="228">Togo (+228)</option>
+              <option data-countryCode="TO" value="676">Tonga (+676)</option>
+              <option data-countryCode="TT" value="1868">
+                Trinidad &amp; Tobago (+1868)
+              </option>
+              <option data-countryCode="TN" value="216">Tunisia (+216)</option>
+              <option data-countryCode="TR" value="90">Turkey (+90)</option>
+              <option data-countryCode="TM" value="7">Turkmenistan (+7)</option>
+              <option data-countryCode="TM" value="993">
+                Turkmenistan (+993)
+              </option>
+              <option data-countryCode="TC" value="1649">
+                Turks &amp; Caicos Islands (+1649)
+              </option>
+              <option data-countryCode="TV" value="688">Tuvalu (+688)</option>
+              <option data-countryCode="UG" value="256">Uganda (+256)</option>
+              <!-- <option data-countryCode="GB" value="44">UK (+44)</option> -->
+              <option data-countryCode="UA" value="380">Ukraine (+380)</option>
+              <option data-countryCode="AE" value="971">
+                United Arab Emirates (+971)
+              </option>
+              <option data-countryCode="UY" value="598">Uruguay (+598)</option>
+              <!-- <option data-countryCode="US" value="1">USA (+1)</option> -->
+              <option data-countryCode="UZ" value="7">Uzbekistan (+7)</option>
+              <option data-countryCode="VU" value="678">Vanuatu (+678)</option>
+              <option data-countryCode="VA" value="379">
+                Vatican City (+379)
+              </option>
+              <option data-countryCode="VE" value="58">Venezuela (+58)</option>
+              <option data-countryCode="VN" value="84">Vietnam (+84)</option>
+              <option data-countryCode="VG" value="84">
+                Virgin Islands - British (+1284)
+              </option>
+              <option data-countryCode="VI" value="84">
+                Virgin Islands - US (+1340)
+              </option>
+              <option data-countryCode="WF" value="681">
+                Wallis &amp; Futuna (+681)
+              </option>
+              <option data-countryCode="YE" value="969">
+                Yemen (North)(+969)
+              </option>
+              <option data-countryCode="YE" value="967">
+                Yemen (South)(+967)
+              </option>
+              <option data-countryCode="ZM" value="260">Zambia (+260)</option>
+              <option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
+            </datalist>
+
+            <div class="phone-tel">
+              <div class="text-group tell" title="Enter your Phone Number">
+                <input
+                  type="number"
+                  name="Phone"
+                  id="tel-national"
+                  autocomplete="tel-national"
+                  required="false"
+                />
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="label-gap" id="tel-label" style="left: 0.4vw"
+                  >Phone Number</label
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="det-2">
+            <div class="text-group">
+              <input
+                type="password"
+                name="Password"
+                minlength="8"
+                autocomplete="new-password"
+                id="pass"
+                autocorrect="off"
+                autocapitalize="none"
+                required
+                title="Enter a secure Password"
+              />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label id="pass-label">Password</label>
+            </div>
+
+            <div class="text-group">
+              <input
+                type="password"
+                name="Confirm_Password"
+                minlength="8"
+                autocomplete="new-password"
+                id="cpas"
+                autocorrect="off"
+                autocapitalize="none"
+                required
+                title="Re-Type Password"
+              />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label id="cpas-label">Re-type Password</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="dddtt1">
+          <div class="det-3">
+            <div class="text-group" title="Enter your First Name">
+              <input type="text" name="First_Name" required />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>First Name</label>
+            </div>
+
+            <div class="text-group" title="Enter your Last Name">
+              <input type="text" name="Last_Name" required="false" />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Last Name</label>
+            </div>
+          </div>
+
+          <div class="det-4" title="Select your Gender">
+            <label class="top-label">Gender</label>
+
+            <div class="top-label2">
+              <div>
+                <input type="radio" id="test1" name="Gender" value="Male" />
+                <label for="test1">Male</label>
+              </div>
+
+              <div>
+                <input type="radio" id="test2" name="Gender" value="Female" />
+                <label for="test2">Female</label>
+              </div>
+
+              <div>
+                <input type="radio" id="test3" name="Gender" value="" checked />
+                <label for="test3">None</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="det-0">
+            <div
+              class="g-recaptcha"
+              data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+            ></div>
+            <script>
+              window.addEventListener("load", () => {
+                const $recaptcha = document.querySelector(
+                  "#g-recaptcha-response"
+                );
+                if ($recaptcha) {
+                  $recaptcha.setAttribute("required", "required");
+                }
+              });
+            </script>
+          </div>
+
+          <div class="det-5">
+            <div
+              class="checkbox-group"
+              title="Sign up to get Emails regarding the latest News at Cepher Records"
+            >
+              <label class="checkbox-button">
+                <input
+                  type="checkbox"
+                  class="checkbox-button__input"
+                  id="Newsletter"
+                  name="Newsletter"
+                  value="false"
+                  onclick="this.value=true;"
+                />
+                <span class="checkbox-button__control"></span>
+                <span class="checkbox-button__label"
+                  >Sign Up to Newsletter</span
+                >
+              </label>
+            </div>
+
+            <div class="checkbox-group" title="Agree to Terms & Conditions">
+              <label class="checkbox-button">
+                <input
+                  type="checkbox"
+                  class="checkbox-button__input"
+                  id="remember-me"
+                  name="Terms"
+                  value="Terms"
+                  required
+                />
+                <span class="checkbox-button__control"></span>
+                <span class="checkbox-button__label"
+                  >I agree to
+                  <a
+                    class="underline hculi"
+                    href="/terms"
+                    target="_blank"
+                    title="Cepher Record's Terms & Conditions"
+                    ><b>Terms & Conditions</b></a
+                  ></span
+                >
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <input type="submit" id="but" name="submit" value="Create Account" />
+    </form>
+    <div class="notify">
+      <div id="not-cont" class="notify-content">
+        <a class="hno underline" target="_blank" href="#s0">{{ msg_link }}</a>
+        {{ msg }} Sign in to your account
+      </div>
+      <div>
+        <a class="notify-button underline" onclick="accept_cookie()">Dismiss</a>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  function news() {
+    document.getElementById("nameofid").value = "My value";
+  }
+</script>
+<script>
+  function notify(text, timeout) {
+    document.getElementById("not-cont").innerHTML = text;
+    // document.querySelector("#not-cont").style.color = "red";
+
+    deccept_cookie();
+
+    if (timeout != -1) {
+      setTimeout(function () {
+        accept_cookie();
+      }, timeout);
+    }
+  }
+</script>
+<script>
+  function deter(n) {
+    if (n == 1) {
+      document.getElementById("ename-label").style.color = "#ff7d7d";
+      document.getElementById("ename").style.borderBottom =
+        "1.1px solid #ff6a6ac5";
+    }
+    if (n == 2) {
+      if (n == 1) {
+        document.getElementById("uname-label").style.color = "#ff7d7d";
+        document.getElementById("uname").style.borderBottom =
+          "1.1px solid #ff6a6ac5";
+      }
+    }
+    if (n == 3) {
+      document.getElementById("code-label").style.color = "#ff7d7d";
+      document.getElementById("tel-country-code").style.borderBottom =
+        "1.1px solid #ff6a6ac5";
+    }
+    if (n == 4) {
+      document.getElementById("tel-label").style.color = "#ff7d7d";
+      document.getElementById("tel-national").style.borderBottom =
+        "1.1px solid #ff6a6ac5";
+    }
+    if (n == 5) {
+      document.getElementById("pass-label").style.color = "#ff7d7d";
+      document.getElementById("pass").style.borderBottom =
+        "1.1px solid #ff6a6ac5";
+      document.getElementById("cpas").style.borderBottom =
+        "1.1px solid #ff6a6ac5";
+      document.getElementById("cpas-label").style.color = "#ff7d7d";
+    }
+  }
+</script>
+<script>
+  var password = document.getElementById("pass"),
+    confirm_password = document.getElementById("cpas");
+
+  function validatePassword() {
+    if (password.value != confirm_password.value) {
+      confirm_password.setCustomValidity("Passwords Does Not Match");
+    } else {
+      confirm_password.setCustomValidity("");
+    }
+  }
+
+  password.onchange = validatePassword;
+  confirm_password.onkeyup = validatePassword;
+
+  var t = document.getElementById("uname");
+
+  function chek(e) {
+    t.setCustomValidity("");
+
+    var oo = 0;
+    const key = e.key;
+
+    var url = "/getusername/" + t.value;
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open("GET", url, false);
+    xmlHttp.send(null);
+
+    if (xmlHttp.responseText == "1") {
+      t.setCustomValidity("Username has already been taken !");
+      t.reportValidity();
+      // notify("Username has already been taken !", -1);
+      return;
+    }
+
+    var chr = String.fromCharCode(e.which);
+
+    if ("></\" ',*^%;{}[]()@=+\\".indexOf(chr) >= 0) {
+      notify("Special characters are not allowed !", 4000);
+      return false;
+    }
+    //
+    if (key === "Backspace" || key === "Delete") {
+      t.setCustomValidity("");
+    }
+  }
+
+  t.onblur = chek;
+  t.onkeyup = chek;
+  t.onkeypress = chek;
+
+  var d = document.getElementById("ename");
+
+  function checkemail() {
+    d.setCustomValidity("");
+
+    var url = "/getemail/" + d.value;
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open("GET", url, false);
+    xmlHttp.send(null);
+
+    if (xmlHttp.responseText == "1") {
+      d.setCustomValidity("Email Already In Use !");
+      d.reportValidity();
+      return 1;
+      //document.getElementById("ename").classList.remove("rhidden");
+      // alert("Special characters are not allowed !");
+    }
+  }
+  function mail() {
+    notify("Email Already In Use !", 5000);
+    setTimeout(function () {
+      d.setCustomValidity("");
+      d.reportValidity();
+    }, 5000);
+  }
+
+  d.onfocus = mail;
+  // d.onblur = checkemail;
+
+  $("#formf").submit(function () {
+    var flagg = 0;
+    var url = "/getemail/" + d.value;
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open("GET", url, false);
+    xmlHttp.send(null);
+
+    if (xmlHttp.responseText == "1") {
+      d.setCustomValidity("Email Already In Use !");
+      d.reportValidity();
+      deter(1);
+      flagg = 1;
+      console.log("1");
+    }
+
+    var url = "/getusername/" + t.value;
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open("GET", url, false);
+    xmlHttp.send(null);
+
+    if (xmlHttp.responseText == "1") {
+      t.setCustomValidity("Username has already been taken !");
+      t.reportValidity();
+      deter(2);
+      flagg = 1;
+      console.log("1");
+    }
+
+    if (flagg == 1) {
+      console.log("11");
+      return false;
+    } else {
+      console.log("22");
+      return true;
+    }
+  });
+</script>
+
+<script type="text/javascript">
+  function accept_cookie() {
+    document.querySelector(".notify").style.padding = "0vw 0vw";
+    document.querySelector(".notify").style.zIndex = "-11";
+    document.querySelector(".notify").style.opacity = "0";
+  }
+  function deccept_cookie() {
+    document.querySelector(".notify").style.padding = "1.8vw 1vw";
+    document.querySelector(".notify").style.zIndex = "1";
+    document.querySelector(".notify").style.opacity = "1";
+  }
+</script>
+<style>
+  .notify {
+    background: #ffffff;
+    position: fixed;
+    left: 50%;
+    bottom: 1%;
+    transform: translate(-50%, -50%);
+    /* min-height: 40px;*/
+    height: 0%;
+
+    /* width: 60%; */
+    font-family: Inder;
+    width: 50%;
+    border-radius: 7px;
+    padding: 2% 2%;
+    padding: 0vw 0vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: nowrap;
+    transition: 0.2s ease-in-out;
+    opacity: 0;
+    z-index: 5;
+    gap: 4vw;
+    width: fit-content;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    z-index: -11;
+  }
+  .notify-content {
+    color: #000;
+    font-size: 1vw;
+    font-weight: 500;
+  }
+
+  .underline {
+    position: relative;
+    color: inherit;
+  }
+
+  .underline::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  .notify-button {
+    color: rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    font-weight: 600;
+    min-width: 7vw;
+    font-size: 1vw;
+    cursor: pointer;
+  }
+
+  .notify-button:hover {
+    background: rgba(255, 255, 255, 0);
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .underline:hover::before {
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
+  }
+  .hno {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: underline;
+  }
+  .hno:hover {
+    color: black;
+    font-weight: 500;
+  }
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+  }
+
+  .screen {
+    backdrop-filter: blur(20px);
+    /* background-color: var(--b1); */
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    animation: curtdrop 2s ease-in-out 1;
+  }
+
+  @keyframes curtdrop {
+    0% {
+      opacity: 1;
+    }
+
+    70% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .svlogo {
+    background: url(../static/Vector\ 1.svg);
+    transform: scaleX(1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: startup 2s ease-in-out 1;
+    opacity: 0;
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50%;
+    /* cubic-bezier(0.77, 0, 0.175, 1) */
+  }
+  .load-con {
+    position: fixed;
+    z-index: 15;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 0px solid white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8vw;
+  }
+
+  @keyframes startup {
+    0% {
+      opacity: 0;
+      clip-path: circle(0% at 50% 50%);
+    }
+    20% {
+      opacity: 0.5;
+      clip-path: circle(100% at 50% 50%);
+    }
+
+    70% {
+      opacity: 1;
+      transform: scaleX(1) scale(1);
+    }
+
+    80% {
+      opacity: 0;
+    }
+
+    90% {
+      transform: scaleX(-1) scale(0.6);
+    }
+  }
+
+  .progress-curt {
+    background: rgba(0, 0, 0, 1);
+    height: 100%;
+    width: 100%;
+    z-index: 98;
+    opacity: 0;
+    animation: progmove 1s ease-in-out 1;
+  }
+
+  @keyframes progmove {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .tname {
+    text-align: center;
+    font-family: "Advent Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8vw;
+    transform: scale(0.6);
+    animation: startup2 2s ease-in-out 1;
+    opacity: 0;
+  }
+
+  @keyframes startup2 {
+    0% {
+      transform: scale(1);
+    }
+
+    30% {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    70% {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    80% {
+      opacity: 0;
+    }
+
+    90% {
+      transform: scale(0.6);
+    }
+  }
+  .ffar {
+    position: absolute;
+    right: 3%;
+    top: 0.7vw;
+    font-size: 1.2vw;
+    cursor: pointer;
+    color: rgb(175, 175, 175);
+    display: none;
+  }
+  .ffar:hover {
+    color: rgb(255, 254, 254);
+  }
+</style>
+
+<script>
+  const togglePassword = document.querySelector("#togglePassword");
+  const password = document.querySelector("#id_password");
+
+  togglePassword.addEventListener("click", function (e) {
+    // toggle the type attribute
+    const type =
+      password.getAttribute("type") === "password" ? "text" : "password";
+    password.setAttribute("type", type);
+    // toggle the eye slash icon
+    this.classList.toggle("fa-eye-slash");
+  });
+
+  var input = document.getElementById("id_password");
+  var element = document.getElementById("togglePassword");
+
+  input.addEventListener("input", function () {
+    element.style.display = "block";
+  });
+
+  $("#id_password").on("blur", function () {
+    if (this.value == "") {
+      element.style.display = "none";
+    }
+  });
+</script>
+
+<script>
+  setTimeout(function () {
+    ready();
+  }, 2000);
+
+  function ready() {
+    document.querySelector("#loader").style.display = "none";
+    document.querySelector("#progress-curt").style.display = "none";
+  }
+
+  loadOff(); // comment this to turn on loader
+  function loadOff() {
+    document.querySelector("#loader").style.display = "none";
+    document.querySelector("#progress-curt").style.display = "none";
+  }
+</script>
+
+<style>
+  input:-webkit-autofill,
+  input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+  }
+
+  .lines-con {
+    position: absolute;
+    left: -35%;
+    top: 77%;
+    transform: translate(0%, -0%);
+    /* animation: lines-con 17s ease-in-out infinite;*/
+  }
+  .lc2 {
+    left: -30%;
+    top: -60%;
+    transform: translate(-30%, -60%);
+  }
+  .lc3 {
+    left: 50%;
+    top: 10%;
+    transform: translate(-0%, -30%);
+  }
+  @keyframes lines-con {
+    0% {
+    }
+    50% {
+      transform: translate(-30%, -40%);
+    }
+  }
+  ::selection {
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+  }
+
+  .lines {
+    z-index: -3;
+    border: 1px solid #ffffff8d;
+    background-color: #01010100;
+    height: 80vw;
+    width: 80vw;
+    border-radius: 50%;
+    animation: lines 7s ease-in-out infinite;
+    top: 50%;
+    transform: rotateZ(0deg);
+  }
+  .llc2 {
+    height: 98vw;
+    width: 98vw;
+  }
+  @keyframes lines {
+    0% {
+      border-radius: 50%;
+    }
+
+    50% {
+      border-radius: 25%;
+      transform: rotateZ(360deg);
+    }
+
+    90% {
+    }
+  }
+  .v542_780 {
+    width: 10vw;
+    height: 2.8vw;
+    background: url(./static/images/v542_780.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    overflow: hidden;
+    border-radius: 7px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    cursor: pointer;
+  }
+  .v542_780:hover {
+    opacity: 0.7;
+  }
+  .v542_782 {
+    width: 2vw;
+    height: 2.1vw;
+    background: url("./static/images/v542_782.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    border-radius: 7px;
+  }
+</style>
+<style>
+  .divider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 1.6vw;
+    margin-bottom: 1.6vw;
+  }
+  .linne {
+    width: 30%;
+    border: 1px solid #ffffff69;
+  }
+  .v542_779 {
+    color: rgba(255, 255, 255, 0.8700000047683716);
+    top: 0px;
+    left: 164px;
+    font-family: Jura;
+    font-weight: Medium;
+    font-size: 1vw;
+    font-size: 0.98vw;
+    opacity: 1;
+    text-align: center;
+  }
+  .grpbut1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 22vw;
+    margin-bottom: 3%;
+  }
+  .text-des {
+    font-family: Inder;
+    font-weight: Regular;
+    font-size: 0.8vw;
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+  }
+  .text-des:hover {
+    text-decoration: underline;
+  }
+  .checkbox-group {
+    font-family: Inder;
+    font-weight: Regular;
+    font-size: 0.8vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 1vw;
+    align-items: flex-start;
+    width: 20vw;
+  }
+  .checkbox-button {
+    cursor: pointer;
+    color: white;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+  }
+
+  input[type="checkbox"] {
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  input[type="checkbox"] {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 11px 23px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0;
+    outline: 0;
+    background-color: transparent;
+  }
+
+  .checkbox-button__input {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .checkbox-button__control {
+    position: relative;
+    display: inline-block;
+    width: 1.2vw;
+    height: 1.2vw;
+    margin-right: 0.5vw;
+    /* margin-left: 12px; */
+    vertical-align: middle;
+    background-color: inherit;
+    color: #ffffff;
+    border: 0.2vw solid rgba(255, 255, 255, 0.7);
+  }
+
+  .checkbox-button__input:checked + .checkbox-button__control:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 0.6vw;
+    height: 0.6vw;
+    background-color: #ffffff;
+  }
+
+  .checkbox-button__input:checked + .checkbox-button__control:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0.3vw;
+    left: 0.3vw;
+    width: 0.6vw;
+    height: 0.6vw;
+    background-color: #ffffff;
+  }
+  .checkbox-button:hover .checkbox-button__control {
+    border: 0.2vw solid rgb(255, 255, 255);
+  }
+  .checkbox-button__input:checked + .checkbox-button__control {
+    border-color: #ffffff;
+  }
+
+  .checkbox-button__control {
+    transform: scale(0.8);
+  }
+
+  @font-face {
+    font-family: "OCRAq";
+    src: url("./static/OCRAq.TTF") format("opentype");
+  }
+  @font-face {
+    font-family: "Advent Pro";
+    src: url("../static/TrenchThin-aZ1J.ttf") format("opentype");
+  }
+  @font-face {
+    font-family: "cocoon";
+    src: url("./static/Eloxy-owYD0.otf") format("opentype");
+  }
+
+  .grain {
+    background-image: url("/static/old-film-cracks-and-dust-textured-background-loop-video.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.71;
+    z-index: -1;
+    position: fixed;
+    margin: 0;
+    left: 0;
+    top: 0;
+  }
+
+  body {
+    background: #252525;
+    color: rgb(255, 255, 255);
+    overflow-x: hidden;
+  }
+  .lop {
+    padding-right: 5px;
+  }
+  .t {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  #ii {
+    padding-bottom: 35px;
+  }
+  #for {
+    float: right;
+  }
+  #rof {
+    float: left;
+    width: fit-content;
+  }
+  .s {
+    padding-top: 35px;
+  }
+  #but {
+  }
+  #ro {
+    float: left;
+    padding-top: 7px;
+  }
+  #remember-me {
+    height: 12px;
+    width: 12px;
+  }
+  #login-form {
+    width: 100%;
+  }
+  #login {
+    display: block;
+    padding-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-tit-con {
+    position: absolute;
+    border: 0px solid white;
+    margin-left: 10%;
+    top: 36vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 35%;
+  }
+  .main-title {
+    font-family: "Advent Pro";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.8vw;
+  }
+  .main-title a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .main-sub {
+    font-family: "cocoon";
+    font-weight: 100;
+    font-size: 0.8vw;
+    opacity: 0.6;
+    margin-top: -1vw;
+  }
+  .line1 {
+    font-family: "cocoon";
+    font-weight: 100;
+    font-size: 0.7vw;
+    opacity: 0.4;
+    transform: translate(-0%, 0%);
+    max-width: 30%;
+    margin-top: 0.3vw;
+    display: none;
+  }
+  .v542_786_2 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    row-gap: 1.9vw;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .v542_786 {
+    background: url(./static/images/v542_786.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(-10%, -50%);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1vw;
+    width: 22vw;
+    /* height: 32vw; */
+    /* border: 1px solid white; */
+  }
+  .lo-co1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2vw;
+    margin-bottom: 5vw;
+  }
+  .lo-co1-o1 {
+    color: rgba(255, 255, 255, 1);
+    left: 0px;
+    font-family: Inder;
+    font-weight: Regular;
+    font-size: 2vw;
+  }
+  .lo-co1-o2 {
+    width: 3vw;
+    height: 3vw;
+    background: url("./static/images/v542_761.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    top: 0px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .lo-co2-o1 {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.800000011920929);
+    font-family: Inder;
+    font-weight: Regular;
+    font-size: 1.5vw;
+    opacity: 1;
+    border: 0px;
+    border-bottom: rgba(255, 255, 255, 0.463) 2px solid;
+    background-color: transparent;
+    padding: 1vw;
+    outline: none;
+  }
+</style>
+
+<style>
+  .text-group {
+    position: relative;
+    margin-top: 2vw;
+    width: 100%;
+    font-family: Inder;
+    width: 20vw;
+  }
+  input {
+    font-size: 1vw;
+    padding: 1vw 1vw 1vw 1vw;
+    display: block;
+    /* width: 300px; */
+    border: none;
+    border-bottom: 1px solid #b7b7b7;
+    border-bottom: 1.1px solid #ffffffc5;
+    background-color: transparent;
+    color: white;
+    width: 100%;
+  }
+  input:focus {
+    outline: none;
+  }
+
+  /* LABEL ======================================= */
+  .text-group label {
+    color: rgb(175, 175, 175);
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 1%;
+    top: 1vw;
+
+    left: 2%;
+    top: 0.7vw;
+
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    font-size: 1vw;
+  }
+
+  /* active state */
+  input:focus ~ label,
+  input:valid ~ label {
+    top: -0.8vw;
+
+    font-size: 0.8vw;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  /* BOTTOM BARS ================================= */
+  .bar {
+    position: relative;
+    display: block;
+    /* width: 300px; */
+  }
+  .bar:before,
+  .bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #ffffff;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  .bar:before {
+    left: 50%;
+  }
+  .bar:after {
+    right: 50%;
+  }
+
+  /* active state */
+  input:focus ~ .bar:before,
+  input:focus ~ .bar:after {
+    width: 50%;
+  }
+
+  /* HIGHLIGHTER ================================== */
+  .highlight {
+    position: absolute;
+    height: 60%;
+    /* width: 100px; */
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  /* active state */
+  input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+  }
+
+  /* ANIMATIONS ================ */
+  @-webkit-keyframes inputHighlighter {
+    from {
+      background: #d7d7d7;
+    }
+    to {
+      width: 0;
+      background: transparent;
+    }
+  }
+  @-moz-keyframes inputHighlighter {
+    from {
+      background: #d7d7d7;
+    }
+    to {
+      width: 0;
+      background: transparent;
+    }
+  }
+  @keyframes inputHighlighter {
+    from {
+      background: #d7d7d7;
+    }
+    to {
+      width: 0;
+      background: transparent;
+    }
+  }
+
+  input[type="submit"] {
+    background: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid rgba(255, 255, 255, 0);
+    cursor: pointer;
+    width: 100%;
+    font-weight: 900;
+    font-family: "cocoon";
+    font-weight: 500;
+    font-family: "Inder";
+    font-size: 1.2vw;
+    text-align: center;
+    /* height: 2.8vw; */
+    border-radius: 4px;
+    /* margin-top: 2vw;     */
+    width: 20vw;
+  }
+  input[type="submit"]:hover {
+    opacity: 0.7;
+    /* background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.5028512137276786) 30%, rgba(255,255,255,0.5028512137276786) 50%, rgba(255,255,255,0.4972489728313201) 70%, rgba(255,255,255,1) 100%); */
+  }
+  input[type="submit"]:active {
+    background: rgb(61, 61, 61);
+    color: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+  }
+</style>
+<style>
+  [type="radio"]:checked,
+  [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+  }
+  [type="radio"]:checked + label,
+  [type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-left: 1.8vw;
+    cursor: pointer;
+    line-height: 1.3vw;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-family: OCRAq;
+    font-weight: Regular;
+    font-size: 0.9vw;
+    top: 0vw;
+  }
+  [type="radio"]:checked + label:before,
+  [type="radio"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.1vw;
+    height: 1.1vw;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0);
+  }
+  [type="radio"]:checked + label:after,
+  [type="radio"]:not(:checked) + label:after {
+    content: "";
+    width: 0.7vw;
+    height: 0.7vw;
+    background: #ffffff;
+    position: absolute;
+    top: 0.27vw;
+    left: 0.27vw;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+</style>
+
+<style>
+  .form-group {
+    border: 0px solid white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 3vw;
+    padding-bottom: 4vw;
+    gap: 10vw;
+  }
+  .form {
+    width: 70%;
+    height: 70%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 12vw;
+  }
+  .det-1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .phone {
+  }
+  .det-2 {
+  }
+  .det-3 {
+  }
+  .det-4 {
+    width: 20vw;
+    width: 20vw;
+    display: flex;
+    margin-top: 1.2vw;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 1.6vw;
+  }
+  .det-4 input:focus ~ label,
+  input:valid ~ label {
+  }
+  .det-5 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 1vw;
+  }
+  .det-0 {
+    background-color: #ffffff00;
+    width: 16vw;
+    height: 4vw;
+    margin-top: 0.5vw;
+    /* background-image: url("./static/image 13.png"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: contain;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+  .dddtt1 {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    gap: 2vw;
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+  }
+  .top-label {
+    color: rgb(175, 175, 175);
+    font-weight: normal;
+    pointer-events: none;
+    position: relative;
+    left: 2%;
+    font-size: 1vw;
+    font-family: Inder;
+  }
+  .top-label2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .title_bol {
+    font-family: Inder;
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 4vw;
+  }
+  .tel-code {
+    text-align: center;
+  }
+  .tell {
+    width: 14vw;
+  }
+  .tell2 {
+    width: 4vw;
+  }
+  .phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  body::-webkit-scrollbar {
+    width: 4px;
+    position: absolute;
+    z-index: 19;
+  }
+  body::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.363);
+    transition: 0.3s ease-in-out;
+  }
+  body::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transition: 0.3s ease-in-out;
+  }
+  body::-webkit-scrollbar-track {
+    width: 0px;
+    position: absolute;
+    background: #00000000;
+    transition: 0.3s ease-in-out;
+  }
+  input::-webkit-calendar-picker-indicator {
+    display: none !important;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    display: none;
+  }
+  .g-recaptcha {
+    transform: scale(0.82);
+    transform-origin: 0 0;
+  }
+  #g-recaptcha-response {
+    display: block !important;
+    position: absolute;
+    margin: -78px 0 0 0 !important;
+    width: 302px !important;
+    height: 76px !important;
+    z-index: -999999;
+    opacity: 0;
+  }
+</style>
