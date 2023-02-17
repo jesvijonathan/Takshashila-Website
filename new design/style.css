@@ -237,3 +237,42 @@ section {
   object-fit: cover;
   transition: 0.2s ease-out;
 }
+
+.noise-container {
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: auto;
+  left: 0;
+  opacity: 1;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  transition: opacity 1s ease-out;
+  height: 100vh;
+  width: 100vw;
+  z-index: 102;
+  background-image: url(https://marvinx.com/assets/images/noise.png);
+  animation: noise-animation 1s steps(10) infinite;
+  background-position: 0 0;
+  filter: contrast(5);
+}
+
+@keyframes noise-animation {
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.sample_body {
+  top: 0;
+  left: 0;
+  margin: 0;
+  background-color: #010;
+  z-index: 0;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
