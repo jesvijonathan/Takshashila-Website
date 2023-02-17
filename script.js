@@ -1,4 +1,4 @@
-onload = function () {
+function () {
   const image1 = document.querySelector("#image1");
   const image2 = document.querySelector("#image2");
   const image3 = document.querySelector("#image0_4_41");
