@@ -32,6 +32,16 @@ section {
   src: url("./Montserrat-Medium.ttf");
 }
 
+#image3 {
+  transition: ease;
+}
+
+#image4 {
+  transition: ease;
+}
+#image5 {
+  transition: ease;
+}
 .bg_design {
   background-image: url("./logo\ h\ \ 2.png");
   width: 100%;
@@ -43,6 +53,8 @@ section {
   /* background-position: center; */
   background-size: contain;
   background-repeat: no-repeat;
+  transition: 0.2s linear;
+  /* filter: blur(10px); */
 }
 
 .bg_2 {
@@ -54,7 +66,6 @@ section {
   position: absolute;
   left: 80%;
   top: 90%;
-  transform: scale(1.5) rotate(29deg);
   border-radius: 32%;
   height: 48vw;
   width: 39vw;
@@ -210,4 +221,19 @@ section {
   text-align: center;
   font-family: "oo";
   font-size: 1vw;
+}
+.container {
+  position: relative;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.2s ease-out;
 }
