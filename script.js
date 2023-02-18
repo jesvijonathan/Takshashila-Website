@@ -10,9 +10,6 @@ onload = function () {
   const cursor_border = document.querySelector("#cursor_border");
   const cursor_circle = document.querySelector("#cursor_circle");
 
-  const innerwidth = window.innerWidth;
-  const innerheight = window.innerHeight;
-
   document.addEventListener("mousemove", (event) => {
     const mouseX = event.clientX;
     const mouseY = event.clientY;
@@ -24,8 +21,8 @@ onload = function () {
       mouseY - 20
     }px, 0)`;
 
-    let x = mouseX / innerwidth;
-    let y = mouseY / innerheight;
+    let x = mouseX / window.innerWidth;
+    let y = mouseY / window.innerHeight;
 
     image1.style.transform = `scale(1) translate(${x * -80}px, ${y * 20}px)`;
     image2.style.transform = `scale(1.5) rotate(${x * -14}deg) translate(${
@@ -37,7 +34,6 @@ onload = function () {
 
     $(".link_cur").hover(
       function () {
-        console.log(y);
         // cursor_border.classList.add("cursor_border_hover");
         if (y <= 0.5) {
           cursor_circle.style.transform = "scale(7) translate(10px, 10px)";
@@ -48,7 +44,7 @@ onload = function () {
 
         // The mouse has entered the element
       },
-      function (event) {
+      function () {
         // cursor_border.classList.remove("cursor_border_hover");
         cursor_circle.style.transform = "scale(1)";
         cursor_circle.innerHTML = "";
