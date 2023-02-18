@@ -5,6 +5,12 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <link rel="stylesheet" href="./style.css" />
     <script defer src="./script.js"></script>
   </head>
@@ -16,7 +22,7 @@
     </div>
     <div class="noise-container"></div>
 
-    <div class="main_logo">
+    <div class="main_logo" data-type="link" style="z-index: 100">
       <svg
         width="90"
         height="134"
@@ -83,11 +89,30 @@
       </svg>
     </div>
     <div class="main_navigation">
-      <a href="#home" class="navigation_links">Home</a>
-      <a href="#about" class="navigation_links">About</a>
-      <a href="#evvents" class="navigation_links">Events</a>
-      <a href="#workshops" class="navigation_links">Workshops</a>
-      <a href="#contact" class="navigation_links">Contacts</a>
+      <a href="#home" data-text="Home Page" class="navigation_links link_cur"
+        >Home</a
+      >
+      <a href="#about" data-text="About Us" class="navigation_links link_cur"
+        >About</a
+      >
+      <a
+        href="#evvents"
+        data-text="Events List"
+        class="navigation_links link_cur"
+        >Events</a
+      >
+      <a
+        href="#workshops"
+        data-text="Workshops"
+        class="navigation_links link_cur"
+        >Workshops</a
+      >
+      <a
+        href="#contact"
+        data-text="Contact Us"
+        class="navigation_links link_cur"
+        >Contacts</a
+      >
     </div>
     <div class="main_signin">Sign In</div>
   </header>
@@ -277,15 +302,15 @@
         </div>
       </div>
       <div class="socials">
-        <div class="fa fa-instagram"></div>
+        <div class="fa fa-instagram link_cur" data-text="Instagram"></div>
 
-        <div class="fa fa-facebook"></div>
+        <div class="fa fa-facebook link_cur" data-text="Facebook"></div>
 
-        <div class="fa fa-linkedin"></div>
+        <div class="fa fa-linkedin link_cur" data-text="Linked In"></div>
 
-        <div class="fa fa-envelope-o"></div>
+        <div class="fa fa-envelope-o link_cur" data-text="Email"></div>
 
-        <div class="fa fa-phone"></div>
+        <div class="fa fa-phone link_cur" data-text="Phone"></div>
       </div>
 
       <div class="arrow_container">

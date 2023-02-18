@@ -323,15 +323,38 @@ section {
   background-color: white;
   border-radius: 50%;
   transition: 0.2s ease;
+  font: 0.14vw "oo";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  text-align: center;
 }
-
+.cursor_circle_click {
+  transform: scale(0.5);
+}
 .cursor_border {
-  border-radius: 25%;
+  border-radius: 50%;
   width: 2.1vw;
   height: 2.1vw;
   border: 0.1vw solid #ffffff80;
   transition: 0.2s ease;
+  transform: scale(1);
+
+  border-radius: 25%;
   animation: electric 0.1s linear infinite;
+  animation-play-state: running;
+  font: 0.37vw "oo";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  text-align: center;
+}
+
+.cursor_border_hover {
+  animation: electric 1s linear forwards;
+  border-radius: 50%;
 }
 
 @keyframes electric {
@@ -341,4 +364,23 @@ section {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.interactable {
+  aspect-ratio: 1 / 1.5;
+  width: clamp(120px, 40vmin, 600px);
+  background-position: center 50%;
+  background-size: 100%;
+  opacity: 0.4;
+
+  transition: background-size 400ms ease, opacity 400ms ease;
+}
+
+.interactable:hover {
+  background-size: 105%;
+  opacity: 0.8;
+}
+
+.link_cur_hover {
+  color: rgb(0, 0, 0);
 }

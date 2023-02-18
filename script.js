@@ -32,8 +32,29 @@ onload = function () {
     image4.style.y = `${x * -50}`;
     image5.style.transform = `translate(${x * -7}px, ${y * -7}px)`;
 
+    $(".link_cur").hover(
+      function (event) {
+        cursor_border.classList.add("cursor_border_hover");
+        if (y <= 0.5) {
+          cursor_circle.style.transform = "scale(7) translate(10px, 10px)";
+        } else {
+          cursor_circle.style.transform = "scale(7) translate(10px, -10px)";
+        }
+        cursor_circle.innerHTML = $(this).data("text");
+
+        // The mouse has entered the element
+      },
+      function (event) {
+        cursor_border.classList.remove("cursor_border_hover");
+        cursor_circle.style.transform = "scale(1)";
+        cursor_circle.innerHTML = "";
+
+        // The mouse has left the element
+      }
+    );
+
     document.addEventListener("mousedown", function () {
-      cursor_circle.style.transform = `scale(0.5)`;
+      cursor_circle.classList.add("cursor_circle_click");
       cursor_border.style.border = "0.2vw solid white";
       // document.body.style.background = "white";
 
@@ -45,7 +66,7 @@ onload = function () {
     });
 
     document.addEventListener("mouseup", function () {
-      cursor_circle.style.transform = `scale(1)`;
+      cursor_circle.classList.remove("cursor_circle_click");
       cursor_border.style.border = " 0.1vw solid #ffffff80";
 
       // document.body.style.mixBlendMode = " unset";
@@ -63,7 +84,7 @@ onload = function () {
       mouseX >= window.innerWidth ||
       mouseY >= window.innerHeight
     ) {
-      cursor.style.display = "none";
+      cursor_.style.display = "none";
     }
   });
   document.addEventListener("mouseenter", () => {
