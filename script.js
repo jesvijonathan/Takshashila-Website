@@ -34,7 +34,7 @@ onload = function () {
 
     $(".link_cur").hover(
       function (event) {
-        cursor_border.classList.add("cursor_border_hover");
+        // cursor_border.classList.add("cursor_border_hover");
         if (y <= 0.5) {
           cursor_circle.style.transform = "scale(7) translate(10px, 10px)";
         } else {
@@ -45,7 +45,7 @@ onload = function () {
         // The mouse has entered the element
       },
       function (event) {
-        cursor_border.classList.remove("cursor_border_hover");
+        // cursor_border.classList.remove("cursor_border_hover");
         cursor_circle.style.transform = "scale(1)";
         cursor_circle.innerHTML = "";
 

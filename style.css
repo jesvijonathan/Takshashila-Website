@@ -342,9 +342,9 @@ section {
   transition: 0.2s ease;
   transform: scale(1);
 
-  border-radius: 25%;
-  animation: electric 0.1s linear infinite;
-  animation-play-state: running;
+  /* border-radius: 25%;
+    animation: electric 0.1s linear infinite;
+    animation-play-state: running; */
   font: 0.37vw "oo";
   display: flex;
   justify-content: center;
