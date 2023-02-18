@@ -55,7 +55,7 @@ onload = function () {
 
     document.addEventListener("mousedown", function () {
       cursor_circle.classList.add("cursor_circle_click");
-      cursor_border.style.border = "0.2vw solid white";
+      cursor_border.style.background = "white";
       // document.body.style.background = "white";
 
       // document.body.style.mixBlendMode = " difference";
@@ -67,7 +67,7 @@ onload = function () {
 
     document.addEventListener("mouseup", function () {
       cursor_circle.classList.remove("cursor_circle_click");
-      cursor_border.style.border = " 0.1vw solid #ffffff80";
+      cursor_border.style.background = "transparent";
 
       // document.body.style.mixBlendMode = " unset";
       // document.body.style.background = "#282828 ";

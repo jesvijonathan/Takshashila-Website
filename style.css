@@ -361,6 +361,12 @@ section:nth-child(5) {
 }
 .cursor_circle_click {
   transform: scale(0.5);
+  border: 0.03vw solid rgb(137, 137, 137);
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 0.1s ease;
+  font-weight: 600;
+  /* text-decoration: underline; */
+  color: white;
 }
 .cursor_border {
   border-radius: 50%;
