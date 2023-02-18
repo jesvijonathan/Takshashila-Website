@@ -319,11 +319,12 @@ section {
 .cursor_circle {
   width: 0.8vw;
   height: 0.8vw;
+
   margin: 0.65vw;
   background-color: white;
   border-radius: 50%;
   transition: 0.2s ease;
-  font: 0.14vw "oo";
+  font: 0.12vw "oo";
   display: flex;
   justify-content: center;
   align-items: center;
