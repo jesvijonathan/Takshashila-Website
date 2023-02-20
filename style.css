@@ -453,7 +453,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 0.7vw;
+  font-size: 0.5vw;
   letter-spacing: 0.08vw;
   word-spacing: 0.1vw;
 }
@@ -515,6 +515,10 @@ footer {
   color: rgba(255, 255, 255, 0.8);
 }
 
+.foot_1_2_1_list_item:hover {
+  text-decoration: underline;
+}
+
 .line_3 {
   height: 10vw;
   width: 0.1vw;
@@ -548,5 +552,5 @@ footer {
 }
 
 .f_end {
-  height: 2.5vw;
+  height: 2vw;
 }
