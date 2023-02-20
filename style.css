@@ -407,16 +407,19 @@ section:nth-child(5) {
 }
 
 footer {
-  height: 22.5vw;
+  background-color: rgb(35, 35, 35);
+}
+
+.footer {
+  height: 19.5vw;
   color: white;
   font-family: "jura";
 
   display: flex;
+  flex-direction: column;
   margin-left: 5vw;
   margin-right: 5vw;
-  flex-direction: column;
 }
-
 .foot_1 {
   height: 20vw;
   width: 100%;
@@ -434,14 +437,25 @@ footer {
   gap: 1.2vw;
 }
 .foot_1_2 {
-  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4vw;
   width: 100%;
+  margin-right: 2vw;
 }
 
 .foot_2 {
-  background-color: brown;
   height: 2.5vw;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.7vw;
+  letter-spacing: 0.08vw;
+  word-spacing: 0.1vw;
 }
 
 .title_font {
@@ -469,6 +483,70 @@ footer {
 }
 
 .line_2 {
-  width: 23vw;
+  width: 24.5vw;
   height: 0.1vw;
+}
+
+.foot_1_2_1 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 1.8vw;
+}
+
+.foot_1_2_1_title {
+  margin-top: 1vw;
+  font-size: 1.2vw;
+  font-weight: 900;
+  letter-spacing: 0.2vw;
+}
+
+.foot_1_2_1_list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1vw;
+}
+
+.foot_1_2_1_list_item {
+  font-size: 0.8vw;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.line_3 {
+  height: 10vw;
+  width: 0.1vw;
+  background: rgba(255, 255, 255, 0.2);
+}
+.line_4 {
+  height: 1.2vw;
+  width: 0.1vw;
+  background: rgba(255, 255, 255, 0.2);
+}
+.line_5 {
+  height: 0.1vw;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.foot_2_1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1.8vw;
+}
+
+.foot_2_2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  letter-spacing: 0.13vw;
+}
+
+.f_end {
+  height: 2.5vw;
 }
