@@ -23,7 +23,7 @@ onload = function () {
 
     let x = mouseX / window.innerWidth;
     let y = mouseY / window.innerHeight;
-
+    /////////////////////////
     image1.style.transform = `scale(1) translate(${x * -80}px, ${y * 20}px)`;
     image2.style.transform = `scale(1.5) rotate(${x * -14}deg) translate(${
       x * 70
@@ -31,6 +31,8 @@ onload = function () {
     image3.style.y = `${y * 20}`;
     image4.style.y = `${x * -50}`;
     image5.style.transform = `translate(${x * -7}px, ${y * -7}px)`;
+
+    ////////////////
 
     $(".link_cur").hover(
       function () {
