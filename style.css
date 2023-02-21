@@ -713,6 +713,7 @@ footer {
   align-content: center;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 .to_title {
   font-size: 2vw;
@@ -728,9 +729,10 @@ footer {
   font-style: italic;
   opacity: 0.8;
 }
-.acola {
+.acol {
   text-decoration: none;
   color: #2b2b2b;
+  color: white;
 }
 .s1 {
   position: relative;
