@@ -117,11 +117,12 @@ header {
   stroke: none;
   height: 5vw;
   width: 5vw;
-  transition: 1 s ease-in;
+  transition: 1s ease-in;
 }
 .main_logo:hover svg {
   stroke: white;
 }
+
 .main_logo svg path {
   transition: 0.2s ease-in-out;
 }
