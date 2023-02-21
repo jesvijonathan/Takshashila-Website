@@ -410,6 +410,10 @@ header {
   }
 }
 
+.link_cur {
+  text-decoration: none;
+}
+
 .link_cur_hover {
   color: rgb(0, 0, 0);
 }
