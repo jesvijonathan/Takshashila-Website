@@ -265,7 +265,7 @@ header {
 }
 
 .navigation_links {
-  color: white;
+  color: white !important;
   font-size: 1vw;
 
   font-family: "oo";
@@ -412,6 +412,7 @@ header {
 
 .link_cur {
   text-decoration: none;
+  color: inherit;
 }
 
 .link_cur_hover {
