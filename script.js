@@ -86,7 +86,7 @@ onload = function () {
       mouseX >= window.innerWidth ||
       mouseY >= window.innerHeight
     ) {
-      cursor_.style.display = "none";
+      cursor.style.display = "none";
     }
   });
   document.addEventListener("mouseenter", () => {
