@@ -109,6 +109,7 @@ header {
   width: fit-content;
   margin-left: 4vw;
   top: 2vw;
+  transition: 0.2s ease-in-out;
 }
 
 .main_logo svg {
@@ -116,7 +117,18 @@ header {
   stroke: none;
   height: 5vw;
   width: 5vw;
+  transition: 1 s ease-in;
 }
+.main_logo:hover svg {
+  stroke: white;
+}
+.main_logo svg path {
+  transition: 0.2s ease-in-out;
+}
+.main_logo:hover svg path {
+  fill: grey;
+}
+
 .main_logo svg path {
   /* fill: transparent;
   stroke: white;
@@ -280,7 +292,7 @@ header {
   top: 3vw;
   border-radius: 7px;
   background-color: #52525265;
-  color: white;
+  color: white !important;
   padding: 0.9vw 2vw;
   width: 4vw;
   text-align: center;
@@ -648,7 +660,7 @@ footer {
   height: 55vw;
   float: right;
   margin-right: -10%;
-  margin-top: -3%;
+  margin-top: -5%;
 }
 
 .to_title {
@@ -722,7 +734,7 @@ footer {
 }
 .to_title {
   font-size: 2vw;
-  margin-top: 7%;
+  margin-top: 8%;
   margin-left: 7%;
   font-weight: lighter;
 }
