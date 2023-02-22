@@ -12,6 +12,9 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="./butter.js"></script>
     <link rel="stylesheet" href="./style.css" />
     <script defer src="./script.js"></script>
@@ -351,7 +354,7 @@
         </div>
       </section>
 
-      <section class="s1">
+      <section class="s1" id="s1">
         <div>
           <div
             class="img_sc skewElem"
@@ -361,24 +364,26 @@
             "
           ></div>
         </div>
-        <div class="to_title">About CIT</div>
+        <div class="to_title jos" id="col_img" data-callback="fly_in">
+          About CIT
+        </div>
         <div class="slogans desc">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with/<br /><br />
-          It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged. It was
-          popularised in the 1960s with the release of Letraset sheets
-          containing Lorem Ipsum passages, and more recently with<br /><br />
+          A prominent institution ranking amongst the top colleges in Tamil
+          Nadu, was established with an initiative to provide pragmatic
+          learning. The institution has also partnered with a number of
+          companies to set a worldwide standard by offering students a diverse
+          range of possibilities that combine education and recreation.<br /><br />
+          The students' appetite for knowledge makes them thrive to prepare for
+          the ready-to-serve industrial requirements. This is delivered by CIT
+          through professional ethics which is sated by frequent guest lectures
+          by professionals from various industries and academic backgrounds.
+          Chennai Institute of Technology has been awarded the National Award of
+          Excellence for Best Placements & has been ranked Second in Tamil Nadu.
+          Our college has made dreams of thousands of students come true<br /><br />
           <div class="desc_2">
-            "Uvuvwevwevwe onyetenvewve ugwemubwem ossas Uvuvwevwevwe
-            onyetenvewve ossas"
-            <div class="descc_2">- Sri Sairam</div>
+            "Our objective for establishing CIT is to transfer our knowledge to
+            you, so that you can tranform into a proper engineer"
+            <div class="descc_2">~Shri Sriram Parthasarathy</div>
           </div>
         </div>
         <div class="but_desc_2">
@@ -413,7 +418,9 @@
           <!-- is there any  -->
         </div>
         <br />
-        <div class="to_title" style="margin-top: 5%">About Takshashila</div>
+        <div class="to_title jos" data-callback="fly_in" style="margin-top: 5%">
+          About Takshashila
+        </div>
         <div class="slogans desc">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -696,13 +703,13 @@
   </body>
 </html>
 <script>
-  // butter.init({
-  //   wrapperId: "butter",
-  //   wrapperDamper: 0.1,
-  //   cancelOnTouch: false,
-  // });
+  butter.init({
+    wrapperId: "butter",
+    wrapperDamper: 0.1,
+    cancelOnTouch: false,
+  });
 
-  // document.querySelector("#butter").style.position = "initial";
+  document.querySelector("#butter").style.position = "initial";
 </script>
 
 <script>
@@ -718,4 +725,70 @@
   } else {
     document.body.style.display = "block";
   }
+</script>
+
+<script>
+  // AOS.init({ once: false });
+</script>
+<!-- 
+<script>
+  const elementsToExpand = document.querySelectorAll(".to_title");
+
+  let expansionObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      console.log(entry.intersectionRatio);
+      if (entry.intersectionRatio > 0) {
+        entry.target.classList.add("expand");
+      } else {
+        entry.target.classList.remove("expand");
+      }
+    });
+  });
+
+  elementsToExpand.forEach((element) => {
+    expansionObserver.observe(element);
+  });
+</script> -->
+
+<script>
+  function callbackRouter(entries, observer) {
+    let entry = entries[0];
+    let target = entry.target;
+    if (entry.intersectionRatio > 0) {
+      if (target.dataset.callback) {
+        window[target.dataset.callback](target, true);
+      }
+    } else {
+      if (target.dataset.callback) {
+        window[target.dataset.callback](target, false);
+      }
+    }
+  }
+
+  function fly_in(target, state) {
+    if (state) {
+      target.classList.add("fly_in");
+      target.classList.remove("jos");
+
+      // observer.unobserve(target);
+    } else {
+      target.classList.remove("fly_in");
+    }
+  }
+
+  function initCarousel(target) {
+    console.log("initialize a carousel here");
+  }
+
+  function sendAsyncRequest(target) {
+    console.log("send an async request here");
+  }
+
+  function doWhatever(target) {
+    console.log("literally do whatever you want");
+  }
+
+  const observer = new IntersectionObserver(callbackRouter);
+  const boxes = document.querySelectorAll(".jos");
+  boxes.forEach(observer.observe.bind(observer));
 </script>

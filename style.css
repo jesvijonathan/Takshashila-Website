@@ -19,8 +19,8 @@ body {
     rgba(34, 193, 195, 1) 0%,
     rgb(72 72 72) 100%
   );
-
-  background: linear-gradient(0deg, rgb(0 0 0) 0%, rgb(72 72 72) 100%); */
+*/
+  /* background: linear-gradient(0deg, rgb(0 0 0) 0%, rgb(72 72 72) 100%); */
 }
 
 * {
@@ -683,7 +683,7 @@ footer {
 
 .desc_2 {
   font-weight: 100;
-  font-size: 1.1vw;
+  font-size: 1vw;
   margin-top: 1%;
   font-style: normal;
   color: #eee;
@@ -736,9 +736,17 @@ footer {
 .to_title {
   font-size: 2vw;
   margin-top: 8%;
-  margin-left: 7%;
+  margin-left: 0%;
   font-weight: lighter;
+
+  transition: 0.5s ease-in-out;
+  opacity: 0;
 }
+.fly_in {
+  opacity: 1;
+  margin-left: 7%;
+}
+
 .slogans {
   margin-top: 3vw;
   width: fit-content;
@@ -900,4 +908,13 @@ footer {
 mark {
   color: rgb(0, 0, 0);
   background: rgb(255, 255, 255);
+}
+.fade {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 900ms;
+}
+
+#col_img {
+  transform: 0.3s ease-in-out;
 }
