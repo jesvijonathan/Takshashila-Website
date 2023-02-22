@@ -662,6 +662,14 @@ footer {
   float: right;
   margin-right: -10%;
   margin-top: -5%;
+  opacity: 0;
+  transform: rotate(50deg) scale(0.6);
+  transition: 0.9s ease;
+}
+
+.fade_rot {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
 }
 
 .to_title {
@@ -783,6 +791,12 @@ footer {
   width: 56%;
   margin-left: 7%;
   line-height: 150%;
+  opacity: 0;
+  transition: 0.7s ease-in-out;
+}
+
+.opaci {
+  opacity: 1;
 }
 
 .underline {
@@ -914,12 +928,12 @@ mark {
   color: rgb(0, 0, 0);
   background: rgb(255, 255, 255);
 }
-.fade {
-  transform: translateX(0);
-  opacity: 1;
-  transition: all 900ms;
-}
 
 #col_img {
   transform: 0.3s ease-in-out;
+}
+
+.pro_ppl_cont {
+  width: 100%;
+  height: 40vw;
 }

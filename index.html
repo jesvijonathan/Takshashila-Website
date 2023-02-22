@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -356,18 +357,12 @@
 
       <section class="s1" id="s1">
         <div>
-          <div
-            class="img_sc skewElem"
-            style="
-              transform-origin: 50% center;
-              transform: translate3d(0px, 0px, 0px);
-            "
-          ></div>
+          <div class="img_sc skewElem jos" data-callback="opa_rev"></div>
         </div>
         <div class="to_title jos" id="col_img" data-callback="fly_in">
           About CIT
         </div>
-        <div class="slogans desc">
+        <div class="slogans desc jos" data-callback="fade_opaci">
           A prominent institution ranking amongst the top colleges in Tamil
           Nadu, was established with an initiative to provide pragmatic
           learning. The institution has also partnered with a number of
@@ -421,7 +416,7 @@
         <div class="to_title jos" data-callback="fly_in" style="margin-top: 5%">
           About Takshashila
         </div>
-        <div class="slogans desc">
+        <div class="slogans desc jos" data-callback="fade_opaci">
           The Grand Annual Cultural Fiesta of Chennai Institute Of Technology is
           an eminent spectacle that gives the student community a platform to
           showcase their talents and sculpt their skills. This memorable
@@ -432,7 +427,11 @@
           Takshashila's voyage will be an exhilarating one, full of adventures
           that are fished straight out of the ocean.<br /><br />
         </div>
-        <div class="slogans desc" style="width: 84%; margin-top: 2%">
+        <div
+          class="slogans desc jos"
+          data-callback="fade_opaci"
+          style="width: 84%; margin-top: 2%"
+        >
           [Extra Info From Here] an unknown printer took a galley of type and
           scrambled it to make a type. It has survived not only five centuries,
           but also the leap into electronic typesetting, remaining essentially
@@ -451,7 +450,9 @@
           essentially unchanged. It was popularised in the 1960s with the
           release of Letraset sheets containing Lorem Ipsum passages, and
         </div>
+      </section>
 
+      <section>
         <div
           class="gallery_cont link_cur"
           data-text="Gallery"
@@ -470,9 +471,9 @@
             </div>
           </div>
         </div>
-      </section>
 
-      <section>Sponsors & Contact</section>
+        <div class="pro_ppl_cont"></div>
+      </section>
 
       <footer>
         <div class="footer">
@@ -751,6 +752,40 @@
 </script> -->
 
 <script>
+  function fly_in(target, state) {
+    if (state) {
+      target.classList.add("fly_in");
+      // target.classList.remove("jos");
+
+      // observer.unobserve(target);
+    } else {
+      target.classList.remove("fly_in");
+    }
+  }
+
+  function opa_rev(target, state) {
+    if (state) {
+      target.classList.add("fade_rot");
+      // target.classList.remove("jos");
+
+      // // observer.unobserve(target);
+    } else {
+      target.classList.remove("fade_rot");
+    }
+  }
+
+  function fade_opaci(target, state) {
+    if (state) {
+      target.classList.add("opaci");
+    } else {
+      target.classList.remove("opaci");
+    }
+  }
+
+  function doWhatever(target) {
+    console.log("literally do whatever you want");
+  }
+
   function callbackRouter(entries, observer) {
     let entry = entries[0];
     let target = entry.target;
@@ -763,29 +798,6 @@
         window[target.dataset.callback](target, false);
       }
     }
-  }
-
-  function fly_in(target, state) {
-    if (state) {
-      target.classList.add("fly_in");
-      target.classList.remove("jos");
-
-      // observer.unobserve(target);
-    } else {
-      target.classList.remove("fly_in");
-    }
-  }
-
-  function initCarousel(target) {
-    console.log("initialize a carousel here");
-  }
-
-  function sendAsyncRequest(target) {
-    console.log("send an async request here");
-  }
-
-  function doWhatever(target) {
-    console.log("literally do whatever you want");
   }
 
   const observer = new IntersectionObserver(callbackRouter);
