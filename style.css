@@ -829,6 +829,7 @@ footer {
   height: 30vw;
   background: #00000079;
   background: #00000000;
+  /* background: #0000000d; */
   margin-top: 5vw;
   /* display: flex; */
   font-size: 10vw;
@@ -850,11 +851,11 @@ footer {
 
 @keyframes text_bigger {
   0% {
-    font-size: 7vw;
+    font-size: 6vw;
   }
   100% {
-    font-size: 9vw;
-    letter-spacing: 0.7vw;
+    font-size: 8vw;
+    letter-spacing: 1.2vw;
   }
 }
 
@@ -869,7 +870,8 @@ footer {
   filter: grayscale(1) contrast(0.8);
   animation: pic_loop 60s linear infinite;
 }
-
+.gallery_img_i img {
+}
 .gallery_cont:hover .gallery_img .gallery_img_i {
   filter: grayscale(0.4) contrast(0.8);
 }
