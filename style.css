@@ -747,7 +747,7 @@ footer {
   margin-left: 0%;
   font-weight: lighter;
 
-  transition: 0.5s ease-in-out;
+  transition: 0.7s ease-in-out;
   opacity: 0;
 }
 .fly_in {
@@ -792,11 +792,7 @@ footer {
   margin-left: 7%;
   line-height: 150%;
   opacity: 0;
-  transition: 0.7s ease-in-out;
-}
-
-.opaci {
-  opacity: 1;
+  transition: 0.9s ease-in-out;
 }
 
 .underline {
@@ -858,6 +854,8 @@ footer {
   color: white;
   overflow: clip;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transition: 1s linear;
+  opacity: 0;
 }
 
 .gallery_text {
@@ -936,4 +934,8 @@ mark {
 .pro_ppl_cont {
   width: 100%;
   height: 40vw;
+}
+
+.opaci {
+  opacity: 1;
 }
