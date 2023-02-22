@@ -900,6 +900,11 @@ footer {
   height: 23vw;
 }
 
+::selection {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+}
+
 .highlightme {
   color: rgb(0, 0, 0);
   background: rgb(255, 255, 255);
