@@ -962,9 +962,9 @@ mark {
   width: 20vw;
   background-repeat: no-repeat;
   height: 27vw;
-  background: url("./Julian-Jordan-©Cooper-Seykens.jpg");
+  background: url(./Julian-Jordan-©Cooper-Seykens.jpg);
   background-position: center;
-  /* background-size: contain; */
+  background-size: cover;
   filter: grayscale(1) contrast(0.9);
   border-radius: 10px;
 }
