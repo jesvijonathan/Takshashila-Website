@@ -214,6 +214,8 @@ header {
   top: 92%;
   height: fit-content;
   margin-left: 5%;
+  opacity: 0;
+  transition: 0.4s;
 }
 
 .socials .fa {
@@ -228,6 +230,7 @@ header {
   position: absolute;
   left: 95%;
   top: 91%;
+  opacity: 0;
 }
 
 .arrow_container {
@@ -236,6 +239,19 @@ header {
   position: absolute;
   left: 93%;
   top: 91%;
+  animation-delay: 0.3s;
+  animation: fade_down 0.7s ease-in forwards;
+}
+
+@keyframes fade_down {
+  0% {
+    opacity: 0;
+    top: 84%;
+  }
+  100% {
+    opacity: 1;
+    top: 91%;
+  }
 }
 
 .arrow_container svg {
@@ -329,14 +345,14 @@ header {
   pointer-events: none;
   position: fixed;
   top: 0;
-  transition: opacity 1s ease-out;
+  transition: 1s ease;
   height: 100vh;
   width: 100vw;
   z-index: 102;
-  background-image: url(https://marvinx.com/assets/images/noise.png);
+  background-image: url("https://marvinx.com/assets/images/noise.png");
   animation: noise-animation 1s steps(10) infinite;
   background-position: 0 0;
-  filter: contrast(5);
+  filter: contrast(0.3);
   /* display: none; */
 }
 
@@ -854,7 +870,7 @@ footer {
   color: white;
   overflow: clip;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  transition: 1s linear;
+  transition: 1.4s linear;
   opacity: 0;
 }
 
@@ -933,9 +949,41 @@ mark {
 
 .pro_ppl_cont {
   width: 100%;
-  height: 40vw;
+  height: 34vw;
+  background: grey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.pro_ppl_img {
+  width: 20vw;
+  background-repeat: no-repeat;
+  height: 27vw;
+  background: url("./Julian-Jordan-©Cooper-Seykens.jpg");
+  background-position: center;
+  /* background-size: contain; */
+  filter: grayscale(1) contrast(0.9);
+  border-radius: 10px;
 }
 
 .opaci {
   opacity: 1;
+}
+
+.splash_slide {
+  animation: splash_slide 1s ease forwards;
+}
+
+@keyframes splash_slide {
+  0% {
+    opacity: 0;
+    left: -3%;
+  }
+  100% {
+    opacity: 1;
+    left: 0%;
+  }
 }

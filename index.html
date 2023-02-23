@@ -295,7 +295,7 @@
             <div class="line"></div>
           </div>
         </div>
-        <div class="socials">
+        <div class="socials jos" data-once="true" data-callback="splash_pop">
           <a
             href=""
             target="_blank"
@@ -475,7 +475,7 @@
         </div>
       </section>
 
-      <section>
+      <section style="height: max-content">
         <div
           class="gallery_cont link_cur jos"
           data-text="Gallery"
@@ -497,7 +497,11 @@
           </div>
         </div>
 
-        <div class="pro_ppl_cont"></div>
+        <div class="pro_ppl_cont">
+          <div class="pro_ppl_card">
+            <div class="pro_ppl_img"></div>
+          </div>
+        </div>
       </section>
 
       <footer>
@@ -801,8 +805,10 @@
     }
   }
 
-  function doWhatever(target) {
-    console.log("literally do whatever you want");
+  function splash_pop(target, state) {
+    if (state) {
+      target.classList.add("splash_slide");
+    }
   }
 
   function callbackRouter(entries, observer) {
@@ -813,7 +819,6 @@
     if (entry.intersectionRatio > 0) {
       if (target.dataset.callback) {
         window[target.dataset.callback](target, true);
-        console.log(target.dataset.once);
         if (target.dataset.once == "true") {
           target.classList.remove("jos");
           observer.unobserve(target);
