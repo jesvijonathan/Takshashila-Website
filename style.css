@@ -883,8 +883,15 @@ footer {
   color: white;
   overflow: clip;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  transition: 1.4s linear;
+  transition: 0.8s linear;
   opacity: 0;
+  background: linear-gradient(
+    360deg,
+    rgb(19 19 19) 0%,
+    rgba(0, 0, 0, 0.782125350140056) 51%,
+    rgba(0, 0, 0, 0.6448704481792717) 82%,
+    rgb(0 0 0 / 0%) 100%
+  );
 }
 
 .gallery_text {
@@ -969,13 +976,14 @@ mark {
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: nowrap;
+  background: #131313;
 }
 .pro_ppl_card {
   width: 20vw;
   height: 27vw;
-  border-radius: 10px;
   overflow: hidden;
   background-color: #1c1c1c;
+  border-radius: 7px;
 }
 
 .pro_ppl_img {
@@ -1070,7 +1078,7 @@ mark {
 .pro_ppl_card:hover .pro_ppl_img {
   /* animation-play-state: paused;*/
   transform: scale(2) rotate(10deg);
-  filter: grayscale(0.7) contrast(0.9) blur(20px) brightness(0.5);
+  filter: grayscale(0.7) contrast(0.9) blur(10px) brightness(0.5);
 }
 
 .pro_ppl_card:hover .pro_ppl_txt {
