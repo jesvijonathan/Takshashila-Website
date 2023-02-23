@@ -924,7 +924,7 @@ footer {
   /* flex-direction: row; */
   transition: 0.5s linear;
   filter: grayscale(1) contrast(0.8);
-  animation: pic_loop 60s linear infinite;
+  animation: pic_loop 30s linear infinite;
 }
 .gallery_img_i img {
 }
@@ -1199,4 +1199,106 @@ mark {
     opacity: 1;
     left: 0%;
   }
+}
+
+.ppl_more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.link {
+  height: 3vw;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: flex;
+  width: fit-content;
+  /* margin-left: 9%; */
+  background-color: #4242426c;
+  background-color: #2e2e2e52;
+  padding: 1vw 1vw 1vw 2vw;
+  text-transform: uppercase;
+}
+
+/* Hide extra text */
+.mask {
+  position: relative;
+  padding: 0;
+  height: 1.7vw;
+  overflow: hidden;
+}
+
+.link-container {
+  transition: transform 0.4s ease;
+}
+.title {
+  display: block;
+
+  /*  Set same font-size and line height  */
+  font-size: 1.2vw;
+  line-height: 1.8vw;
+
+  transition: transform 0.4s ease;
+}
+
+.link-title1 {
+  transform-origin: right center;
+}
+
+.link-title2 {
+  transform-origin: left center;
+  transform: rotate(20deg);
+}
+
+.link-icon {
+  position: relative;
+  width: 2vw;
+  height: 1.3vw;
+  /* border-radius: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2vw;
+  overflow: hidden;
+}
+
+.icon {
+  display: block;
+  position: absolute;
+  transition: transform 0.4s ease;
+  fill: white;
+}
+
+.icon:nth-child(2) {
+  transform: translate(-4vw);
+}
+
+/* Hover Action*/
+
+/* Move up two texts (20px = font-size) */
+.link:hover .link-container {
+  transform: translateY(-1.8vw);
+  /* background-color: #ffffff;
+  color: black; */
+}
+
+/* Rotate texts a little bit */
+.link:hover .link-title1 {
+  transform: rotate(20deg);
+}
+
+.link:hover .link-title2 {
+  transform: rotate(0);
+}
+
+/* Move arrows to right */
+.link:hover .icon:first-child {
+  transform: translate(4vw);
+}
+
+.link:hover .icon:nth-child(2) {
+  transform: translate(0px);
 }
