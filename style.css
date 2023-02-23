@@ -64,7 +64,20 @@ header {
   font-family: "jura";
   src: url("./Jura-VariableFont_wght.ttf");
 }
-
+@font-face {
+  font-family: "Jeju Hallasan";
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/jejuhallasan/v3/JejuHallasan-Regular.eot);
+  src: url(//fonts.gstatic.com/ea/jejuhallasan/v3/JejuHallasan-Regular.eot?#iefix)
+      format("embedded-opentype"),
+    url(//fonts.gstatic.com/ea/jejuhallasan/v3/JejuHallasan-Regular.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/ea/jejuhallasan/v3/JejuHallasan-Regular.woff)
+      format("woff"),
+    url(//fonts.gstatic.com/ea/jejuhallasan/v3/JejuHallasan-Regular.ttf)
+      format("truetype");
+}
 #image3 {
   transition: ease;
 }
@@ -950,25 +963,124 @@ mark {
 .pro_ppl_cont {
   width: 100%;
   height: 34vw;
-  background: grey;
+  background: #2c2c2c00;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: nowrap;
 }
-
-.pro_ppl_img {
+.pro_ppl_card {
   width: 20vw;
-  background-repeat: no-repeat;
   height: 27vw;
-  background: url(./Julian-Jordan-©Cooper-Seykens.jpg);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #1c1c1c;
+}
+.pro_ppl_img {
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  background: url("Seth+Hills.jpg");
   background-position: center;
   background-size: cover;
   filter: grayscale(1) contrast(0.9);
-  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+  transform: scale(1.2);
+  /* animation: movee 14s linear infinite; */
 }
 
+.pro_ppl_txt {
+  color: white;
+  position: relative;
+  font-size: 2vw;
+  text-align: center;
+  top: -5vw;
+  font-family: "jura";
+  transition: 0.2s ease-in-out;
+}
+.pro_ppl_txt_s {
+  color: white;
+  position: relative;
+  text-align: center;
+  font-family: "jura";
+  transition: 0.2s ease-in-out;
+  top: -4.5vw;
+  font-size: 0.8vw;
+}
+
+.pro_ppl_txt_desc {
+  color: white;
+  position: relative;
+  text-align: center;
+  font-family: "jura";
+  transition: 0.2s ease-in;
+  top: -23.5vw;
+  font-size: 0.6vw;
+  /* width: 80%; */
+  margin: 1vw;
+  opacity: 0;
+  letter-spacing: 0.1vw;
+}
+.pro_ppl_txt_b {
+  color: white;
+  position: relative;
+  text-align: center;
+  font-family: "jura";
+  transition: 0.2s ease-in-out;
+  top: -7vw;
+  font-size: 0.8vw;
+  width: fit-content;
+  padding: 0.5vw;
+  background: #51515161;
+  border-radius: 7px;
+  left: 10vw;
+  opacity: 0;
+}
+.pro_ppl_txt_b:hover {
+  background-color: white;
+  color: black;
+}
+@keyframes movee {
+  0% {
+    transform: translate(0, 0) scale(1.3);
+  }
+  20% {
+    transform: translate(-5%, 0) scale(1.1);
+  }
+  40% {
+    transform: translate(-5%, 10%) scale(1.3);
+  }
+  70% {
+    transform: translate(-5%, 0) scale(1.3);
+  }
+}
+
+.pro_ppl_card:hover .pro_ppl_img {
+  /* animation-play-state: paused;*/
+  transform: scale(2) rotate(10deg);
+  filter: grayscale(0.7) contrast(0.9) blur(20px) brightness(0.5);
+}
+
+.pro_ppl_card:hover .pro_ppl_txt {
+  /* animation-play-state: paused;*/
+  top: -24vw;
+}
+
+.pro_ppl_card:hover .pro_ppl_txt_s {
+  /* animation-play-state: paused;*/
+  left: -25%;
+  top: -5.5vw;
+}
+
+.pro_ppl_card:hover .pro_ppl_txt_desc {
+  /* animation-play-state: paused;*/
+  opacity: 1;
+}
+.pro_ppl_card:hover .pro_ppl_txt_b {
+  left: 14vw;
+  opacity: 1;
+}
 .opaci {
   opacity: 1;
 }
