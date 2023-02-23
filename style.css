@@ -977,19 +977,29 @@ mark {
   overflow: hidden;
   background-color: #1c1c1c;
 }
+
 .pro_ppl_img {
-  width: 100%;
-  background-repeat: no-repeat;
-  height: 100%;
-  background: url("Seth+Hills.jpg");
-  background-position: center;
-  background-size: cover;
+  width: 100% !important;
+  height: 100% !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
   filter: grayscale(1) contrast(0.9);
-  transition: 0.2s ease-in-out;
   transform: scale(1.2);
+  transition: 0.2s ease-in-out;
   /* animation: movee 14s linear infinite; */
 }
+#pp1 {
+  background: url("Julian-Jordan-press-photo.jpg");
+}
 
+#pp2 {
+  background: url("Skrillex-at-Ultra-Korea-08.jpg");
+}
+
+#pp3 {
+  background: url("Seth+Hills.jpg");
+}
 .pro_ppl_txt {
   color: white;
   position: relative;
@@ -1007,6 +1017,7 @@ mark {
   transition: 0.2s ease-in-out;
   top: -4.5vw;
   font-size: 0.8vw;
+  /* background: #0e0e0e42; */
 }
 
 .pro_ppl_txt_desc {
@@ -1071,6 +1082,7 @@ mark {
   /* animation-play-state: paused;*/
   left: -25%;
   top: -5.5vw;
+  background: transparent;
 }
 
 .pro_ppl_card:hover .pro_ppl_txt_desc {
