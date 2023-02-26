@@ -786,7 +786,178 @@
               </div>
             </div>
           </div>
+
+          <div class="cont jos" data-callback="fade_opaci" data-once="false">
+            <div class="sitem">
+              <img class="simg" src="./jacek-dylag-523063-unsplash 2.png" />
+              <div class="sdetcon">
+                <div class="stit to_title">Workshop</div>
+                <div class="sdet">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting,
+                </div>
+                <div class="sbuto link_cur" data-text="View Events">
+                  <button onclick="location.href='/store'">View All</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <section class="section s2" id="Locon">
+        <div
+          class="topic-head ano aos-init aos-animate"
+          id="Loconn"
+          style="padding-top: 10vh"
+          data-aos="zoom-in"
+          data-aos-duration="400"
+        >
+          Location
+        </div>
+
+        <div class="buttnex" style="display: none">
+          <a class="prev" href="javascript:plusSlides(-1)">❮</a>
+          <a class="next" href="javascript:plusSlides(1)">❯</a>
+        </div>
+        <div
+          class="locao aos-init aos-animate"
+          data-aos="zoom-out-down"
+          data-aos-duration="300"
+        >
+          <div
+            class="locac fade aos-init aos-animate"
+            data-aos="zoom-out-down"
+            data-aos-duration="600"
+            style="display: block"
+          >
+            <div>
+              <div class="loca">
+                <iframe
+                  class="locam"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0006663305403!2d80.04093371482203!3d12.971808890855769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f4d07355bab5%3A0xbb6063169c4ed4d9!2sChennai%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1651592789112!5m2!1sen!2sin"
+                  allowfullscreen=""
+                ></iframe>
+                <!-- loading="lazy" -->
+
+                <div class="locamm">
+                  <h3>Chennai Institute Of Technology</h3>
+                  <div class="locmi">
+                    <br />
+                    SH-113, Sarathy Nagar, <br />Pudupedu Kundrathur,
+                    <br />Sriperumbudur Main Road, <br />Chennai, Tamil Nadu
+                    <br />PIN : 600069
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="locac fade" style="display: none">
+            <div>
+              <div class="loca">
+                <!--  -->
+
+                <div class="locamm">
+                  <h3>Phone :</h3>
+                  <div class="locmi coon">
+                    <ul>
+                      <li>
+                        <a href="tel:+919849770286" target="_blank"
+                          >Ponduru Dinuroop (President | +919849770286)</a
+                        >
+                      </li>
+                      <li>
+                        <a href="tel:+919150612359" target="_blank"
+                          >Yuva Daranee (Vice President | +919150612359)</a
+                        >
+                      </li>
+                      <li>
+                        <a href="tel:+919003633318" target="_blank"
+                          >Kamal Roshan (Event Co-ordinator | +919003633318)</a
+                        >
+                      </li>
+                      <li>
+                        <a href="tel:+919384485985" target="_blank"
+                          >Dhanya Babu (Secretary | +919384485985)</a
+                        >
+                      </li>
+                      <!-- dhanya 9384485985 | yuva 9150612359
+                <br>-->
+                      <li>
+                        <a
+                          href="https://jesvi.pythonanywhere.com/"
+                          target="_blank"
+                          >Jesvi Jonathan (<b>Developer 🤖</b>)</a
+                        >
+                      </li>
+                      <!-- <br> -->
+                      <!-- <li><a href="tel:+916374252105" target="_blank">Meenalakshmi (Incharge Faculty)</a></li>
+                <li><a href="tel:+918344477761" target="_blank">Preetiya (Incharge Faculty)</a></li> -->
+                      <!-- <li><a href="tel:+918056986115" target="_blank">Dina Padmanaban (Incharge Faculty)</a></li>   -->
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dotstyle dotstyle-scaleup ddo">
+            <ul>
+              <li class="dot current">
+                <a href="javascript:currentSlide(1)">1 | Location</a>
+              </li>
+              <li class="dot">
+                <a href="javascript:currentSlide(2)">2 | Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides((slideIndex += n));
+            }
+
+            function currentSlide(n) {
+              showSlides((slideIndex = n));
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("locac");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {
+                slideIndex = 1;
+              }
+              if (n < 1) {
+                slideIndex = slides.length;
+              }
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" current", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " current";
+
+              if (n == 1) {
+                document.getElementById("Loconn").innerHTML = "Location";
+              } else {
+                document.getElementById("Loconn").innerHTML = "Contact";
+              }
+            }
+          </script>
+        </div>
+        <br />
+        <br />
+        <br />
       </section>
 
       <footer>
@@ -1008,7 +1179,11 @@
 
               <div class="foot_2_1_1">Copyright ©2023</div>
             </div>
-            <a data-text="🔥😎🔥" class="foot_2_2 link_cur"
+            <a
+              href="https://jesvi.pythonanywhere.com"
+              target="_blank"
+              data-text="🔥😎🔥"
+              class="foot_2_2 link_cur"
               >Made With 🤟 By Jesvi Jonathan</a
             >
           </div>
