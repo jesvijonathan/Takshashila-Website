@@ -1158,9 +1158,6 @@ mark {
   left: 14vw;
   opacity: 1;
 }
-.opaci {
-  opacity: 1;
-}
 .pro_div {
   display: flex;
   flex-direction: column;
@@ -1300,4 +1297,132 @@ mark {
 
 .link:hover .icon:nth-child(2) {
   transform: translate(0px);
+}
+
+.event_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e2e2e;
+  padding-bottom: 0;
+  /* margin-bottom: 2vw; */
+  height: fit-content;
+}
+
+.event_cont {
+  height: fit-content;
+  width: 100%;
+}
+
+.eve {
+  color: white;
+  position: relative;
+  font-family: "oo";
+}
+
+.cont {
+  width: 100%;
+  display: flex;
+  background-color: #0000002c;
+  width: 100%;
+  height: 21vw;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.sitem {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  /* margin-right: 9%;*/
+}
+
+.simg {
+  height: 25vw;
+  /* position: absolute; */
+  /* top: 0; */
+  /* filter: grayscale(1) contrast(0.5); */
+
+  /* filter: invert(1); */
+  /* opacity: 2.6; */
+  /* background: white;*/
+  /* mix-blend-mode: multiply; */
+}
+.event_don {
+  display: flex;
+  height: fit-content;
+  padding: 5vw;
+  gap: 4vw;
+  flex-direction: column;
+}
+
+.sdetcon {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "jura";
+  /* gap: 4vw; */
+}
+
+.stit {
+  /* position: absolute; */
+  margin-top: 0px;
+  margin-left: 0px;
+  /* top: -18%; */
+  /* transform: translate(0vw, -3vw); */
+  opacity: 1;
+}
+
+.sdet {
+  /* height: 11vw; */
+  margin: 2vw 0vw;
+  font-weight: 100;
+  font-size: 1.1vw;
+  /* margin-top: 3%; */
+  font-style: normal;
+  color: #eee;
+  /* width: 50%; */
+  /* margin-left: 9%; */
+  line-height: 150%;
+}
+
+.to_title {
+  font-size: 2vw;
+  /* margin-top: 7%; */
+  /* margin-left: 9%; */
+  font-weight: lighter;
+  color: white;
+  z-index: 10000;
+  font-family: "oo";
+}
+
+button {
+  min-width: 7vw;
+  /* max-width: 7vw; */
+  padding: 0.7vw 0.3vw;
+  background-color: #fbfbfb00;
+  color: var(--f0);
+  border: 2px solid rgba(255, 255, 255, 0.449);
+  font-size: 1vw;
+  text-align: center;
+  transition: 0.1s;
+  cursor: pointer;
+  color: white;
+}
+
+button:hover {
+  background: white;
+  color: black;
+}
+
+.opaci {
+  opacity: 1;
 }
