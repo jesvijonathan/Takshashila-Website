@@ -1729,7 +1729,7 @@ button:hover {
 }
 
 .eve_list_cont {
-  /* width: 100%; */
+  /*  width: 100%; */
   background: #2f2f2f;
   gap: 1vw;
   height: 30vw;
@@ -1740,7 +1740,10 @@ button:hover {
   align-content: space-between;
   align-items: center;
   height: fit-content;
-  padding-bottom: 4vw;
+  padding-bottom: 1vw;
+  padding-top: 1vw;
+  justify-content: center;
+  margin-bottom: 3vw;
 }
 
 .eve_card {
