@@ -1691,14 +1691,19 @@ button:hover {
   /* padding-bottom: 3vw;*/
 }
 .eve_func {
-  margin: 14vw 5vw 5vw 4vw;
+  margin: 14vw 5vw 4.2vw 4vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
   align-content: center;
-  border-bottom: 2px solid white;
+  border-bottom: 0.1vw solid white;
+  transition: 0.3s ease-in-out;
+  z-index: 100;
+  /* margin: 14vw 0vw; */
+  /* padding: 0vw 4vw; */
+  position: sticky;
 }
 
 .eve_func .title {
@@ -1731,9 +1736,9 @@ button:hover {
 }
 
 .eve_list_cont {
-  /* min-height: 30vw; */
-  background: #2f2f2f;
-  gap: 1vw;
+  /*  min-height: 30vw; */
+  /* background: #ffffff; */
+  gap: 2vw;
   height: fit-content;
   margin: 0vw 7vw;
   display: flex;
@@ -1743,10 +1748,10 @@ button:hover {
   padding-bottom: 1vw;
   padding-top: 1vw;
   margin-bottom: 3vw;
+  /* padding: 1vw; */
+  padding: 0.2vw 0vw 4.2vw 0.19vw;
   align-items: center;
-  /* margin: 5vw; */
-  padding: 1vw;
-  padding: 1vw 1vw 1vw 1.17vw;
+  justify-content: flex-start;
 }
 
 .eve_card {
@@ -1761,7 +1766,7 @@ button:hover {
 }
 
 .eve_card:hover .eve_img {
-  filter: contrast(0.8) brightness(0.7) blur(5px);
+  filter: contrast(0.8) brightness(0.7) grayscale(0) blur(5px);
   transform: scale(1.1);
 }
 
@@ -1776,7 +1781,7 @@ button:hover {
 .eve_img {
   height: 100%;
   width: 100%;
-  filter: contrast(0.85) brightness(0.9);
+  filter: contrast(0.85) brightness(0.9) grayscale(0.2) blur(0px);
   transition: 0.2s ease;
   /* opacity: 0; */
 }
@@ -1884,4 +1889,20 @@ button:hover {
 .eve_active {
   background-color: white;
   color: black;
+}
+.sticky {
+  /* position: fixed; */
+  /* top: -14vw; */
+  width: -webkit-fill-available;
+  z-index: 100;
+  background: #1a1a1a;
+  margin: 0vw 0vw;
+  padding: 0vw 4vw;
+  border-bottom: 0.1vw solid transparent;
+  /* border-bottom: 0.1vw solid rgb(255 255 255 / 30%); */
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
 }

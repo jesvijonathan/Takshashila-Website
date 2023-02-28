@@ -36,56 +36,55 @@
         <div class="nav_bar_links">Contact</div>
       </div>
     </header>
+    <div class="eve_func" id="navbar">
+      <div class="title">Events</div>
+      <div class="search"></div>
+      <div class="filter">
+        <button
+          class="fil_bub eve_active"
+          onclick="toggle_but(this);"
+          value="true"
+          id="all"
+          data-type="eve_card"
+        >
+          All
+        </button>
+        <button
+          class="fil_bub"
+          onclick="toggle_but(this);"
+          data-type="Technical"
+          value="false"
+        >
+          Technical
+        </button>
 
-    <div class="main" id="butter">
-      <div class="eve_func">
-        <div class="title">Events</div>
-        <div class="search"></div>
-        <div class="filter">
-          <button
-            class="fil_bub eve_active"
-            onclick="toggle_but(this);"
-            value="true"
-            id="all"
-            data-type="eve_card"
-          >
-            All
-          </button>
-          <button
-            class="fil_bub"
-            onclick="toggle_but(this);"
-            data-type="Technical"
-            value="false"
-          >
-            Technical
-          </button>
-
-          <button
-            class="fil_bub"
-            onclick="toggle_but(this);"
-            data-type="Non-Technical"
-            value="false"
-          >
-            Non-Technical
-          </button>
-          <button
-            class="fil_bub"
-            onclick="toggle_but(this);"
-            data-type="Workshop"
-            value="false"
-          >
-            Workshops
-          </button>
-          <button
-            class="fil_bub"
-            onclick="toggle_but(this);"
-            data-type="Pro Shows"
-            value="false"
-          >
-            Pro Shows
-          </button>
-        </div>
+        <button
+          class="fil_bub"
+          onclick="toggle_but(this);"
+          data-type="Non-Technical"
+          value="false"
+        >
+          Non-Technical
+        </button>
+        <button
+          class="fil_bub"
+          onclick="toggle_but(this);"
+          data-type="Workshop"
+          value="false"
+        >
+          Workshops
+        </button>
+        <button
+          class="fil_bub"
+          onclick="toggle_but(this);"
+          data-type="Pro Shows"
+          value="false"
+        >
+          Pro Shows
+        </button>
       </div>
+    </div>
+    <div class="main" id="butter">
       <div class="eve_list_cont" id="eve_list_cont">
         <!-- <div class="eve_card">
         <img
@@ -125,6 +124,235 @@
         </div>
       </div> -->
       </div>
+      <footer>
+        <div class="footer">
+          <div class="foot_1">
+            <div class="foot_1_1">
+              <div class="title_font">Takshashila</div>
+              <div class="line line_2"></div>
+              <div>
+                <a
+                  class="foot_desc_title link_cur"
+                  data-text="Our Institution"
+                  href=""
+                  target="_blank"
+                >
+                  Chennai Institute Of Technology
+                </a>
+                <a
+                  class="foot_desc link_cur"
+                  data-text="Location"
+                  href=""
+                  target="_blank"
+                >
+                  Kundrathur, Chennai, Tamil Nadu, PIN : 600069
+                </a>
+              </div>
+            </div>
+            <div class="foot_1_2">
+              <div class="foot_1_2_1">
+                <div class="foot_1_2_1_title">Socials</div>
+                <div class="foot_1_2_1_list">
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Instagram"
+                    href=""
+                    target="_blank"
+                  >
+                    Instagram
+                  </a>
+
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Facebook"
+                    href=""
+                    target="_blank"
+                  >
+                    Facebook
+                  </a>
+
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Linked In"
+                    href=""
+                    target="_blank"
+                  >
+                    Linked In
+                  </a>
+
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Email"
+                    href=""
+                    target="_blank"
+                  >
+                    Email
+                  </a>
+
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Phone"
+                    href=""
+                    target="_blank"
+                  >
+                    Phone
+                  </a>
+                </div>
+              </div>
+              <div class="line_3"></div>
+              <div class="foot_1_2_1">
+                <div class="foot_1_2_1_title">Events</div>
+                <div class="foot_1_2_1_list">
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Technical Events"
+                    href=""
+                    target="_blank"
+                  >
+                    Technical
+                  </a>
+
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Non-Technical Events"
+                    href=""
+                    target="_blank"
+                  >
+                    Non Technical
+                  </a>
+
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Workshops"
+                    href=""
+                    target="_blank"
+                  >
+                    Workshops
+                  </a>
+
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Pro-shows"
+                    href=""
+                    target="_blank"
+                  >
+                    Pro-Shows
+                  </a>
+
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Other Events"
+                    href=""
+                    target="_blank"
+                  >
+                    Others
+                  </a>
+                </div>
+              </div>
+              <div class="line_3"></div>
+              <div class="foot_1_2_1">
+                <div class="foot_1_2_1_title">Website</div>
+                <div class="foot_1_2_1_list">
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Terms & Conditions"
+                    href=""
+                    target="_blank"
+                  >
+                    Terms & Policy
+                  </a>
+
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Our Services"
+                    href=""
+                    target="_blank"
+                  >
+                    Service
+                  </a>
+
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Your Account"
+                    href=""
+                    target="_blank"
+                  >
+                    Account
+                  </a>
+
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Official Website"
+                    href=""
+                    target="_blank"
+                  >
+                    College Site
+                  </a>
+
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Developer"
+                    href=""
+                    target="_blank"
+                  >
+                    Developer
+                  </a>
+                </div>
+              </div>
+              <div class="line_3"></div>
+              <div class="foot_1_2_1">
+                <div class="foot_1_2_1_title">Support</div>
+                <div class="foot_1_2_1_list">
+                  <a data-text="Our Team" class="foot_1_2_1_list_item link_cur"
+                    >Takshashila Team</a
+                  >
+
+                  <a
+                    data-text="Report Errors"
+                    class="foot_1_2_1_list_item link_cur"
+                    >Report</a
+                  >
+
+                  <a data-text=":)" class="foot_1_2_1_list_item link_cur"
+                    >Developer</a
+                  >
+
+                  <a
+                    data-text="Contact Us"
+                    class="foot_1_2_1_list_item link_cur"
+                    >Contact Us</a
+                  >
+
+                  <a data-text="Credits" class="foot_1_2_1_list_item link_cur"
+                    >Credits</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="line_5"></div>
+        <div class="footer f_end">
+          <div class="foot_2">
+            <div class="foot_2_1">
+              <div class="foot_2_1_1">Takshashila.in</div>
+              <div class="line_4"></div>
+              <div class="foot_2_1_1">All Rights Reserved</div>
+              <div class="line_4"></div>
+
+              <div class="foot_2_1_1">Copyright ©2023</div>
+            </div>
+            <a
+              href="https://jesvi.pythonanywhere.com"
+              target="_blank"
+              data-text="🔥😎🔥"
+              class="foot_2_2 link_cur"
+              >Made With 🤟 By Jesvi Jonathan</a
+            >
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
@@ -232,6 +460,27 @@
           eve_cards[j].style.display = "block";
         }
       }
+    }
+  }
+</script>
+
+<script>
+  window.onscroll = function () {
+    myFunction();
+  };
+
+  // Get the navbar
+  var navbar = document.getElementById("navbar");
+
+  // Get the offset position of the navbar
+  var sticky = navbar.offsetTop;
+
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset >= sticky / 3) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
     }
   }
 </script>
