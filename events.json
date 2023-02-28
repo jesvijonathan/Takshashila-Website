@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Water Rocketry",
+    "type": "Technical",
+
+    "image": null,
+
+    "fee": "0",
+    "team_size": "Event_Team_Size",
+    "description": "It all looked so easy when you did it with paper-where valves never froze, gyros never drifted and rocked motors did not blow up in your face.Build your own rocket and bring it on the floor that blast the sky.",
+    "tag_line": "Event_Tag_Line",
+
+    "rules": ["1. ", "2. ", "3. "],
+
+    "prize": {
+      "first": "Event_Prize_First",
+      "second": "Event_Prize_Second",
+      "third": "Event_Prize_Third"
+    },
+
+    "batch": {
+      "date:": "YYYY-MM-DD",
+      "time": "HH:MM AM",
+      "venue": "Venue_Name"
+    },
+
+    "incharge": [
+      {
+        "name": "Incharge_Name",
+        "email": "Incharge_Email",
+        "phone": "Incharge_Phone"
+      },
+
+      {
+        "name": "Incharge_Name",
+        "email": "Incharge_Email",
+        "phone": "Incharge_Phone"
+      }
+    ],
+
+    "instagram": "Event_Instagram",
+    "youtube": "",
+
+    "register": "Event_Register_Link"
+  },
+  {
+    "name": "Wasdkjasdkj",
+    "type": "Non-Technical",
+
+    "image": null,
+
+    "fee": "0",
+    "team_size": "Event_Team_Size",
+    "description": "It all looked so easy when you did it with paper-where valves never froze, gyros never drifted and rocked motors did not blow up in your face.Build your own rocket and bring it on the floor that blast the sky., It all looked so easy when you did it with paper-where valves never froze, gyros never drifted and rocked motors did not blow up in your face.Build your own rocket and bring it on the floor that blast the sky.",
+    "tag_line": "Event_Tag_Line",
+
+    "rules": ["1. ", "2. ", "3. "],
+
+    "prize": {
+      "first": "Event_Prize_First",
+      "second": "Event_Prize_Second",
+      "third": "Event_Prize_Third"
+    },
+
+    "batch": {
+      "date:": "YYYY-MM-DD",
+      "time": "HH:MM AM",
+      "venue": "Venue_Name"
+    },
+
+    "incharge": [
+      {
+        "name": "Incharge_Name",
+        "email": "Incharge_Email",
+        "phone": "Incharge_Phone"
+      },
+
+      {
+        "name": "Incharge_Name",
+        "email": "Incharge_Email",
+        "phone": "Incharge_Phone"
+      }
+    ],
+
+    "instagram": "Event_Instagram",
+    "youtube": "",
+
+    "register": "Event_Register_Link"
+  }
+]

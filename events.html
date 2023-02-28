@@ -1,10 +1,216 @@
 <!DOCTYPE html>
 <html>
-  <header><link type="stylesheet" src="./style.css" /></header>
-  <body>
-    <div class="filter_cont"></div>
-    <div class="event_cont">
-      <div class="event_card"></div>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./butter.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body class="eve_body">
+    <header class="eve_head">
+      <div class="ev_title title_font">Takshashila</div>
+
+      <div class="mav_bar_cont">
+        <div class="nav_bar_links">About</div>
+        <div class="nav_bar_links">Events</div>
+        <div class="nav_bar_links">Pro Shows</div>
+        <div class="nav_bar_links">Workshops</div>
+        <div class="nav_bar_links">Contact</div>
+      </div>
+    </header>
+    <div class="eve_func">
+      <div class="title">Events</div>
+      <div class="search"></div>
+      <div class="filter">
+        <button
+          class="fil_bub eve_active"
+          onclick="toggle_but(this);"
+          value="true"
+          id="all"
+          data-type="eve_card"
+        >
+          All
+        </button>
+        <button
+          class="fil_bub"
+          onclick="toggle_but(this);"
+          data-type="Technical"
+          value="false"
+        >
+          Technical
+        </button>
+
+        <button
+          class="fil_bub"
+          onclick="toggle_but(this);"
+          data-type="Non-Technical"
+          value="false"
+        >
+          Non-Technical
+        </button>
+        <button
+          class="fil_bub"
+          onclick="toggle_but(this);"
+          data-type="Workshop"
+          value="false"
+        >
+          Workshops
+        </button>
+        <button
+          class="fil_bub"
+          onclick="toggle_but(this);"
+          data-type="Pro Shows"
+          value="false"
+        >
+          Pro Shows
+        </button>
+      </div>
+    </div>
+    <div class="eve_list_cont" id="eve_list_cont">
+      <!-- <div class="eve_card">
+        <img
+          class="eve_img"
+          src="./9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png"
+        />
+        <div class="eve_ma">
+          <div class="eve_title">Plush</div>
+          <div class="eve_tag">Dance It All The Way</div>
+        </div>
+
+        <div class="eve_desc">
+          <div>
+            Dream World Film Festival (DWFF) is an annual 2-day event conducted
+            by VIT Film Society. It acts as an interactive platform for aspiring
+            filmmakers and cinema aficionados to exhibit their skills while
+            gaining a plethora of knowledge. Exhilarating events on topics
+            ranging from film-making technicalities to cinema trivia are also
+            incorporated. DWFF 2023 will feature a line up of industry experts
+            to bestow their knowledge and share their experiences in the various
+            aspects of film making. The participants will be given time to shoot
+            and produce their own movies, giving them first hand experience of
+            film making and providing them a medium to use the knowledge they
+            possess. For the final day, movies filmed and produced by the
+            participants will be screened and judged by experienced film makers,
+            hence declaring the winners who will be awarded prize money,
+            bringing an end to the 2 day longÂ filmÂ festival.
+          </div>
+        </div>
+        <div class="eve_bar">
+          <div class="eve_min">
+            <div>Technical Event</div>
+            <div class="eve_line"></div>
+            <div>22 March 2023</div>
+          </div>
+          <div class="eve_button">View</div>
+        </div>
+      </div> -->
     </div>
   </body>
 </html>
+
+<script type="text/javascript">
+  var jata = null;
+  var html_list = document.getElementById("eve_list_cont");
+  var inner_details = "";
+
+  $(document).ready(function () {
+    $.getJSON("pevents.json", function (data) {
+      for (i = 0; i < data.length; i++) {
+        jata = data[i];
+        inner_details = "";
+
+        jata = data[i];
+
+        inner_details += '<img class="eve_img" src="' + jata.image + '"/>';
+        inner_details +=
+          ' <div class="eve_ma"><div class="eve_title">' + jata.name + "</div>";
+        inner_details +=
+          '<div class="eve_tag">' + jata.tag_line + "</div></div>";
+        inner_details +=
+          '<div class="eve_desc"><div>' + jata.description + "</div></div>";
+        inner_details +=
+          '<div class="eve_bar"><div class="eve_min"><div>' +
+          jata.type +
+          "</div>";
+        inner_details +=
+          '<div class="eve_line"></div><div>' +
+          jata.batch.date +
+          "</div></div>";
+        inner_details += '<div class="eve_button">View</div></div>';
+
+        html_list.innerHTML +=
+          '<div class="eve_card ' +
+          jata.type +
+          '">' +
+          inner_details +
+          "</div>\n";
+      }
+    });
+  });
+</script>
+
+<script>
+  // function filter(type) {
+  //   var eve_cards = document.getElementsByClassName("Technical");
+  //   for (i = 0; i < eve_cards.length; i++) {
+  //     eve_cards[i].style.display = "none";
+  //   }
+  //   var eve_cards = document.getElementsByClassName(type);
+  //   for (i = 0; i < eve_cards.length; i++) {
+  //     eve_cards[i].style.display = "block";
+  //   }
+  // }
+
+  var types = ["Technical", "Non-Technical", "Workshop", "Pro Shows"];
+
+  var vis = null;
+
+  function toggle_but(e) {
+    var eve_cards = document.getElementsByClassName("eve_card");
+
+    if (e.dataset.type == "eve_card") {
+      vis = "block";
+
+      all.classList.add("eve_active");
+    } else {
+      vis = "None";
+    }
+
+    var ch = e.parentElement.children;
+    for (i = 0; i < ch.length; i++) {
+      ch[i].classList.remove("eve_active");
+    }
+
+    e.classList.add("eve_active");
+
+    for (i = 0; i < eve_cards.length; i++) {
+      eve_cards[i].style.display = vis;
+    }
+
+    for (i = 0; i < types.length; i++) {
+      var eve_cards = document.getElementsByClassName(types[i]);
+      console.log(e.dataset.type, types[i]);
+      if (e.dataset.type == types[i]) {
+        console.log(types[i]);
+        for (j = 0; j < eve_cards.length; j++) {
+          eve_cards[j].style.display = "block";
+        }
+      }
+    }
+
+    // var eve_cards = document.getElementsByClassName(e.dataset.type);
+    // for (i = 0; i < eve_cards.length; i++) {
+    // }
+  }
+</script>

@@ -1645,3 +1645,231 @@ button:hover {
     opacity: 1;
   }
 }
+
+.eve_head {
+  font-family: "oo";
+  cursor: unset;
+}
+
+.ev_title {
+  font-size: 3vw !important;
+  color: white !important;
+  position: absolute;
+  margin: 2.2vw 4vw;
+}
+
+.mav_bar_cont {
+  width: fit-content;
+  height: 5vw;
+  position: absolute;
+  margin: 3.5vw 4vw;
+  color: white;
+  font-size: 1vw;
+  display: flex;
+  gap: 1.8vw;
+  /* right: 6%; */
+  left: 62%;
+}
+
+.nav_bar_links {
+  cursor: pointer;
+}
+
+.nav_bar_links:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.eve_body {
+  cursor: unset !important;
+  display: flex;
+  /* height: fit-content; */
+  /* min-height: 30vw; */
+  /* background: white; */
+  flex-direction: column;
+}
+.eve_func {
+  margin: 14vw 5vw 5vw 4vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-content: center;
+  border-bottom: 2px solid white;
+}
+
+.eve_func .title {
+  font-size: 2.8vw;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 2vw 0;
+  font-family: "oo";
+}
+
+.filter {
+  display: flex;
+  gap: 1vw;
+}
+
+.fil_bub {
+  /* background: rgb(255 255 255 / 88%); */
+  color: white;
+  font-size: 0.8vw;
+  padding: 0.6vw 1.6vw;
+  border-radius: 20px;
+  border: 0.1vw solid white;
+  cursor: pointer;
+  font-family: "jura";
+}
+
+.fil_bub:hover {
+  background: rgba(255, 255, 255, 1);
+  color: black;
+}
+
+.eve_list_cont {
+  /* width: 100%; */
+  background: #2f2f2f;
+  gap: 1vw;
+  height: 30vw;
+  margin: 0vw 7vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: center;
+  height: fit-content;
+  padding-bottom: 4vw;
+}
+
+.eve_card {
+  height: 35vw;
+  width: 27vw;
+  background-color: #373737;
+  transition: 0.2s ease;
+  border-radius: 7px;
+  overflow: hidden;
+  font-family: "oo";
+  border: 2px solid rgb(255 255 255 / 70%);
+}
+
+.eve_card:hover .eve_img {
+  filter: contrast(0.8) brightness(0.7);
+  transform: scale(1.1);
+}
+
+.eve_card:hover .eve_ma {
+  top: -30.5vw;
+}
+.eve_card:hover .eve_desc {
+  opacity: 1;
+  top: -30vw;
+}
+
+.eve_img {
+  height: 100%;
+  width: 100%;
+  filter: contrast(0.85) brightness(0.9);
+  transition: 0.2s ease;
+}
+
+.eve_title {
+  color: white;
+  font-size: 2vw;
+}
+
+.eve_tag {
+  margin-top: 0.4vw;
+  color: white;
+  padding: 0.6vw;
+  font-size: 0.6vw;
+  position: relative;
+  width: fit-content;
+  border-top: 1px solid white;
+  width: 10vw;
+  text-align: center;
+}
+
+.eve_bar {
+  color: white;
+  font-size: 0.7vw;
+  position: relative;
+  top: -29vw;
+  display: flex;
+  margin: 0vw 3vw;
+  font-weight: 100;
+  gap: 1vw;
+  /* letter-spacing: 0.05vw; */
+  /* margin-left: 2vw; */
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.eve_button {
+  padding: 0.7vw 2vw;
+  background: #0000000f;
+  color: white;
+  border-radius: 7px;
+  font-size: 0.7vw;
+}
+
+.eve_min {
+  display: flex;
+  gap: 0.4vw;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-family: "jura";
+  transition: 0.2s ease;
+}
+
+.eve_min div {
+  transition: 0.2s ease;
+}
+.eve_line {
+  height: 1vw;
+  background-color: white;
+  width: 0.1vw;
+  position: relative;
+}
+
+.eve_ma {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  width: fit-content;
+  top: -20vw;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  transition: 0.2s ease-in-out;
+}
+
+.eve_desc {
+  width: 100%;
+  height: 20vw;
+  font-size: 0.7vw;
+  color: rgb(255 255 255 / 80%);
+  position: relative;
+  top: -23vw;
+  font-family: "oo";
+  /* margin: 2vw; */
+  /* margin: 1vw; */
+  display: flex;
+  opacity: 0;
+  transition: 0.2s ease-out;
+}
+
+.eve_desc div {
+  margin: 3vw;
+}
+
+.eve_active {
+  background-color: white;
+  color: black;
+}
