@@ -13,11 +13,18 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <script defer src="./script.js"></script>
     <script src="./butter.js"></script>
     <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body class="eve_body">
+    <div class="cursor" id="cursor">
+      <div class="cursor_border" id="cursor_border">
+        <div class="cursor_circle" id="cursor_circle"></div>
+      </div>
+    </div>
+    <div class="noise-container"></div>
     <header class="eve_head">
       <div class="ev_title title_font">Takshashila</div>
 
@@ -29,56 +36,58 @@
         <div class="nav_bar_links">Contact</div>
       </div>
     </header>
-    <div class="eve_func">
-      <div class="title">Events</div>
-      <div class="search"></div>
-      <div class="filter">
-        <button
-          class="fil_bub eve_active"
-          onclick="toggle_but(this);"
-          value="true"
-          id="all"
-          data-type="eve_card"
-        >
-          All
-        </button>
-        <button
-          class="fil_bub"
-          onclick="toggle_but(this);"
-          data-type="Technical"
-          value="false"
-        >
-          Technical
-        </button>
 
-        <button
-          class="fil_bub"
-          onclick="toggle_but(this);"
-          data-type="Non-Technical"
-          value="false"
-        >
-          Non-Technical
-        </button>
-        <button
-          class="fil_bub"
-          onclick="toggle_but(this);"
-          data-type="Workshop"
-          value="false"
-        >
-          Workshops
-        </button>
-        <button
-          class="fil_bub"
-          onclick="toggle_but(this);"
-          data-type="Pro Shows"
-          value="false"
-        >
-          Pro Shows
-        </button>
+    <div class="main" id="butter">
+      <div class="eve_func">
+        <div class="title">Events</div>
+        <div class="search"></div>
+        <div class="filter">
+          <button
+            class="fil_bub eve_active"
+            onclick="toggle_but(this);"
+            value="true"
+            id="all"
+            data-type="eve_card"
+          >
+            All
+          </button>
+          <button
+            class="fil_bub"
+            onclick="toggle_but(this);"
+            data-type="Technical"
+            value="false"
+          >
+            Technical
+          </button>
+
+          <button
+            class="fil_bub"
+            onclick="toggle_but(this);"
+            data-type="Non-Technical"
+            value="false"
+          >
+            Non-Technical
+          </button>
+          <button
+            class="fil_bub"
+            onclick="toggle_but(this);"
+            data-type="Workshop"
+            value="false"
+          >
+            Workshops
+          </button>
+          <button
+            class="fil_bub"
+            onclick="toggle_but(this);"
+            data-type="Pro Shows"
+            value="false"
+          >
+            Pro Shows
+          </button>
+        </div>
       </div>
-    </div>
-    <div class="eve_list_cont" id="eve_list_cont">
-      <!-- <div class="eve_card">
+      <div class="eve_list_cont" id="eve_list_cont">
+        <!-- <div class="eve_card">
         <img
           class="eve_img"
           src="./9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png"
@@ -115,9 +124,36 @@
           <div class="eve_button">View</div>
         </div>
       </div> -->
+      </div>
     </div>
   </body>
 </html>
+
+<script>
+  butter.init({
+    wrapperId: "butter",
+    wrapperDamper: 0.1,
+    cancelOnTouch: false,
+  });
+
+  document.querySelector("#butter").style.position = "initial";
+</script>
+
+<script>
+  document.body.style.display = "none";
+  console.log(navigator.userAgent);
+  if (
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    )
+  ) {
+    var ask1 = alert(
+      "Website Under construction & is not supported for mobile devices.\nUse a Desktop/Laptop to view the site.."
+    );
+  } else {
+    document.body.style.display = "block";
+  }
+</script>
 
 <script type="text/javascript">
   var jata = null;
@@ -161,17 +197,6 @@
 </script>
 
 <script>
-  // function filter(type) {
-  //   var eve_cards = document.getElementsByClassName("Technical");
-  //   for (i = 0; i < eve_cards.length; i++) {
-  //     eve_cards[i].style.display = "none";
-  //   }
-  //   var eve_cards = document.getElementsByClassName(type);
-  //   for (i = 0; i < eve_cards.length; i++) {
-  //     eve_cards[i].style.display = "block";
-  //   }
-  // }
-
   var types = ["Technical", "Non-Technical", "Workshop", "Pro Shows"];
 
   var vis = null;
@@ -208,9 +233,5 @@
         }
       }
     }
-
-    // var eve_cards = document.getElementsByClassName(e.dataset.type);
-    // for (i = 0; i < eve_cards.length; i++) {
-    // }
   }
 </script>

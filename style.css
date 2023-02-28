@@ -1683,10 +1683,12 @@ button:hover {
 .eve_body {
   cursor: unset !important;
   display: flex;
-  /* height: fit-content; */
-  /* min-height: 30vw; */
+  height: fit-content;
+  min-height: 30vw;
   /* background: white; */
   flex-direction: column;
+  margin-bottom: 2vw;
+  /* padding-bottom: 3vw;*/
 }
 .eve_func {
   margin: 14vw 5vw 5vw 4vw;
@@ -1729,21 +1731,22 @@ button:hover {
 }
 
 .eve_list_cont {
-  /*  width: 100%; */
+  /* min-height: 30vw; */
   background: #2f2f2f;
   gap: 1vw;
-  height: 30vw;
+  height: fit-content;
   margin: 0vw 7vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content: space-between;
-  align-items: center;
   height: fit-content;
   padding-bottom: 1vw;
   padding-top: 1vw;
-  justify-content: center;
   margin-bottom: 3vw;
+  align-items: center;
+  /* margin: 5vw; */
+  padding: 1vw;
+  padding: 1vw 1vw 1vw 1.17vw;
 }
 
 .eve_card {
@@ -1754,11 +1757,11 @@ button:hover {
   border-radius: 7px;
   overflow: hidden;
   font-family: "oo";
-  border: 2px solid rgb(255 255 255 / 70%);
+  border: 0.11vw solid rgba(120, 120, 120, 0.7);
 }
 
 .eve_card:hover .eve_img {
-  filter: contrast(0.8) brightness(0.7);
+  filter: contrast(0.8) brightness(0.7) blur(5px);
   transform: scale(1.1);
 }
 
@@ -1767,7 +1770,7 @@ button:hover {
 }
 .eve_card:hover .eve_desc {
   opacity: 1;
-  top: -30vw;
+  top: -29vw;
 }
 
 .eve_img {
@@ -1775,6 +1778,7 @@ button:hover {
   width: 100%;
   filter: contrast(0.85) brightness(0.9);
   transition: 0.2s ease;
+  /* opacity: 0; */
 }
 
 .eve_title {
@@ -1819,6 +1823,11 @@ button:hover {
   font-size: 0.7vw;
 }
 
+.eve_button:hover {
+  background: #00000048;
+  cursor: pointer;
+}
+
 .eve_min {
   display: flex;
   gap: 0.4vw;
@@ -1834,8 +1843,8 @@ button:hover {
 }
 .eve_line {
   height: 1vw;
-  background-color: white;
-  width: 0.1vw;
+  background-color: #ffffffb5;
+  width: 0.05vw;
   position: relative;
 }
 
@@ -1856,7 +1865,7 @@ button:hover {
 .eve_desc {
   width: 100%;
   height: 20vw;
-  font-size: 0.7vw;
+  font-size: 0.8vw;
   color: rgb(255 255 255 / 80%);
   position: relative;
   top: -23vw;
