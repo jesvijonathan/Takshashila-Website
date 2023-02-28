@@ -1691,7 +1691,7 @@ button:hover {
   /* padding-bottom: 3vw;*/
 }
 .eve_func {
-  margin: 14vw 5vw 4.2vw 4vw;
+  margin: 11vw 5vw 4.2vw 4vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1747,7 +1747,7 @@ button:hover {
   height: fit-content;
   padding-bottom: 1vw;
   padding-top: 1vw;
-  margin-bottom: 3vw;
+  /* margin-bottom: 3vw; */
   /* padding: 1vw; */
   padding: 0.2vw 0vw 4.2vw 0.19vw;
   align-items: center;

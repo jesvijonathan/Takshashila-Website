@@ -13,7 +13,7 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <script defer src="./script.js"></script>
+    <script defer src="./cursor.js"></script>
     <script src="./butter.js"></script>
     <link rel="stylesheet" href="./style.css" />
   </head>
@@ -26,14 +26,20 @@
     </div>
     <div class="noise-container"></div>
     <header class="eve_head">
-      <div class="ev_title title_font">Takshashila</div>
+      <div class="ev_title title_font link_cur" data-text="Return To Main Page">
+        Takshashila
+      </div>
 
       <div class="mav_bar_cont">
-        <div class="nav_bar_links">About</div>
-        <div class="nav_bar_links">Events</div>
-        <div class="nav_bar_links">Pro Shows</div>
-        <div class="nav_bar_links">Workshops</div>
-        <div class="nav_bar_links">Contact</div>
+        <div class="nav_bar_links link_cur" data-text="About Us">About</div>
+        <div class="nav_bar_links link_cur" data-text="Events List">Events</div>
+        <div class="nav_bar_links link_cur" data-text="Pro-Shows">
+          Pro Shows
+        </div>
+        <div class="nav_bar_links link_cur" data-text="Workshops">
+          Workshops
+        </div>
+        <div class="nav_bar_links link_cur" data-text="Contact Us">Contact</div>
       </div>
     </header>
     <div class="eve_func" id="navbar">
@@ -41,44 +47,49 @@
       <div class="search"></div>
       <div class="filter">
         <button
-          class="fil_bub eve_active"
+          class="fil_bub eve_active link_cur"
           onclick="toggle_but(this);"
           value="true"
           id="all"
           data-type="eve_card"
+          data-text="All Events"
         >
           All
         </button>
         <button
-          class="fil_bub"
+          class="fil_bub link_cur"
           onclick="toggle_but(this);"
           data-type="Technical"
           value="false"
+          data-text="Technical Events"
         >
           Technical
         </button>
 
         <button
-          class="fil_bub"
+          class="fil_bub link_cur"
           onclick="toggle_but(this);"
           data-type="Non-Technical"
           value="false"
+          data-text="Non-Technical Events"
         >
           Non-Technical
         </button>
         <button
-          class="fil_bub"
+          class="fil_bub link_cur"
           onclick="toggle_but(this);"
           data-type="Workshop"
           value="false"
+          data-text="Workshops"
         >
           Workshops
         </button>
         <button
-          class="fil_bub"
+          class="fil_bub link_cur"
           onclick="toggle_but(this);"
           data-type="Pro Shows"
           value="false"
+          data-text="Pro Shows"
         >
           Pro Shows
         </button>
