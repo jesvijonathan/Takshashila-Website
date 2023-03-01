@@ -1765,6 +1765,7 @@ button:hover {
   overflow: hidden;
   font-family: "oo";
   border: 0.11vw solid rgba(120, 120, 120, 0.7);
+  cursor: pointer;
 }
 
 .eve_card:hover .eve_img {

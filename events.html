@@ -46,8 +46,8 @@
       <div class="eve_path_con_par">
         <div class="title">Events</div>
         <div class="eve_path_con" id="eve_path">
-          <div>/ Technical</div>
-          <div>/ Plush</div>
+          <a class="link_cur" data-text="Event Type">/ Technical</a>
+          <a class="link_cur" data-text="Event Name">/ Plush</a>
         </div>
       </div>
       <div class="search"></div>
@@ -142,7 +142,11 @@
       </div> -->
       </div>
 
-      <div class="eve_detail_cont" id="eve_detail_cont">
+      <div
+        class="eve_detail_cont"
+        id="eve_detail_cont"
+        onclick="close_event(this);"
+      >
         <div class="eve_detail_1">
           <div class="eve_detail_1_1">
             <img
@@ -597,13 +601,19 @@
     document.getElementById("eve_list_cont").style.display = "none";
     document.getElementById("eve_detail_cont").style.display = "flex";
     console.log(json_data[e]);
+
+    document.getElementById("eve_path").style.display = "flex";
+    document.getElementById("filter").style.display = "none";
   }
 
-  document.getElementById("eve_list_cont").style.display = "none";
-  document.getElementById("eve_detail_cont").style.display = "flex";
+  function close_event(e) {
+    document.getElementById("eve_list_cont").style.display = "flex";
+    document.getElementById("eve_detail_cont").style.display = "none";
+    console.log(json_data[e]);
 
-  document.getElementById("eve_path").style.display = "flex";
-  document.getElementById("filter").style.display = "none";
+    document.getElementById("eve_path").style.display = "none";
+    document.getElementById("filter").style.display = "flex";
+  }
 </script>
 
 <script>
