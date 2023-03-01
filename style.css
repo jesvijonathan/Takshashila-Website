@@ -1755,7 +1755,7 @@ button:hover {
 }
 
 .eve_card {
-  height: 35vw;
+  height: 29vw;
   width: 27vw;
   background-color: #373737;
   transition: 0.2s ease;
@@ -1771,19 +1771,26 @@ button:hover {
 }
 
 .eve_card:hover .eve_ma {
-  top: -30.5vw;
+  top: -24vw;
 }
 .eve_card:hover .eve_desc {
   opacity: 1;
-  top: -29vw;
+  top: -24vw;
+}
+
+.eve_card:hover .eve_button {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 0px;
 }
 
 .eve_img {
-  height: 100%;
   width: 100%;
   filter: contrast(0.85) brightness(0.9) grayscale(0.2) blur(0px);
   transition: 0.2s ease;
+  opacity: 0;
   /* opacity: 0; */
+  width: auto;
+  height: -webkit-fill-available;
 }
 
 .eve_title {
@@ -1826,10 +1833,12 @@ button:hover {
   color: white;
   border-radius: 7px;
   font-size: 0.7vw;
+  border-bottom: 2px solid transparent;
 }
 
 .eve_button:hover {
-  background: #00000048;
+  background: #ffffff48;
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
