@@ -43,9 +43,15 @@
       </div>
     </header>
     <div class="eve_func" id="navbar">
-      <div class="title">Events</div>
+      <div class="eve_path_con_par">
+        <div class="title">Events</div>
+        <div class="eve_path_con" id="eve_path">
+          <div>/ Technical</div>
+          <div>/ Plush</div>
+        </div>
+      </div>
       <div class="search"></div>
-      <div class="filter">
+      <div class="filter" id="filter">
         <button
           class="fil_bub eve_active link_cur"
           onclick="toggle_but(this);"
@@ -134,6 +140,140 @@
           <div class="eve_button">View</div>
         </div>
       </div> -->
+      </div>
+
+      <div class="eve_detail_cont" id="eve_detail_cont">
+        <div class="eve_detail_1">
+          <div class="eve_detail_1_1">
+            <img
+              style="height: 20vw"
+              src="/photo-1501386761578-eac5c94b800a.jpeg"
+            />
+
+            <div class="eve_detail_1_2">
+              <div class="eve_detai_1_2_title">Tags :</div>
+              <div class="eve_detai_1_2_tag_cont">
+                <div class="eve_detai_1_2_tag">event</div>
+                <div class="eve_detai_1_2_tag">photo</div>
+                <div class="eve_detai_1_2_tag">tech</div>
+                <div class="eve_detai_1_2_tag">edit</div>
+                <div class="eve_detai_1_2_tag">creative</div>
+                <div class="eve_detai_1_2_tag">art</div>
+              </div>
+            </div>
+            <div class="eve_detail_1_3">
+              <div class="eve_detai_1_2_title">Links :</div>
+              <div class="eve_detail_1_3_cont">
+                <div
+                  class="eve_detail_1_3_link link_cur"
+                  data-text="Latest Posts"
+                >
+                  Instagram Post
+                </div>
+                <div
+                  class="eve_detail_1_3_link link_cur"
+                  data-text="Youtube Videos"
+                >
+                  Youtube
+                </div>
+                <div
+                  class="eve_detail_1_3_link link_cur"
+                  data-text="Shareable Link"
+                >
+                  Share Link
+                </div>
+                <div
+                  class="eve_detail_1_3_link link_cur"
+                  data-text="Download Brochure"
+                >
+                  Download
+                </div>
+              </div>
+            </div>
+            <div class="eve_detail_1_4">
+              <button class="eve_detail_reg link_cur" data-text="Register Now">
+                Register
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="eve_detail_2">
+          <div class="eve_detail_2_1">
+            <div class="eve_detail_2_1_1">Plush</div>
+            <div class="eve_edtail_2_1_tag">Dance It All The Way</div>
+          </div>
+          <div class="eve_detail_2_2">
+            <div class="eve_detail_2_2_1">Description</div>
+            <div class="eve_detail_2_2_tag">
+              Dream World Film Festival (DWFF) is an annual 2-day event
+              conducted by VIT Film Society. It acts as an interactive platform
+              for aspiring filmmakers and cinema aficionados to exhibit their
+              skills while gaining a plethora of knowledge. Exhilarating events
+              on topics ranging from film-making technicalities to cinema trivia
+              are also incorporated. DWFF 2023 will feature a line up of
+              industry experts to bestow their knowledge and share their
+              experiences in the various aspects of film making.
+            </div>
+          </div>
+          <div class="eve_detail_2_2">
+            <div class="eve_detail_2_2_1">Rules</div>
+            <div class="eve_detail_2_2_tag">
+              <div class="eve_rules">
+                It's a single-player game. Only one player is allowed to play at
+                a time.
+              </div>
+              <div class="eve_rules">
+                Hand gestures are used to control the game.
+              </div>
+              <div class="eve_rules">
+                Each player has one chance(life) with a trial gameplay.
+              </div>
+              <div class="eve_rules">
+                Before the game begins, the demo will be shown.
+              </div>
+              <div class="eve_rules">
+                Participants playing order is chosen by lottery system.
+              </div>
+              <div class="eve_rules">
+                The primary criteria for choosing the winner is the distance
+                travelled & coins collected, incase of a tie.
+              </div>
+            </div>
+          </div>
+          <div class="eve_detail_2_3">
+            <div class="eve_detail_horiz">
+              <div class="eve_sec">
+                <div class="eve_detail_2_2_1">Prize</div>
+                <div class="eve_sec_con">
+                  <div class="">First Prize : ₹2000</div>
+                  <div class="">Second Prize : ₹1000</div>
+                  <div class="">Third Prize : ₹500</div>
+                </div>
+              </div>
+              <div class="eve_lin"></div>
+
+              <div class="eve_sec">
+                <div class="eve_detail_2_2_1">Details</div>
+                <div class="eve_sec_con">
+                  <div class="">Type : Technical Event</div>
+                  <div class="">Date : 22 March 2023</div>
+                  <div class="">Time : 10:00 am</div>
+                </div>
+              </div>
+              <div class="eve_lin"></div>
+
+              <div class="eve_sec">
+                <div class="eve_detail_2_2_1">Contact</div>
+                <div class="eve_sec_con">
+                  <div class="">Co-ordinator : Panapan</div>
+                  <div class="">Phone : 701049394</div>
+                  <div class="">Email: sksksk@gmail.com</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="eve_detail_2_4"></div>
+        </div>
       </div>
       <footer>
         <div class="footer">
@@ -369,6 +509,8 @@
 </html>
 
 <script>
+  var t;
+
   butter.init({
     wrapperId: "butter",
     wrapperDamper: 0.1,
@@ -392,47 +534,76 @@
   } else {
     document.body.style.display = "block";
   }
-</script>
 
-<script type="text/javascript">
   var jata = null;
   var html_list = document.getElementById("eve_list_cont");
   var inner_details = "";
+  var json_data;
 
+  function set_json(data) {
+    json_data = data;
+    console.log(json_data);
+  }
   $(document).ready(function () {
-    $.getJSON("pevents.json", function (data) {
-      for (i = 0; i < data.length; i++) {
-        jata = data[i];
-        inner_details = "";
+    var data;
 
-        jata = data[i];
+    fetch("./pevents.json") // Call the fetch function passing the url of the API as a parameter
+      .then((res) => res.json())
+      .then(function (res) {
+        data = res;
+        set_json(res);
+        // Your code for handling the data you get from the API
 
-        inner_details += '<img class="eve_img" src="' + jata.image + '"/>';
-        inner_details +=
-          ' <div class="eve_ma"><div class="eve_title">' + jata.name + "</div>";
-        inner_details +=
-          '<div class="eve_tag">' + jata.tag_line + "</div></div>";
-        inner_details +=
-          '<div class="eve_desc"><div>' + jata.description + "</div></div>";
-        inner_details +=
-          '<div class="eve_bar"><div class="eve_min"><div>' +
-          jata.type +
-          "</div>";
-        inner_details +=
-          '<div class="eve_line"></div><div>' +
-          jata.batch.date +
-          "</div></div>";
-        inner_details += '<div class="eve_button">View</div></div>';
+        for (i = 0; i < data.length; i++) {
+          jata = data[i];
+          inner_details = "";
 
-        html_list.innerHTML +=
-          '<div class="eve_card ' +
-          jata.type +
-          '">' +
-          inner_details +
-          "</div>\n";
-      }
-    });
+          jata = data[i];
+
+          inner_details += '<img class="eve_img" src="' + jata.image + '"/>';
+          inner_details +=
+            ' <div class="eve_ma"><div class="eve_title">' +
+            jata.name +
+            "</div>";
+          inner_details +=
+            '<div class="eve_tag">' + jata.tag_line + "</div></div>";
+          inner_details +=
+            '<div class="eve_desc"><div>' + jata.description + "</div></div>";
+          inner_details +=
+            '<div class="eve_bar"><div class="eve_min"><div>' +
+            jata.type +
+            "</div>";
+          inner_details +=
+            '<div class="eve_line"></div><div>' +
+            jata.batch.date +
+            "</div></div>";
+          inner_details += '<div class="eve_button">View</div></div>';
+
+          html_list.innerHTML +=
+            '<div class="eve_card ' +
+            jata.type +
+            '" onclick="open_event(' +
+            i +
+            ');">' +
+            inner_details +
+            "</div>\n";
+        }
+      })
+      .catch(function () {
+        // This is where you run code if the server returns any errors
+      });
   });
+  function open_event(e) {
+    document.getElementById("eve_list_cont").style.display = "none";
+    document.getElementById("eve_detail_cont").style.display = "flex";
+    console.log(json_data[e]);
+  }
+
+  document.getElementById("eve_list_cont").style.display = "none";
+  document.getElementById("eve_detail_cont").style.display = "flex";
+
+  document.getElementById("eve_path").style.display = "flex";
+  document.getElementById("filter").style.display = "none";
 </script>
 
 <script>
@@ -442,7 +613,6 @@
 
   function toggle_but(e) {
     var eve_cards = document.getElementsByClassName("eve_card");
-
     if (e.dataset.type == "eve_card") {
       vis = "block";
 

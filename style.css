@@ -1704,6 +1704,7 @@ button:hover {
   /* margin: 14vw 0vw; */
   /* padding: 0vw 4vw; */
   position: sticky;
+  background: #282828;
 }
 
 .eve_func .title {
@@ -1728,6 +1729,7 @@ button:hover {
   border: 0.1vw solid white;
   cursor: pointer;
   font-family: "jura";
+  transition: 0.2s linear;
 }
 
 .fil_bub:hover {
@@ -1904,14 +1906,266 @@ button:hover {
   /* top: -14vw; */
   width: -webkit-fill-available;
   z-index: 100;
-  background: #1a1a1a;
+
   margin: 0vw 0vw;
   padding: 0vw 4vw;
   border-bottom: 0.1vw solid transparent;
-  /* border-bottom: 0.1vw solid rgb(255 255 255 / 30%); */
+  background: #1a1a1a;
+
+  /* background: #282828;
+  border-bottom: 0.1vw solid rgb(255 255 255 / 30%); */
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 60px;
+}
+
+.eve_detail_cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+  gap: 3vw;
+  margin: 0vw 7vw;
+  margin-bottom: 10vw;
+  height: 44vw;
+  background: rgb(60, 60, 60);
+  color: white;
+  font-family: "oo";
+  font-family: "jura";
+  align-items: center;
+}
+
+.eve_detail_1 {
+  width: 26vw;
+  height: 100%;
+  background: #0000003a;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+.eve_detail_1_1 {
+  width: 20vw;
+  height: fit-content;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.eve_detail_1_2 {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  font-size: 1vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+.eve_detai_1_2_title {
+  width: 3.3vw;
+  font-size: 0.9vw;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.eve_detai_1_2_tag_cont {
+  width: 80%;
+  display: flex;
+  gap: 1vw;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  /* left: -3vw; */
+  position: relative;
+}
+
+.eve_detai_1_2_tag {
+  background-color: rgb(96 96 96 / 40%);
+  border-radius: 40px;
+  font-size: 0.6vw;
+  font-family: "oo";
+  padding: 0.4vw 1vw;
+}
+
+.eve_detai_1_2_tag:hover {
+  background-color: rgba(58, 58, 58, 0.3);
+}
+
+.eve_detail_1_3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.eve_detail_1_3_cont {
+  /* height: 2vw; */
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  margin-bottom: 1vw;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 0.7vw;
+  flex-wrap: wrap;
+  row-gap: 0.6vw;
+}
+
+.eve_detail_1_3_link {
+  padding: 0.5vw 0.7vw;
+
+  padding: 0.5vw 1vw;
+  background-color: #1a1a1a6c;
+  text-align: center;
+  font-size: 0.7vw;
+  border-radius: 4px;
+  font-family: "jura";
+}
+.eve_detail_1_3_link:hover {
+  background-color: #0000006c;
+}
+
+.eve_detail_1_4 {
+  display: flex;
+  margin-top: 2vw;
+  margin-top: 5vw;
+}
+
+.eve_detail_reg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1.2vw;
+  font-family: "jura";
+  color: black;
+  background: #ffffff;
+  padding: 1vw 7vw;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  border: 0px;
+}
+
+.eve_detail_reg:hover {
+  background: #000000;
+  color: rgb(255, 255, 255);
+}
+
+.eve_detail_2 {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  /* gap: 3vw; */
+  gap: 2.2vw;
+  flex-direction: column;
+  justify-content: center;
+}
+.eve_detail_2_1_1 {
+  font-family: "oo";
+  font-size: 3vw;
+
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  width: fit-content;
+  padding-bottom: 0.2vw;
+  margin-bottom: 0.4vw;
+  margin-top: 2vw;
+}
+.eve_edtail_2_1_tag {
+}
+
+.eve_detail_2_2_1 {
+  font-family: "oo";
+  font-size: 1.1vw;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  width: fit-content;
+  padding-bottom: 0.5vw;
+  margin-bottom: 1vw;
+  margin-top: 1vw;
+}
+
+.eve_detail_2_2_tag {
+  font-family: "oo";
+  font-size: 0.8vw;
+  width: 96%;
+}
+
+.eve_rules {
+  font-family: "oo";
+  font-size: 1.1vw;
+  width: fit-content;
+  margin-bottom: 0.4vw;
+  font-size: 0.7vw;
+}
+
+.eve_rules:before {
+  content: "\00BB";
+  margin-right: 0.5vw;
+}
+
+.eve_detail_horiz {
+  /* width: 95%; */
+  height: 6vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+
+.eve_sec {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.eve_sec_con {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: flex-start;
+  gap: 0.2vw;
+  justify-content: center;
+}
+
+.eve_lin {
+  width: 0.1vw;
+  height: 40%;
+  background-color: #ffffff;
+  opacity: 0;
+}
+
+.eve_path_con {
+  display: flex;
+  color: white;
+  height: 4.08vw;
+  align-items: flex-end;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /* width: 9vw; */
+  justify-content: center;
+  align-content: center;
+  padding-left: 0.5vw;
+  gap: 0.3vw;
+  font-family: "oo";
+}
+
+.eve_path_con_par {
+  display: flex;
 }
