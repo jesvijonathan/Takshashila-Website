@@ -172,35 +172,39 @@
             <div class="eve_detail_1_3">
               <div class="eve_detai_1_2_title">Links :</div>
               <div class="eve_detail_1_3_cont">
-                <div
+                <a
                   class="eve_detail_1_3_link link_cur"
                   data-text="Latest Posts"
                   id="link_con_insta"
+                  target="_blank"
                 >
                   Instagram Post
-                </div>
-                <div
+                </a>
+                <a
                   class="eve_detail_1_3_link link_cur"
                   data-text="Youtube Videos"
                   id="link_con_youtube"
+                  target="_blank"
                 >
                   Youtube
-                </div>
-                <div
+                </a>
+                <a
                   class="eve_detail_1_3_link link_cur"
                   data-text="Shareable Link"
                   id="link_con_share"
-                  onclick="copyToClipboard(); alert('Link Copied to Clipboard');"
+                  onclick="copyToClipboard(); notify('Link Copied To Clipboard !',5000)"
+                  target="_blank"
                 >
                   Share Link
-                </div>
-                <div
+                </a>
+                <a
                   class="eve_detail_1_3_link link_cur"
                   data-text="Download Brochure"
                   id="link_con_download"
+                  target="_blank"
                 >
                   Download
-                </div>
+                </a>
               </div>
             </div>
             <div class="eve_detail_1_4">
@@ -568,8 +572,8 @@
 <script>
   function close_event(e) {
     window.history.pushState(
-      "page2",
-      "Title",
+      "",
+      "",
       "/events.html".replace(/ /g, "_").toLowerCase()
     );
 
@@ -731,9 +735,10 @@
     document.getElementById("eve_img").src = "./" + json_data[e].image;
 
     //inner div for tag_con from json_data[e].tags
+    document.getElementById("tag_con").innerHTML = "";
     for (i = 0; i < json_data[e].tags.length; i++) {
       document.getElementById("tag_con").innerHTML +=
-        '<div class="eve_tag">' + json_data[0].tags[i] + "</div>";
+        '<div class="eve_detai_1_2_tag">' + json_data[0].tags[i] + "</div>";
     }
 
     document.getElementById("link_con_insta").href = json_data[e].instagram;
