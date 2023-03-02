@@ -43,7 +43,7 @@
     "instagram": "Event_Instagram",
     "youtube": "",
 
-    "register": "Event_Register_Link"
+    "register": "https://www.google.com"
   },
 
   {
@@ -51,7 +51,7 @@
     "type": "Technical",
     "tags": [""],
 
-    "image": "9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
+    "image": "",
 
     "fee": "0",
     "team_size": "Event_Team_Size",
@@ -97,7 +97,7 @@
     "type": "Non-Technical",
     "tags": [""],
 
-    "image": "9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
+    "image": "",
 
     "fee": "0",
     "team_size": "Event_Team_Size",
@@ -143,7 +143,7 @@
     "type": "Non-Technical",
     "tags": [""],
 
-    "image": "9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
+    "image": "",
 
     "fee": "0",
     "team_size": "Event_Team_Size",
@@ -189,7 +189,7 @@
     "type": "Non-Technical",
     "tags": ["Onilne"],
 
-    "image": "9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
+    "image": "",
 
     "fee": "0",
     "team_size": "Event_Team_Size",
@@ -235,7 +235,7 @@
     "type": "Non-Technical",
     "tags": ["Onilne"],
 
-    "image": "9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
+    "image": "",
 
     "fee": "0",
     "team_size": "Event_Team_Size",
@@ -281,7 +281,7 @@
     "type": "Non-Technical",
     "tags": ["Sports"],
 
-    "image": "9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
+    "image": "",
 
     "fee": "0",
     "team_size": "Event_Team_Size",
@@ -327,7 +327,7 @@
     "type": "Non-Technical",
     "tags": ["Sports"],
 
-    "image": "9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
+    "image": "",
 
     "fee": "0",
     "team_size": "Event_Team_Size",
@@ -373,7 +373,7 @@
     "type": "Workshop",
     "tags": [""],
 
-    "image": "9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
+    "image": "",
 
     "fee": "0",
     "team_size": "Event_Team_Size",
@@ -417,7 +417,7 @@
     "type": "Workshop",
     "tags": [""],
 
-    "image": "9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
+    "image": "",
 
     "fee": "0",
     "team_size": "Event_Team_Size",

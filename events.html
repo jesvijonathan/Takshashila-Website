@@ -204,13 +204,14 @@
               </div>
             </div>
             <div class="eve_detail_1_4">
-              <button
+              <a
                 class="eve_detail_reg link_cur"
                 data-text="Register Now"
                 id="eve_reg_link"
+                target="_blank"
               >
                 Register
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -262,7 +263,7 @@
             <div class="eve_detail_horiz">
               <div class="eve_sec">
                 <div class="eve_detail_2_2_1">Prize</div>
-                <div class="eve_sec_con">
+                <div class="eve_sec_con" id="prize">
                   <div class="">First Prize : ₹2000</div>
                   <div class="">Second Prize : ₹1000</div>
                   <div class="">Third Prize : ₹500</div>
@@ -676,10 +677,6 @@
         // Your code for handling the data you get from the API
 
         for (i = 0; i < data.length; i++) {
-          if (data[i].name.replace(" ", "_").toLowerCase() == url_event) {
-            open_event(i);
-            deccept_cookie;
-          }
           jata = data[i];
           inner_details = "";
 
@@ -712,6 +709,9 @@
             ');">' +
             inner_details +
             "</div>\n";
+          if (data[i].name.replace(" ", "_").toLowerCase() == url_event) {
+            open_event(i);
+          }
         }
         load_done = true;
       })
@@ -737,8 +737,8 @@
     }
 
     document.getElementById("link_con_insta").href = json_data[e].instagram;
-    document.getElementById("link_con_youtube").href = json_data[e].youtube;
-    document.getElementById("link_con_share").href = "";
+    // document.getElementById("link_con_youtube").href = json_data[e].youtube;
+    // document.getElementById("link_con_share").href = "";
 
     document.getElementById("link_con_download").href = "";
     document.getElementById("eve_reg_link").href = json_data[e].register;
@@ -751,6 +751,7 @@
       "Title",
       ("/events.html#/" + json_data[e].name).replace(/ /g, "_").toLowerCase()
     );
+
     document.getElementById("eve_title_con").childNodes[3].innerHTML =
       json_data[e].tag_line;
     document.getElementById("eve_detail_2_2").childNodes[3].innerHTML =
@@ -764,6 +765,13 @@
       document.getElementById("eve_detail_rules").innerHTML +=
         '<div class="eve_rules">' + json_data[e].rules[i] + "</div>";
     }
+
+    document.getElementById("prize").innerHTML =
+      '<div class="">First Prize : ' + json_data[e].prize.first + "</div>";
+    document.getElementById("prize").innerHTML +=
+      '<div class="">Second Prize : ' + json_data[e].prize.second + "</div>";
+    document.getElementById("prize").innerHTML +=
+      '<div class="">Third Prize : ' + json_data[e].prize.third + "</div>";
 
     document.getElementById("eve_details").childNodes[1].innerHTML =
       "Type : " + json_data[e].type;
@@ -812,7 +820,7 @@
       vis = "None";
     }
 
-    accept_cookie;
+    // accept_cookie;
 
     var ch = e.parentElement.children;
     for (i = 0; i < ch.length; i++) {

@@ -1826,9 +1826,9 @@ button:hover {
   width: 100%;
   filter: contrast(0.85) brightness(0.9) grayscale(0.2) blur(0px);
   transition: 0.2s ease;
-  opacity: 0;
+
   /* opacity: 0; */
-  width: auto;
+  /* width: auto; */
   height: -webkit-fill-available;
 }
 
@@ -2024,6 +2024,11 @@ button:hover {
   align-items: center;
   /* left: -3vw; */
   position: relative;
+  overflow: auto;
+}
+.eve_detai_1_2_tag_cont::-webkit-scrollbar {
+  height: 0;
+  opacity: 0;
 }
 
 .eve_detai_1_2_tag {
