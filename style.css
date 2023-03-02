@@ -1240,6 +1240,42 @@ mark {
   transition: transform 0.4s ease;
 }
 
+.title_but {
+  display: block;
+
+  /*  Set same font-size and line height  */
+  font-size: 1vw;
+  line-height: 1.8vw;
+  color: white;
+
+  transition: transform 0.4s ease;
+}
+
+.title_back_con {
+  display: flex;
+  font-size: 2vw;
+  /* line-height: 1.8vw; */
+  color: white;
+  transition: transform 0.4s ease;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  font-family: "oo";
+  gap: 2vw;
+}
+
+.title_back_con:hover div {
+  text-decoration: underline;
+}
+.title_back_con span {
+  transition: 0.2s ease-in-out;
+}
+.title_back_con:hover span {
+  margin-right: 1vw;
+}
+
 .link-title1 {
   transform-origin: right center;
 }
@@ -2145,6 +2181,15 @@ button:hover {
   justify-content: center;
 }
 
+.eve_sec_con a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.eve_sec_con a:hover {
+  text-decoration: underline;
+}
+
 .eve_lin {
   width: 0.1vw;
   height: 40%;
@@ -2169,4 +2214,46 @@ button:hover {
 
 .eve_path_con_par {
   display: flex;
+}
+
+.notify {
+  top: 92vh;
+  background: #ffffff;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 0%;
+  font-family: Inder;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+  flex-wrap: nowrap;
+  gap: 4vw;
+  width: fit-content;
+  transition: 0.2s ease-in-out;
+  z-index: -1;
+  opacity: 0;
+  border: 1px solid rgb(0 0 0 / 30%);
+}
+.notify-content {
+  color: #000;
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+.notify-button {
+  color: rgb(0, 0, 0);
+  background: rgba(255, 255, 255, 0);
+  border-bottom: 1px solid rgb(0, 0, 0);
+  font-weight: 600;
+  font-size: 1vw;
+  cursor: pointer;
+}
+.notify-button:hover {
+  background: rgba(255, 255, 255, 0);
+  color: rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
 }

@@ -2,16 +2,19 @@
   {
     "name": "Water Rocketry",
     "type": "Technical",
-    "tags": [""],
+    "tags": ["1", "2"],
 
-    "image": "./9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
+    "image": "9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
 
     "fee": "0",
     "team_size": "Event_Team_Size",
     "description": "It all looked so easy when you did it with paper-where valves never froze, gyros never drifted and rocked motors did not blow up in your face.Build your own rocket and bring it on the floor that blast the sky.",
     "tag_line": "Event_Tag_Line",
 
-    "rules": [""],
+    "rules": [
+      " It's a single-player game. Only one player is allowed to play ata time.",
+      "2"
+    ],
 
     "prize": {
       "first": "1500",
@@ -19,11 +22,9 @@
       "third": "0"
     },
 
-    "batch": {
-      "date": "2023-03-31",
-      "time": "11:00 AM",
-      "venue": "Ground"
-    },
+    "date": "2023-03-31",
+
+    "batch": [{ "time": "11:00 AM", "venue": "Ground" }],
 
     "incharge": [
       {
@@ -50,7 +51,7 @@
     "type": "Technical",
     "tags": [""],
 
-    "image": "./9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
+    "image": "9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
 
     "fee": "0",
     "team_size": "Event_Team_Size",
@@ -96,7 +97,7 @@
     "type": "Non-Technical",
     "tags": [""],
 
-    "image": "./9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
+    "image": "9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
 
     "fee": "0",
     "team_size": "Event_Team_Size",
@@ -142,7 +143,7 @@
     "type": "Non-Technical",
     "tags": [""],
 
-    "image": "./9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
+    "image": "9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
 
     "fee": "0",
     "team_size": "Event_Team_Size",
@@ -188,7 +189,7 @@
     "type": "Non-Technical",
     "tags": ["Onilne"],
 
-    "image": "./9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
+    "image": "9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
 
     "fee": "0",
     "team_size": "Event_Team_Size",
@@ -234,7 +235,7 @@
     "type": "Non-Technical",
     "tags": ["Onilne"],
 
-    "image": "./9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
+    "image": "9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
 
     "fee": "0",
     "team_size": "Event_Team_Size",
@@ -280,7 +281,7 @@
     "type": "Non-Technical",
     "tags": ["Sports"],
 
-    "image": "./9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
+    "image": "9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
 
     "fee": "0",
     "team_size": "Event_Team_Size",
@@ -326,7 +327,7 @@
     "type": "Non-Technical",
     "tags": ["Sports"],
 
-    "image": "./9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
+    "image": "9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
 
     "fee": "0",
     "team_size": "Event_Team_Size",
@@ -372,7 +373,7 @@
     "type": "Workshop",
     "tags": [""],
 
-    "image": "./9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
+    "image": "9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
 
     "fee": "0",
     "team_size": "Event_Team_Size",
@@ -416,7 +417,7 @@
     "type": "Workshop",
     "tags": [""],
 
-    "image": "./9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
+    "image": "9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
 
     "fee": "0",
     "team_size": "Event_Team_Size",

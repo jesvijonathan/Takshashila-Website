@@ -18,11 +18,13 @@
       "third": "Event_Prize_Third"
     },
 
-    "batch": {
-      "date:": "YYYY-MM-DD",
-      "time": "HH:MM AM",
-      "venue": "Venue_Name"
-    },
+    "batch": [
+      {
+        "date:": "YYYY-MM-DD",
+        "time": "HH:MM AM",
+        "venue": "Venue_Name"
+      }
+    ],
 
     "incharge": [
       {
