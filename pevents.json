@@ -1,0 +1,459 @@
+[
+  {
+    "name": "Water Rocketry",
+    "type": "Technical",
+    "tags": ["1", "2"],
+
+    "image": "9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png",
+
+    "fee": "0",
+    "team_size": "Event_Team_Size",
+    "description": "It all looked so easy when you did it with paper-where valves never froze, gyros never drifted and rocked motors did not blow up in your face.Build your own rocket and bring it on the floor that blast the sky.",
+    "tag_line": "Event_Tag_Line",
+
+    "rules": [
+      " It's a single-player game. Only one player is allowed to play ata time.",
+      "2"
+    ],
+
+    "prize": {
+      "first": "1500",
+      "second": "1000",
+      "third": "0"
+    },
+
+    "date": "2023-03-31",
+
+    "batch": [{ "time": "11:00 AM", "venue": "Ground" }],
+
+    "incharge": [
+      {
+        "name": "Gokul Kannan CSE",
+        "email": "gokulkannanp.cse2021@citchennai.net",
+        "phone": "9941269128"
+      },
+
+      {
+        "name": "Karthikeyan ECE",
+        "email": "gokulkannanp.cse2021@citchennai.net",
+        "phone": "9941269128"
+      }
+    ],
+
+    "instagram": "https://instagram.com/_jesvi_",
+    "youtube": "",
+
+    "register": "https://www.google.com"
+  },
+
+  {
+    "name": "RC Racing",
+    "type": "Technical",
+    "tags": [""],
+
+    "image": "",
+
+    "fee": "0",
+    "team_size": "Event_Team_Size",
+    "description": "Competition is what makes us work harder. Crash tests, pit stops and obstacle courses. Race to the finish line while revving your engines. Creativity and strategy packs a punch in this RC race!",
+    "tag_line": "Event_Tag_Line",
+
+    "rules": [""],
+
+    "prize": {
+      "first": "2000",
+      "second": "1500",
+      "third": "0"
+    },
+
+    "batch": {
+      "date": "2023-04-01",
+      "time": "11:00 AM",
+      "venue": "Batminton Clay Court"
+    },
+
+    "incharge": [
+      {
+        "name": "Gokul Kannan CSE",
+        "email": "gokulkannanp.cse2021@citchennai.net",
+        "phone": "9941269128"
+      },
+
+      {
+        "name": "Incharge_Name",
+        "email": "gokulkannanp.cse2021@citchennai.net",
+        "phone": "Incharge_Phone"
+      }
+    ],
+
+    "instagram": "Event_Instagram",
+    "youtube": "",
+
+    "register": "Event_Register_Link"
+  },
+
+  {
+    "name": "Chordially Yours",
+    "type": "Non-Technical",
+    "tags": [""],
+
+    "image": "",
+
+    "fee": "0",
+    "team_size": "Event_Team_Size",
+    "description": "Music is felt rather than heard. ​With your beguiling voice, you can touch people's hearts and enlighten their souls. After all, music is more than just a tune.",
+    "tag_line": "Event_Tag_Line",
+
+    "rules": [""],
+
+    "prize": {
+      "first": "1500",
+      "second": "1000",
+      "third": "500"
+    },
+
+    "batch": {
+      "date": "2023-03-31",
+      "time": "10:00 AM",
+      "venue": "Kaveri Auditorium"
+    },
+
+    "incharge": [
+      {
+        "name": "Gayathrie",
+        "email": "gayathriem.aids2021@citchennai.net",
+        "phone": "9150472413"
+      },
+
+      {
+        "name": "Incharge_Name",
+        "email": "Incharge_Email",
+        "phone": "Incharge_Phone"
+      }
+    ],
+
+    "instagram": "Event_Instagram",
+    "youtube": "",
+
+    "register": "Event_Register_Link"
+  },
+
+  {
+    "name": "Active Popcorn",
+    "type": "Non-Technical",
+    "tags": [""],
+
+    "image": "",
+
+    "fee": "0",
+    "team_size": "Event_Team_Size",
+    "description": "You have one minute to speak your piece, and everything will be determined within seconds. Energize yourselves, speak up without hesitation, and win with your words and tenacity.",
+    "tag_line": "Event_Tag_Line",
+
+    "rules": ["1. ", "2. ", "3. "],
+
+    "prize": {
+      "first": "2000",
+      "second": "1500",
+      "third": "0"
+    },
+
+    "batch": {
+      "date": "2023-04-01",
+      "time": "11:00 AM",
+      "venue": "Classroom"
+    },
+
+    "incharge": [
+      {
+        "name": "Gokul Kannan CSE",
+        "email": "gokulkannanp.cse2021@citchennai.net",
+        "phone": "9941269128"
+      },
+
+      {
+        "name": "Incharge_Name",
+        "email": "gokulkannanp.cse2021@citchennai.net",
+        "phone": "Incharge_Phone"
+      }
+    ],
+
+    "instagram": "Event_Instagram",
+    "youtube": "",
+
+    "register": "Event_Register_Link"
+  },
+
+  {
+    "name": "Photography",
+    "type": "Non-Technical",
+    "tags": ["Onilne"],
+
+    "image": "",
+
+    "fee": "0",
+    "team_size": "Event_Team_Size",
+    "description": "Are you passionate about photography? Come and join us for an exciting event that celebrates the art of capturing moments through the lens.Whether you're a seasoned photographer or just starting out, you're sure to find inspiration here. ",
+    "tag_line": "Event_Tag_Line",
+
+    "rules": ["1. ", "2. ", "3. "],
+
+    "prize": {
+      "first": "1500",
+      "second": "1000",
+      "third": "500"
+    },
+
+    "batch": {
+      "date": "2023-03-31",
+      "time": "10:00 AM",
+      "venue": "Online"
+    },
+
+    "incharge": [
+      {
+        "name": "Gayathrie",
+        "email": "gayathriem.aids2021@citchennai.net",
+        "phone": "9150472413"
+      },
+
+      {
+        "name": "Incharge_Name",
+        "email": "Incharge_Email",
+        "phone": "Incharge_Phone"
+      }
+    ],
+
+    "instagram": "Event_Instagram",
+    "youtube": "",
+
+    "register": "Event_Register_Link"
+  },
+
+  {
+    "name": "Meme",
+    "type": "Non-Technical",
+    "tags": ["Onilne"],
+
+    "image": "",
+
+    "fee": "0",
+    "team_size": "Event_Team_Size",
+    "description": "Create a meme that makes people stop scrolling and stop sharing! Make magical memes that make people roll in laughter. Will your meme be the next viral hit?",
+    "tag_line": "Event_Tag_Line",
+
+    "rules": ["1. ", "2. ", "3. "],
+
+    "prize": {
+      "first": "2000",
+      "second": "1500",
+      "third": "0"
+    },
+
+    "batch": {
+      "date": "2023-04-01",
+      "time": "11:00 AM",
+      "venue": "Online"
+    },
+
+    "incharge": [
+      {
+        "name": "Gokul Kannan CSE",
+        "email": "gokulkannanp.cse2021@citchennai.net",
+        "phone": "9941269128"
+      },
+
+      {
+        "name": "Incharge_Name",
+        "email": "gokulkannanp.cse2021@citchennai.net",
+        "phone": "Incharge_Phone"
+      }
+    ],
+
+    "instagram": "Event_Instagram",
+    "youtube": "",
+
+    "register": "Event_Register_Link"
+  },
+
+  {
+    "name": "Futsal",
+    "type": "Non-Technical",
+    "tags": ["Sports"],
+
+    "image": "",
+
+    "fee": "0",
+    "team_size": "Event_Team_Size",
+    "description": "The sun is out and the fans are on.Time to break out a fresh pair of kicks and get ready for your next futsal match! Show some love for your fellow ballers and share a high-five today.Break a leg!",
+    "tag_line": "Event_Tag_Line",
+
+    "rules": ["1. ", "2. ", "3. "],
+
+    "prize": {
+      "first": "1500",
+      "second": "1000",
+      "third": "500"
+    },
+
+    "batch": {
+      "date": "2023-03-31",
+      "time": "10:00 AM",
+      "venue": "Ground"
+    },
+
+    "incharge": [
+      {
+        "name": "Gayathrie",
+        "email": "gayathriem.aids2021@citchennai.net",
+        "phone": "9150472413"
+      },
+
+      {
+        "name": "Incharge_Name",
+        "email": "Incharge_Email",
+        "phone": "Incharge_Phone"
+      }
+    ],
+
+    "instagram": "Event_Instagram",
+    "youtube": "",
+
+    "register": "Event_Register_Link"
+  },
+
+  {
+    "name": "Volley Ball",
+    "type": "Non-Technical",
+    "tags": ["Sports"],
+
+    "image": "",
+
+    "fee": "0",
+    "team_size": "Event_Team_Size",
+    "description": "Soar up to the skies, beyond the nets and spike past any obstacles in your way. In this game of 12, can you lead your team to victory and climb your way to the top? You won't know unless you try!",
+    "tag_line": "Event_Tag_Line",
+
+    "rules": ["1. ", "2. ", "3. "],
+
+    "prize": {
+      "first": "2000",
+      "second": "1500",
+      "third": "0"
+    },
+
+    "batch": {
+      "date": "2023-04-01",
+      "time": "11:00 AM",
+      "venue": "Volley Ball court"
+    },
+
+    "incharge": [
+      {
+        "name": "Gokul Kannan CSE",
+        "email": "gokulkannanp.cse2021@citchennai.net",
+        "phone": "9941269128"
+      },
+
+      {
+        "name": "Incharge_Name",
+        "email": "gokulkannanp.cse2021@citchennai.net",
+        "phone": "Incharge_Phone"
+      }
+    ],
+
+    "instagram": "Event_Instagram",
+    "youtube": "",
+
+    "register": "Event_Register_Link"
+  },
+
+  {
+    "name": "Cyber Security",
+    "type": "Workshop",
+    "tags": [""],
+
+    "image": "",
+
+    "fee": "0",
+    "team_size": "Event_Team_Size",
+    "description": "Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. These cyberattacks are usually aimed at accessing, changing, or destroying sensitive information; extorting money from users; or interrupting normal business processes.",
+
+    "rules": ["1. ", "2. ", "3. "],
+
+    "prize": {
+      "first": "1500",
+      "second": "1000",
+      "third": "500"
+    },
+
+    "batch": {
+      "time": "10:00 AM",
+      "venue": "Python Laboratory",
+      "date": "2023-03-31"
+    },
+
+    "incharge": [
+      {
+        "name": "Gayathrie",
+        "email": "gayathriem.aids2021@citchennai.net",
+        "phone": "9150472413"
+      },
+
+      {
+        "name": "Incharge_Name",
+        "email": "Incharge_Email",
+        "phone": "Incharge_Phone"
+      }
+    ],
+
+    "instagram": "Event_Instagram",
+    "youtube": "",
+
+    "register": "Event_Register_Link"
+  },
+  {
+    "name": "Ai & Ds",
+    "type": "Workshop",
+    "tags": [""],
+
+    "image": "",
+
+    "fee": "0",
+    "team_size": "Event_Team_Size",
+    "description": "and programs from digital attacks. These cyberattacks are usually aimed at accessing, changing, or destroying sensitive information; extorting money from users; or interrupting normal business processes.",
+
+    "rules": ["1. ", "2. ", "3. "],
+
+    "prize": {
+      "first": "1500",
+      "second": "1000",
+      "third": "500"
+    },
+
+    "batch": {
+      "time": "10:00 AM",
+      "venue": "Python Laboratory",
+      "date": "2023-03-31"
+    },
+
+    "incharge": [
+      {
+        "name": "Gayathrie",
+        "email": "gayathriem.aids2021@citchennai.net",
+        "phone": "9150472413"
+      },
+
+      {
+        "name": "Incharge_Name",
+        "email": "Incharge_Email",
+        "phone": "Incharge_Phone"
+      }
+    ],
+
+    "instagram": "Event_Instagram",
+    "youtube": "",
+
+    "register": "Event_Register_Link"
+  }
+]

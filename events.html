@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script defer src="./cursor.js"></script>
+    <script src="./butter.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body class="eve_body">
+    <div class="cursor" id="cursor">
+      <div class="cursor_border" id="cursor_border">
+        <div class="cursor_circle" id="cursor_circle"></div>
+      </div>
+    </div>
+    <div class="noise-container"></div>
+    <header class="eve_head">
+      <div
+        class="ev_title title_font link_cur"
+        data-text="Return To Main Page"
+        onclick="close_event(this);"
+      >
+        Takshashila
+      </div>
+
+      <div class="mav_bar_cont">
+        <div class="nav_bar_links link_cur" data-text="About Us">About</div>
+        <div class="nav_bar_links link_cur" data-text="Events List">Events</div>
+        <div class="nav_bar_links link_cur" data-text="Pro-Shows">
+          Pro Shows
+        </div>
+        <div class="nav_bar_links link_cur" data-text="Workshops">
+          Workshops
+        </div>
+        <div class="nav_bar_links link_cur" data-text="Contact Us">Contact</div>
+      </div>
+    </header>
+    <div class="eve_func" id="navbar">
+      <div class="eve_path_con_par">
+        <div class="title">Events</div>
+        <div class="eve_path_con" id="eve_path">
+          <a class="link_cur" data-text="Event Type">/ Technical</a>
+          <a class="link_cur" data-text="Event Name">/ Plush</a>
+        </div>
+      </div>
+      <div class="search"></div>
+      <div class="title_back_con" onclick="close_event(this)" id="baclk_w">
+        <span class="fa fa-arrow-left"></span>
+        <div>Back</div>
+      </div>
+      <div class="filter" id="filter">
+        <button
+          class="fil_bub eve_active link_cur"
+          onclick="toggle_but(this);"
+          value="true"
+          id="all"
+          data-type="eve_card"
+          data-text="All Events"
+        >
+          All
+        </button>
+        <button
+          class="fil_bub link_cur"
+          onclick="toggle_but(this);"
+          data-type="Technical"
+          value="false"
+          data-text="Technical Events"
+        >
+          Technical
+        </button>
+
+        <button
+          class="fil_bub link_cur"
+          onclick="toggle_but(this);"
+          data-type="Non-Technical"
+          value="false"
+          data-text="Non-Technical Events"
+        >
+          Non-Technical
+        </button>
+        <button
+          class="fil_bub link_cur"
+          onclick="toggle_but(this);"
+          data-type="Workshop"
+          value="false"
+          data-text="Workshops"
+        >
+          Workshops
+        </button>
+        <button
+          class="fil_bub link_cur"
+          onclick="toggle_but(this);"
+          data-type="Pro Shows"
+          value="false"
+          data-text="Pro Shows"
+        >
+          Pro Shows
+        </button>
+      </div>
+    </div>
+    <div class="main" id="butter">
+      <div class="eve_list_cont" id="eve_list_cont">
+        <!-- <div class="eve_card">
+        <img
+          class="eve_img"
+          src="./9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003 1.png"
+        />
+        <div class="eve_ma">
+          <div class="eve_title">Plush</div>
+          <div class="eve_tag">Dance It All The Way</div>
+        </div>
+
+        <div class="eve_desc">
+          <div>
+            Dream World Film Festival (DWFF) is an annual 2-day event conducted
+            by VIT Film Society. It acts as an interactive platform for aspiring
+            filmmakers and cinema aficionados to exhibit their skills while
+            gaining a plethora of knowledge. Exhilarating events on topics
+            ranging from film-making technicalities to cinema trivia are also
+            incorporated. DWFF 2023 will feature a line up of industry experts
+            to bestow their knowledge and share their experiences in the various
+            aspects of film making. The participants will be given time to shoot
+            and produce their own movies, giving them first hand experience of
+            film making and providing them a medium to use the knowledge they
+            possess. For the final day, movies filmed and produced by the
+            participants will be screened and judged by experienced film makers,
+            hence declaring the winners who will be awarded prize money,
+            bringing an end to the 2 day longÂ filmÂ festival.
+          </div>
+        </div>
+        <div class="eve_bar">
+          <div class="eve_min">
+            <div>Technical Event</div>
+            <div class="eve_line"></div>
+            <div>22 March 2023</div>
+          </div>
+          <div class="eve_button">View</div>
+        </div>
+      </div> -->
+      </div>
+
+      <div class="eve_detail_cont" id="eve_detail_cont">
+        <div class="eve_detail_1">
+          <div class="eve_detail_1_1">
+            <img
+              style="height: 20vw"
+              src="/photo-1501386761578-eac5c94b800a.jpeg"
+              id="eve_img"
+            />
+
+            <div class="eve_detail_1_2">
+              <div class="eve_detai_1_2_title">Tags :</div>
+              <div class="eve_detai_1_2_tag_cont" id="tag_con">
+                <div class="eve_detai_1_2_tag">photo</div>
+                <div class="eve_detai_1_2_tag">tech</div>
+                <div class="eve_detai_1_2_tag">edit</div>
+                <div class="eve_detai_1_2_tag">creative</div>
+                <div class="eve_detai_1_2_tag">art</div>
+              </div>
+            </div>
+            <div class="eve_detail_1_3">
+              <div class="eve_detai_1_2_title">Links :</div>
+              <div class="eve_detail_1_3_cont">
+                <a
+                  class="eve_detail_1_3_link link_cur"
+                  data-text="Latest Posts"
+                  id="link_con_insta"
+                  target="_blank"
+                >
+                  Instagram Post
+                </a>
+                <a
+                  class="eve_detail_1_3_link link_cur"
+                  data-text="Youtube Videos"
+                  id="link_con_youtube"
+                  target="_blank"
+                >
+                  Youtube
+                </a>
+                <a
+                  class="eve_detail_1_3_link link_cur"
+                  data-text="Shareable Link"
+                  id="link_con_share"
+                  onclick="copyToClipboard(); notify('Link Copied To Clipboard !',5000)"
+                  target="_blank"
+                >
+                  Share Link
+                </a>
+                <a
+                  class="eve_detail_1_3_link link_cur"
+                  data-text="Download Brochure"
+                  id="link_con_download"
+                  target="_blank"
+                >
+                  Download
+                </a>
+              </div>
+            </div>
+            <div class="eve_detail_1_4">
+              <a
+                class="eve_detail_reg link_cur"
+                data-text="Register Now"
+                id="eve_reg_link"
+                target="_blank"
+              >
+                Register
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="eve_detail_2">
+          <div class="eve_detail_2_1" id="eve_title_con">
+            <div class="eve_detail_2_1_1">Plush</div>
+            <div class="eve_edtail_2_1_tag">Dance It All The Way</div>
+          </div>
+          <div class="eve_detail_2_2" id="eve_detail_2_2">
+            <div class="eve_detail_2_2_1">Description</div>
+            <div class="eve_detail_2_2_tag">
+              Dream World Film Festival (DWFF) is an annual 2-day event
+              conducted by VIT Film Society. It acts as an interactive platform
+              for aspiring filmmakers and cinema aficionados to exhibit their
+              skills while gaining a plethora of knowledge. Exhilarating events
+              on topics ranging from film-making technicalities to cinema trivia
+              are also incorporated. DWFF 2023 will feature a line up of
+              industry experts to bestow their knowledge and share their
+              experiences in the various aspects of film making.
+            </div>
+          </div>
+          <div class="eve_detail_2_2">
+            <div class="eve_detail_2_2_1">Rules</div>
+            <div class="eve_detail_2_2_tag" id="eve_detail_rules">
+              <div class="eve_rules">
+                It's a single-player game. Only one player is allowed to play at
+                a time.
+              </div>
+              <div class="eve_rules">
+                Hand gestures are used to control the game.
+              </div>
+              <div class="eve_rules">
+                Each player has one chance(life) with a trial gameplay.
+              </div>
+              <div class="eve_rules">
+                Before the game begins, the demo will be shown.
+              </div>
+              <div class="eve_rules">
+                Participants playing order is chosen by lottery system.
+              </div>
+              <div class="eve_rules">
+                The primary criteria for choosing the winner is the distance
+                travelled & coins collected, incase of a tie.
+              </div>
+            </div>
+          </div>
+          <div class="eve_detail_2_3">
+            <div class="eve_detail_horiz">
+              <div class="eve_sec">
+                <div class="eve_detail_2_2_1">Prize</div>
+                <div class="eve_sec_con" id="prize">
+                  <div class="">First Prize : ₹2000</div>
+                  <div class="">Second Prize : ₹1000</div>
+                  <div class="">Third Prize : ₹500</div>
+                </div>
+              </div>
+              <div class="eve_lin"></div>
+
+              <div class="eve_sec">
+                <div class="eve_detail_2_2_1">Details</div>
+                <div class="eve_sec_con" id="eve_details">
+                  <div class="">Type : Technical Event</div>
+                  <div class="">Date : 22 March 2023</div>
+                  <div class="">Time : 10:00 am</div>
+                </div>
+              </div>
+              <div class="eve_lin"></div>
+
+              <div class="eve_sec">
+                <div class="eve_detail_2_2_1">Contact</div>
+                <div class="eve_sec_con" id="eve_contact">
+                  <div class="">Co-ordinator : Panapan</div>
+                  <div class="">Phone : 701049394</div>
+                  <div class="">Email: sksksk@gmail.com</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="eve_detail_2_4"></div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer">
+          <div class="foot_1">
+            <div class="foot_1_1">
+              <div class="title_font">Takshashila</div>
+              <div class="line line_2"></div>
+              <div>
+                <a
+                  class="foot_desc_title link_cur"
+                  data-text="Our Institution"
+                  href=""
+                  target="_blank"
+                >
+                  Chennai Institute Of Technology
+                </a>
+                <a
+                  class="foot_desc link_cur"
+                  data-text="Location"
+                  href=""
+                  target="_blank"
+                >
+                  Kundrathur, Chennai, Tamil Nadu, PIN : 600069
+                </a>
+              </div>
+            </div>
+            <div class="foot_1_2">
+              <div class="foot_1_2_1">
+                <div class="foot_1_2_1_title">Socials</div>
+                <div class="foot_1_2_1_list">
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Instagram"
+                    href=""
+                    target="_blank"
+                  >
+                    Instagram
+                  </a>
+
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Facebook"
+                    href=""
+                    target="_blank"
+                  >
+                    Facebook
+                  </a>
+
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Linked In"
+                    href=""
+                    target="_blank"
+                  >
+                    Linked In
+                  </a>
+
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Email"
+                    href=""
+                    target="_blank"
+                  >
+                    Email
+                  </a>
+
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Phone"
+                    href=""
+                    target="_blank"
+                  >
+                    Phone
+                  </a>
+                </div>
+              </div>
+              <div class="line_3"></div>
+              <div class="foot_1_2_1">
+                <div class="foot_1_2_1_title">Events</div>
+                <div class="foot_1_2_1_list">
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Technical Events"
+                    href=""
+                    target="_blank"
+                  >
+                    Technical
+                  </a>
+
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Non-Technical Events"
+                    href=""
+                    target="_blank"
+                  >
+                    Non Technical
+                  </a>
+
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Workshops"
+                    href=""
+                    target="_blank"
+                  >
+                    Workshops
+                  </a>
+
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Pro-shows"
+                    href=""
+                    target="_blank"
+                  >
+                    Pro-Shows
+                  </a>
+
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Other Events"
+                    href=""
+                    target="_blank"
+                  >
+                    Others
+                  </a>
+                </div>
+              </div>
+              <div class="line_3"></div>
+              <div class="foot_1_2_1">
+                <div class="foot_1_2_1_title">Website</div>
+                <div class="foot_1_2_1_list">
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Terms & Conditions"
+                    href=""
+                    target="_blank"
+                  >
+                    Terms & Policy
+                  </a>
+
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Our Services"
+                    href=""
+                    target="_blank"
+                  >
+                    Service
+                  </a>
+
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Your Account"
+                    href=""
+                    target="_blank"
+                  >
+                    Account
+                  </a>
+
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Official Website"
+                    href=""
+                    target="_blank"
+                  >
+                    College Site
+                  </a>
+
+                  <a
+                    class="foot_1_2_1_list_item link_cur"
+                    data-text="Developer"
+                    href=""
+                    target="_blank"
+                  >
+                    Developer
+                  </a>
+                </div>
+              </div>
+              <div class="line_3"></div>
+              <div class="foot_1_2_1">
+                <div class="foot_1_2_1_title">Support</div>
+                <div class="foot_1_2_1_list">
+                  <a data-text="Our Team" class="foot_1_2_1_list_item link_cur"
+                    >Takshashila Team</a
+                  >
+
+                  <a
+                    data-text="Report Errors"
+                    class="foot_1_2_1_list_item link_cur"
+                    >Report</a
+                  >
+
+                  <a data-text=":)" class="foot_1_2_1_list_item link_cur"
+                    >Developer</a
+                  >
+
+                  <a
+                    data-text="Contact Us"
+                    class="foot_1_2_1_list_item link_cur"
+                    >Contact Us</a
+                  >
+
+                  <a data-text="Credits" class="foot_1_2_1_list_item link_cur"
+                    >Credits</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="line_5"></div>
+        <div class="footer f_end">
+          <div class="foot_2">
+            <div class="foot_2_1">
+              <div class="foot_2_1_1">Takshashila.in</div>
+              <div class="line_4"></div>
+              <div class="foot_2_1_1">All Rights Reserved</div>
+              <div class="line_4"></div>
+
+              <div class="foot_2_1_1">Copyright ©2023</div>
+            </div>
+            <a
+              href="https://jesvi.pythonanywhere.com"
+              target="_blank"
+              data-text="🔥😎🔥"
+              class="foot_2_2 link_cur"
+              >Made With 🤟 By Jesvi Jonathan</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="notify">
+      <div id="not-cont" class="notify-content">
+        <a class="hno underline" target="_blank" href="#s0">{{ msg_link }}</a>
+        {{ msg }} Sign in to your account
+      </div>
+      <div class="notify-button" onclick="accept_cookie()">Dismiss</div>
+    </div>
+  </body>
+</html>
+
+<script>
+  // Notify flyer function //
+
+  function accept_cookie() {
+    document.querySelector(".notify").style.padding = "0vw 0vw";
+
+    document.querySelector(".notify").style.opacity = "0";
+    document.querySelector(".notify").style.zIndex = "-1";
+  }
+  function deccept_cookie() {
+    document.querySelector(".notify").style.padding = "1.8vw 1vw";
+
+    document.querySelector(".notify").style.opacity = "1";
+    document.querySelector(".notify").style.zIndex = "1";
+  }
+
+  function notify(text, timeout) {
+    document.getElementById("not-cont").innerHTML = text;
+    // document.querySelector("#not-cont").style.color = "red";
+
+    deccept_cookie();
+
+    if (timeout != -1) {
+      setTimeout(function () {
+        accept_cookie();
+      }, timeout);
+    }
+  }
+</script>
+
+<script>
+  function close_event(e) {
+    window.history.pushState(
+      "",
+      "",
+      "/events.html".replace(/ /g, "_").toLowerCase()
+    );
+
+    document.getElementById("eve_list_cont").style.display = "flex";
+    document.getElementById("eve_detail_cont").style.display = "none";
+
+    document.getElementById("eve_path").style.display = "none";
+    document.getElementById("filter").style.display = "flex";
+
+    document.getElementById("baclk_w").style.display = "none";
+  }
+
+  // notify("Loading...");
+
+  window.onpopstate = function (event) {
+    close_event();
+  };
+
+  var url_event;
+  var load_done = false;
+
+  if (
+    window.location.href.indexOf("events") != -1 ||
+    window.location.href.indexOf("events.html") != -1
+  ) {
+    var parts = window.location.href.split("/");
+    url_event = parts[parts.length - 1];
+
+    if (url_event.indexOf("events") != -1) {
+      url_event = null;
+      close_event();
+    }
+  }
+
+  function copyToClipboard() {
+    text = window.location.href;
+
+    if (window.clipboardData && window.clipboardData.setData) {
+      // Internet Explorer-specific code path to prevent textarea being shown while dialog is visible.
+      return window.clipboardData.setData("Text", text);
+    } else if (
+      document.queryCommandSupported &&
+      document.queryCommandSupported("copy")
+    ) {
+      var textarea = document.createElement("textarea");
+      textarea.textContent = text;
+      textarea.style.position = "fixed"; // Prevent scrolling to bottom of page in Microsoft Edge.
+      document.body.appendChild(textarea);
+      textarea.select();
+      try {
+        return document.execCommand("copy"); // Security exception may be thrown by some browsers.
+      } catch (ex) {
+        // console.warn("Copy to clipboard failed.", ex);
+        return prompt("Copy to clipboard: Ctrl+C, Enter", text);
+      } finally {
+        document.body.removeChild(textarea);
+      }
+    }
+  }
+</script>
+
+<script>
+  var t;
+
+  butter.init({
+    wrapperId: "butter",
+    wrapperDamper: 0.1,
+    cancelOnTouch: false,
+  });
+
+  document.querySelector("#butter").style.position = "initial";
+</script>
+
+<script>
+  document.body.style.display = "none";
+  // console.log(navigator.userAgent);
+  if (
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    )
+  ) {
+    var ask1 = alert(
+      "Website Under construction & is not supported for mobile devices.\nUse a Desktop/Laptop to view the site.."
+    );
+  } else {
+    document.body.style.display = "block";
+  }
+
+  var jata = null;
+  var html_list = document.getElementById("eve_list_cont");
+  var inner_details = "";
+  var json_data;
+
+  function set_json(data) {
+    json_data = data;
+  }
+  $(document).ready(function () {
+    var data;
+
+    fetch("./pevents.json") // Call the fetch function passing the url of the API as a parameter
+      .then((res) => res.json())
+      .then(function (res) {
+        data = res;
+        set_json(res);
+        // Your code for handling the data you get from the API
+
+        for (i = 0; i < data.length; i++) {
+          jata = data[i];
+          inner_details = "";
+
+          jata = data[i];
+
+          inner_details += '<img class="eve_img" src="' + jata.image + '"/>';
+          inner_details +=
+            ' <div class="eve_ma"><div class="eve_title">' +
+            jata.name +
+            "</div>";
+          inner_details +=
+            '<div class="eve_tag">' + jata.tag_line + "</div></div>";
+          inner_details +=
+            '<div class="eve_desc"><div>' + jata.description + "</div></div>";
+          inner_details +=
+            '<div class="eve_bar"><div class="eve_min"><div>' +
+            jata.type +
+            "</div>";
+          inner_details +=
+            '<div class="eve_line"></div><div>' +
+            jata.batch.date +
+            "</div></div>";
+          inner_details += '<div class="eve_button">View</div></div>';
+
+          html_list.innerHTML +=
+            '<div class="eve_card ' +
+            jata.type +
+            '" onclick="open_event(' +
+            i +
+            ');">' +
+            inner_details +
+            "</div>\n";
+          if (data[i].name.replace(" ", "_").toLowerCase() == url_event) {
+            open_event(i);
+          }
+        }
+        load_done = true;
+      })
+      .catch(function () {
+        // This is where you run code if the server returns any errors
+      });
+  });
+
+  function open_event(e) {
+    document.getElementById("baclk_w").style.display = "flex";
+    document.getElementById("eve_list_cont").style.display = "none";
+    document.getElementById("eve_detail_cont").style.display = "flex";
+
+    document.getElementById("eve_path").style.display = "flex";
+    document.getElementById("filter").style.display = "none";
+
+    document.getElementById("eve_img").src = "./" + json_data[e].image;
+
+    //inner div for tag_con from json_data[e].tags
+    document.getElementById("tag_con").innerHTML = "";
+    for (i = 0; i < json_data[e].tags.length; i++) {
+      document.getElementById("tag_con").innerHTML +=
+        '<div class="eve_detai_1_2_tag">' + json_data[0].tags[i] + "</div>";
+    }
+
+    document.getElementById("link_con_insta").href = json_data[e].instagram;
+    // document.getElementById("link_con_youtube").href = json_data[e].youtube;
+    // document.getElementById("link_con_share").href = "";
+
+    document.getElementById("link_con_download").href = "";
+    document.getElementById("eve_reg_link").href = json_data[e].register;
+
+    document.getElementById("eve_title_con").childNodes[1].innerHTML =
+      json_data[e].name;
+
+    window.history.pushState(
+      "page2",
+      "Title",
+      ("/events.html#/" + json_data[e].name).replace(/ /g, "_").toLowerCase()
+    );
+
+    document.getElementById("eve_title_con").childNodes[3].innerHTML =
+      json_data[e].tag_line;
+    document.getElementById("eve_detail_2_2").childNodes[3].innerHTML =
+      json_data[e].description;
+
+    //<a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=My Event&details=Event description text&dates=20220305T103000/20220305T184500&location=New York City">Add to Google Calendar</a>
+
+    document.getElementById("eve_detail_rules").innerHTML = "";
+
+    for (i = 0; i < json_data[e].rules.length; i++) {
+      document.getElementById("eve_detail_rules").innerHTML +=
+        '<div class="eve_rules">' + json_data[e].rules[i] + "</div>";
+    }
+
+    document.getElementById("prize").innerHTML =
+      '<div class="">First Prize : ' + json_data[e].prize.first + "</div>";
+    document.getElementById("prize").innerHTML +=
+      '<div class="">Second Prize : ' + json_data[e].prize.second + "</div>";
+    document.getElementById("prize").innerHTML +=
+      '<div class="">Third Prize : ' + json_data[e].prize.third + "</div>";
+
+    document.getElementById("eve_details").childNodes[1].innerHTML =
+      "Type : " + json_data[e].type;
+    document.getElementById("eve_details").childNodes[3].innerHTML =
+      "Date : " + json_data[e].date;
+    document.getElementById("eve_details").childNodes[5].innerHTML =
+      "Time : " + json_data[e].batch[0].time;
+
+    document.getElementById("eve_contact").childNodes[1].innerHTML =
+      "Co-ordinator : <a href='mailto:" +
+      json_data[e].incharge[0].email +
+      "'>" +
+      json_data[e].incharge[0].name +
+      "</a>";
+    document.getElementById("eve_contact").childNodes[3].innerHTML =
+      "Email : <a href='mailto:" +
+      json_data[e].incharge[0].email +
+      "'>" +
+      json_data[e].incharge[0].email +
+      "</a>";
+    document.getElementById("eve_contact").childNodes[5].innerHTML =
+      "Phone : <a href='tel:" +
+      json_data[e].incharge[0].phone +
+      "'>" +
+      json_data[e].incharge[0].phone +
+      "</a>";
+  }
+
+  // ///////////////////////////
+</script>
+
+<script>
+  var types = ["Technical", "Non-Technical", "Workshop", "Pro Shows"];
+
+  var vis = null;
+
+  function toggle_but(e) {
+    var eve_cards = document.getElementsByClassName("eve_card");
+
+    if (e.dataset.type == "eve_card") {
+      // notify("All Events", 1000);
+      vis = "block";
+      all.classList.add("eve_active");
+    } else {
+      // notify("Filtered " + e.dataset.type + " events", 1000);
+      vis = "None";
+    }
+
+    // accept_cookie;
+
+    var ch = e.parentElement.children;
+    for (i = 0; i < ch.length; i++) {
+      ch[i].classList.remove("eve_active");
+    }
+
+    e.classList.add("eve_active");
+
+    for (i = 0; i < eve_cards.length; i++) {
+      eve_cards[i].style.display = vis;
+    }
+
+    for (i = 0; i < types.length; i++) {
+      var eve_cards = document.getElementsByClassName(types[i]);
+      if (e.dataset.type == types[i]) {
+        for (j = 0; j < eve_cards.length; j++) {
+          eve_cards[j].style.display = "block";
+        }
+      }
+    }
+  }
+</script>
+
+<script>
+  window.onscroll = function () {
+    myFunction();
+  };
+
+  // Get the navbar
+  var navbar = document.getElementById("navbar");
+
+  // Get the offset position of the navbar
+  var sticky = navbar.offsetTop;
+
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset >= sticky / 3) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+</script>
