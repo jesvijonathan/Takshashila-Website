@@ -1,0 +1,27 @@
+Calling Google Outh..
+
+<body>
+  <script>
+    function poptastic(url) {
+      var newWindow = window.open(url, "name", "height=600,width=450");
+      if (window.focus) {
+        newWindow.focus();
+      }
+    }
+
+    poptastic("{{auth_link}}");
+  </script>
+</body>
+
+<!-- <script>
+  document.getElementById("demo").innerHTML =
+    "The full URL of this page is:<br>" + window.location.href;
+
+  const myTimeout = setTimeout(function () {
+    window.open(
+      "{{ auth_link }}",
+      "_blank",
+      "location=yes,height=570,width=520,scrollbars=yes,status=yes"
+    );
+  }, 5000);
+</script> -->

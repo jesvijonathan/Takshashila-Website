@@ -1,0 +1,68 @@
+<!DOCTYPE >
+<html>
+  Register page 2
+  <form action="/user_details" method="post">
+    <input
+      type="number"
+      name="phone_number"
+      placeholder="phone_number"
+      value=""
+    />
+    <input
+      type="text"
+      name="first_name"
+      placeholder="first_name"
+      id="first_name"
+      value=""
+    />
+    <input
+      type="text"
+      name="last_name"
+      placeholder="last_name"
+      id="last_name"
+      value=""
+    />
+    <input type="text" name="institute" placeholder="institute" />
+    <input type="text" name="degree" placeholder="degree" />
+    <input type="text" name="branch" placeholder="branch" />
+    <input type="number" name="graduate_year" placeholder="graduate_year" />
+    <input
+      placeholder="Date"
+      class="textbox-n"
+      type="text"
+      onfocus="(this.type='date')"
+      onblur="(this.type='text')"
+      id="date"
+    />
+    <input type="hidden" name="hash" id="hash" readonly />
+
+    <input type="submit" value="Submit" />
+  </form>
+</html>
+
+<script>
+  var first_name = getCookie("first_name");
+  document.getElementById("first_name").value = first_name;
+  var last_name = getCookie("last_name");
+  document.getElementById("last_name").value = last_name;
+
+  var hash = getCookie("hash");
+  document.getElementById("hash").value = hash;
+
+  function poptasticopener(url) {
+    var newWindow = window.open(
+      url,
+      "Takshashila Google Authentication",
+      "height=600,width=450"
+    );
+    if (window.focus) {
+      newWindow.focus();
+    }
+  }
+</script>
+
+<script>
+  //   window.location.replace(
+  //     "https://jesvijonathan.github.io/Takshashila-2023-Web-Design/"
+  //   );
+</script>

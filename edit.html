@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events Json | Takshashila</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./butter.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RDPMEBQGBQ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-RDPMEBQGBQ");
+    </script>
+  </head>
+  <body style="cursor: unset !important">
+    <div class="json_view_cont">
+      <div class="json_title">
+        Events Json Editor
+        <div class="json_edited" id="json_edited"></div>
+      </div>
+      <textarea class="json_view" id="json_view">{{ data }}</textarea>
+    </div>
+    <div class="save_but_con">
+      <a href="./events.json" download="events.json">
+        <button type="button" id="down_but" style="min-width: 9vw">
+          Download
+        </button>
+      </a>
+
+      <button
+        class="hov_dis"
+        type="button"
+        id="save_but"
+        disabled
+        onclick="saveData()"
+      >
+        Save
+      </button>
+    </div>
+    <!-- <h1>Events Json</h1>
+    <pre>{{ data }}</pre>
+    <h2>Edit JSON</h2>
+    <textarea id="new-data" rows="10" cols="80">{{ data|tojson }}</textarea>
+    <br />
+    <button onclick="saveData()">Save</button> -->
+
+    <!-- <script type="text/javascript">
+  $(document).ready(function () {
+    var data;
+    
+
+    fetch("./events.json") // Call the fetch function passing the url of the API as a parameter
+      .then((res) => res.json())
+      .then(function (res) {
+        data = res;
+        set_json(res);
+        // Your code for handling the data you get from the API
+
+        for (i = 0; i < data.length; i++) {
+          jata = data[i];
+          inner_details = "";
+        }
+      })
+      .catch(function () {
+        // This is where you run code if the server returns any errors
+      });
+  });
+
+    </script> -->
+
+    <script>
+      // function down_json() {
+      //   var data = document.getElementById("json_view").value;
+
+      //   var excelBlob = new Blob(
+      //     [data],
+      //     { type: "text/plain;charset=utf-8" },
+      //     "events.json"
+      //   );
+      //   // var link = window.URL.createObjectURL(excelBlob);
+      //   // // window.location = link;
+      //   // saveAs(excelBlob, "events.json");
+      //   window.open("./events.json", "_blank");
+      // }
+
+      const def_data = document.getElementById("json_view").value;
+
+      document.getElementById("json_view").onkeyup = function (e) {
+        if (def_data == document.getElementById("json_view").value) {
+          document.getElementById("json_edited").innerHTML = "";
+          document.getElementById("save_but").disabled = true;
+          document.getElementById("save_but").classList.remove("save_but");
+        } else {
+          document.getElementById("json_edited").innerHTML = "*Edited";
+          document.getElementById("save_but").disabled = false;
+          document.getElementById("save_but").classList.add("save_but");
+        }
+      };
+    </script>
+    <script>
+      function saveData() {
+        // var newData = JSON.parse(document.getElementById("json_view").value);
+        // fetch("/update", {
+        //   method: "POST",
+        //   headers: {
+        //     "Content-Type": "application/json",
+        //   },
+        //   body: JSON.stringify(newData),
+        // })
+        //   .then((response) => {
+        //     if (response.ok) {
+        //       alert("Data saved successfully !");
+        //       window.location.reload();
+        //     } else {
+        //       alert("Error saving data.");
+        //     }
+        //   })
+        //   .catch((error) => {
+        //     alert("Error saving data: " + error);
+        //   });
+        alert("Nope, not gonna happen :P");
+      }
+    </script>
+  </body>
+</html>
+
+<style>
+  .json_view_cont {
+    width: 56%;
+    height: 72%;
+    background: rgb(0, 0, 0);
+    color: white;
+    cursor: initial;
+    left: 50%;
+    top: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+  }
+
+  .json_view {
+    width: -webkit-fill-available;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    color: white;
+    left: 50%;
+    top: 50%;
+    border: 2px solid transparent;
+  }
+  .json_view:focus {
+    border: 2px solid rgb(255, 255, 255);
+  }
+  .json_title {
+    background: white;
+    color: black;
+    text-align: center;
+    font-family: "oo";
+    padding: 0.4vw;
+    text-decoration: none;
+    user-select: none;
+    font-size: 1vw;
+    gap: 0.3vw;
+    transition: 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    /* word-spacing: 0.3vw; */
+    /* flex-direction: column;*/
+  }
+
+  .json_edited {
+    color: rgb(0, 210, 0);
+  }
+
+  .save_but_con {
+    display: flex;
+    width: fit-content;
+    height: 9vw;
+    left: 50%;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10vw;
+    padding-bottom: 1vw;
+    align-content: center;
+    transform: translate(-50%, 0);
+    gap: 2vw;
+  }
+
+  .hov_dis {
+    opacity: 0;
+    min-width: 0vw;
+    width: 0;
+  }
+  .hov_dis.hov_dis:hover {
+    background: none;
+    color: white;
+    cursor: not-allowed;
+  }
+
+  .save_but {
+    border-color: white;
+    text-decoration: underline;
+    transition: 0.5s ease;
+    cursor: pointer !important;
+    opacity: 1;
+    width: fit-content;
+    min-width: 9vw;
+  }
+
+  .save_but:hover {
+    background-color: white !important;
+    color: black !important;
+    transition: 0.2s ease;
+  }
+</style>
