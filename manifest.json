@@ -1,0 +1,20 @@
+{
+  "name": "CIT - Takshahila 2023",
+  "short_name": "Takshashila 23",
+  "start_url": "./",
+  "theme_color": "#282828",
+  "background_color": "#282828",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "./favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
