@@ -720,7 +720,7 @@ document.addEventListener("mouseout", () => {
     window.history.pushState(
       "",
       "",
-      "/events.html".replace(/ /g, "_").toLowerCase()
+      "./Takshashila-2023-Web-Design/events.html".replace(/ /g, "_").toLowerCase()
     );
     document.title = "Events | Takshashila 2023";
     eve_list_cont.style.display = "flex";
@@ -755,7 +755,7 @@ document.addEventListener("mouseout", () => {
 
 
         notify("Loading Home Page..");
-        history.pushState(null, null, "/");
+        history.pushState(null, null, "./Takshashila-2023-Web-Design/");
         window.location.reload();
       }
       else if(back_conter==1){
@@ -1098,7 +1098,7 @@ rullee = document.getElementById("rullee");
     let sname =(json_data[e].name)
       .replace(/ /g, "_")
       .toLowerCase()
-    let xpath = ("./events.html#/" + sname);
+    let xpath = ("./Takshashila-2023-Web-Design/events.html#/" + sname);
     
     window.history.pushState("page2", "Title", xpath);
 
