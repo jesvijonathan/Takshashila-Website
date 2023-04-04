@@ -136,13 +136,13 @@ function single_page_login(e) {
       window.history.pushState(
         "page2",
         "Title",
-        "./Takshashila-2023-Web-Design/login.html"
+        "/Takshashila-2023-Web-Design/login.html"
       ))
     : ((l.style.transform = "translate(-50%, -52%) scale(1)"),
       window.history.pushState(
         "page2",
         "Title",
-        "./Takshashila-2023-Web-Design/login.html#/signup"
+        "/Takshashila-2023-Web-Design/login.html#/signup"
       ));
 }
 var slideIndex = 1;
