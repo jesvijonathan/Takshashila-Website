@@ -19,7 +19,19 @@ Let this project live on, be reused, improved, and celebrated in years to come. 
 
 ## Design Philosophy
 
-**Please don’t change the design** — it’s already *perfecto* (0_-) 
+**Not a flex, but...**  
+This entire project runs **without any modern frontend framework** — just my own creation: **JSPA** & **JOS**.  
+**dynamic URLs, seamless navigation, zero page reloads**, **custom Animations** — all handled seamlessly server-side.  
+
+**Why take the fking hard route ? well..**  
+- The more **custom** a software gets, the more it becomes damn near impossible for others to copy-paste & simply kang my work :)  
+- & coming back to the main reason, I don’t play it safe — It's a choice. Tight deadlines? Bring it on. I thrive under pressure.
+
+> This isn't just code — it's craftsmanship.  
+> **I'm the best.** - Jesvi Jonathan
+
+## You Could Improvise 
+**Don’t change the design** — it’s already *perfecto* (0_-) 
 If it were me, I’d enhance the project like this:
 
 - Build a **dashboard** for [editing events](https://www.cittakshashila.in/edit.html) via the [event.json file](https://github.com/jesvijonathan/Takshashila-Website/blob/master/events.json).  
